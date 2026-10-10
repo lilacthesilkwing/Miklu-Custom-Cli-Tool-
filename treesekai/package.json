@@ -1,0 +1,25 @@
+{
+  "name": "treesekai",
+  "version": "1.0.0",
+  "description": "miku",
+  "keywords": [
+    "miku","hatsune","vocaloid","hatsune miku","miku hatsune","vocaloid miku","vocaloid hatsune miku"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "imthinkingmikumikuooeeoo"
+  },
+  "license": "ISC",
+  "author": "lilac",
+  "type": "commonjs",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "node bin/index.js greeting"
+  },
+  "bin": {
+    "miklu": "./bin/index.js"
+  },
+  "dependencies": {
+    "yargs": "^18.2.0"
+  }
+}
