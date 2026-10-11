@@ -18,6 +18,16 @@ const { hideBin } = require("yargs/helpers");
 const args = yargs(hideBin(process.argv))
     .scriptName("miklu")
     
+    //miklu cli tool introduction
+    .command(
+        "$0",
+        "Introduction to the CLI tool, Miklu",
+        () => {},
+        () => {
+            console.log("Hello! I'm Hacksune Miklu! \n I'm a Hatsune Miku inspired CLI tool that can talk to you about Project Sekai. \n Try typing in 'miklu help' to see all my commands!")
+        }
+    )
+
     //miklu's main greeting command
     .command(
         "greeting", 
@@ -38,7 +48,7 @@ const args = yargs(hideBin(process.argv))
                     "Original Miklu's greeting~",
                     () => {},
                     ({ name }) => {
-                        console.log("Hallo, ${name}! I'm Hacksune Miklu!");
+                        console.log("Hallo, friend! I'm Hacksune Miklu!");
                     }
                 )
                 
@@ -97,28 +107,40 @@ const args = yargs(hideBin(process.argv))
     //miklu's role/group summary
     .command(
         "summary",
-        "summairves ig",
+        "Each miklu's summary of their sekai + their group + job? if applicable",
         (command) => 
             command
-            //sets up thing
+            //sets up option for the command
             .option("name", {
                 alias: "n",
                 type: "string",
                 default: "miklu",
-                describe: "The summary of their group + their role"
+                describe: "The summary of their group + their role" 
 
             })
+
+            //og miklu's role explanation
             .command(
                 "og",
-                "og miklu's role",
+                "Explains Miklu's role in the Tree of Feeling Sekai",
                 () => {},
                 ({ name }) => {
-                    console.log("hello")
+                    console.log("Oh, you want to know what I am doing? \n idk bro")
+                }
+            )
+
+            //Leo/need miklu's role explanation
+            .command(
+                "l",
+                "n",
+                () => {},
+                ({ name }) => {
+                    console.log("Oh, description here")
                 }
             )
     )
 
-
+    //silly stuff (tbd)
 
     //help command
     .command(
@@ -129,8 +151,15 @@ const args = yargs(hideBin(process.argv))
             console.log("Miklu's CLI Help!");
             console.log("==================");
             console.log("Commands:");
-            console.log("  greeting  Miklu's greeting to you~");
-            console.log("  help      Show help information");
+            console.log("  greeting  All of the Miklu's greetings for you!"); 
+            console.log("     og        Original Miklu's greeting");
+            console.log("     L/n       Leo/need Miklu's greeting");
+            console.log("     MMJ       MORE! MORE JUMP! Miklu's greeting");
+            console.log("     VBS       Vivid BAD Squad Miklu's greeting");
+            console.log("     WxS       Wonderlands x Showtime Miklu's greeting");
+            console.log("     n25       Nightcord at 25 Miklu's greeting")
+            console.log("  summary   Each miklu's summary of their sekai's appearance & their group members' personalities");
+            console.log("  help      Shows this information, duh!");
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
