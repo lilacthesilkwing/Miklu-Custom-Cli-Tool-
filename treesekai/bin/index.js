@@ -93,7 +93,7 @@ const args = yargs(hideBin(process.argv))
                     }
                 )
 
-                //Nightcord at 25 miklu's greeting option
+                //Nightcord at 25:00 miklu's greeting option
                 .command(
                     "n25",
                     "Nightcord at 25 Miklu's greeting~",
@@ -129,13 +129,53 @@ const args = yargs(hideBin(process.argv))
                 }
             )
 
-            //Leo/need miklu's role explanation
+            //Leo/need miklu's role explanation undinfiehdho
             .command(
                 "l",
                 "n",
                 () => {},
                 ({ name }) => {
                     console.log("Oh, description here")
+                }
+            )
+
+            //MORE! MORE! JUMP! miklu's role explanation undifjnsifnd
+            .command(
+                "MMJ",
+                "idk",
+                () => {},
+                ({ name }) => {
+                    console.log("lol ig")
+                }
+            )
+
+            //Vivid BAD Squad miklu's role explanation unifnished
+            .command(
+                "v",
+                "angry",
+                () => {},
+                ({ name }) => {
+                    console.log("hfebdfvihdfojsdfjjfdsbugwbjaef thisn is not ai!!!!");
+                }
+            )
+
+            //Wonderlands x Showtime miklu's role explanation undfiisndhed 
+            .command(
+                "ws",
+                "wimsndihsiodball angery",
+                () => {},
+                ({ name }) => {
+                    console.log("triggered")
+                }
+            )
+
+            //Nightcord at 25:00 miklu's role explanation ubifinsed 
+            .command(
+                "n2",
+                "apathy",
+                () => {},
+                ({ name }) => {
+                    console.log("anglry bu ti will ock in")
                 }
             )
     )
