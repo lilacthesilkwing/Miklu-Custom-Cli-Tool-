@@ -14,3 +14,5 @@ Goals:
      Sekai descriptions: Complete!
      Group member descriptions: Unstarted
 3. Add text art to most (or all) commands: Pending
+
+NOTE: Code changes may be in main branch instead of default branch. Check the main branch to see all code.
