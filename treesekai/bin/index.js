@@ -131,7 +131,7 @@ const args = yargs(hideBin(process.argv))
             //Leo/need miklu's sekai description + character descriptions 
             .command(
                 "L/n",
-                "Leo/need miklu's description of her sekai and characters",
+                "Leo/need miklu's description of her sekai and group members",
                 (command) => 
                     command
                     .option ("name", {
@@ -147,24 +147,60 @@ const args = yargs(hideBin(process.argv))
                         "Leo/need miklu's description of her sekai",
                         () => {},
                         ({ name }) => {
-                            console.log("Well, as you've probably guessed based on the name, this sekai mostly resembles an empty school. \nThere are even lots of empty classrooms and an acessible roof where you can see the stars at night! \n\nOh, you want to know what I'm doing? \nI'm tuning my guitar so I can practice with the girls and Luka later!")
+                            console.log("Well, as you've probably guessed based on the name, this sekai mostly resembles an empty school.")
+                            console.log("There are even lots of enpty classrooms and an acessible roof where you can see the stars at night!\n")
+                            console.log("Oh, you want to know what I'm doing?")
+                            console.log(" I'm tuning my guitar so I can practice with the girls and Luka later!")
                         }
                     )
 
-                    //Leo/need miklu's description of Ichika Hoshino
+                    //Leo/need miklu's description of Ichika Hoshino unfinshed
+                    .command(
+                        "IchiH",
+                        "Leo/need miklu's description of Ichika Hoshino",
+                        () => {},
+                        ({ name }) => {
+                            console.log("Ichika is a huge fan of Hacksune Miklu (that's me!) in general, but she especially loves my music! mikus songs cacti yakisoba buns (hates green pesas + thrill rides) miku cds")
+                            console.log("I cds in slek alast tiem she wad there")
+                            console.log("She also enjoys taking care of her cacti and lyaksioe and peass")
+                        }
+                    )
 
-                    //Leo/need miklu's description of Saki Tenma
+                    //Leo/need miklu's description of Saki Tenma uninehs
+                    .command(
+                        "SakiT",
+                        "Leo/need miklu's description of Saki Tenma",
+                        () => {},
+                        ({ name }) => {
+                            console.log("fasion/ake iup ideos beading she can juuggle snaks (hate rice porrite + bieng alone) phenny plushies")
+                        }
+                    )
 
-                    //Leo/need miklu's description of Honami Mochizuki
+                    //Leo/need miklu's description of Honami Mochizuki unfineds
+                    .command(
+                        "HonaM",
+                        "Leo/need miklu's description of Honami Mochizuki",
+                        () => {},
+                        ({ name }) => {
+                            console.log("walking her dog shibao gardenign apple pie (hates cheese and drawing) stargazing guide")
+                        }
+                    )
 
-                    //Leo/need miklu's description of Shiho Hinomori
-
+                    //Leo/need miklu's description of Shiho Hinomori unfineshed
+                    .command(
+                        "ShihH",
+                        "Leo/need miklu's description of Shiho Hinomori",
+                        () => {},
+                        ({ name }) => {
+                            console.log("girl band gigs and playing guitar ramen salibury steak (dislaike tofu + shikusku) bass guitsar")
+                        }
+                    )
             )
 
             //MORE! MORE! JUMP! miklu's sekai description + character description
             .command(
                 "MMJ",
-                "MORE! MORE! JUMP! miklu's description of her sekai and the characters",
+                "MORE! MORE! JUMP! miklu's description of her sekai and her group members",
                 (command) => 
                     command
                     .option("name", {
@@ -177,26 +213,60 @@ const args = yargs(hideBin(process.argv))
                     //MORE! MORE! JUMP! miklu's sekai description
                     .command(
                         "$0",
-                        "desc",
+                        "MORE! MORE! JUMP! miklu's description of her sekai",
                         () => {},
                         ({ name }) => {
-                            console.log("This sekai has soooo many different stages in it! \nIf you look out over the stages, you can see all the light sticks waving in the crowd! \n\n Ah! I'm late for my idol training session with Rin!")
+                            console.log("This sekai has soooo many different stages in it!")
+                            console.log("If you look out over the stages, you can see all the ligth sticks waving in the crowd!\n")
+                            console.log("Ah! I'm late for my idol trainng session with Rin!")
                         }
                     )
 
                     //MORE! MORE! JUMP! miklu's description of Minori Hanasato
+                    .command(
+                        "MinoH",
+                        "u",
+                        () => {},
+                        ({ name }) => {
+                            console.log("dance covers dirry lookign ofater animals coming up eith cahtchpashese salmon (dislikes brocoili +reladxing activitys) uidol merch")
+                        }
+                    )
 
                     //MORE! MORE! JUMP! miklu's description of Haruka Kiritani
+                    .command(
+                        "HaruK",
+                        "h",
+                        () => {},
+                        ({ name }) => {
+                            console.log("ffcoloectin pengiun themed mecrh sweet things (dislikes wasabi and idleness) glow stick")
+                        }
+                    )
 
                     //MORE! MORE! JUMP! miklu's description of Airi Momoi
+                    .command(
+                        "AiriM",
+                        "d",
+                        () => {},
+                        ({ name }) => {
+                            console.log("reaseching idols shopping japanese sweeets (dislikes liver + ccats) homemade airir fan wjfodfd")
+                        }
+                    )
 
                     //MORE! MORE! JUMP! miklu's description of Shizuku Hinomori
+                    .command(
+                        "ShizH",
+                        "d",
+                        () => {},
+                        ({ name }) => {
+                            console.log("reading taking walks archery udon nnodles tofu skin (dislikes spicy fooods reading mpas using computers) towel for airi")
+                        }
+                    )
             )
 
             //Vivid BAD Squad miklu's sekai description
             .command(
                 "VBS",
-                "Vivid BAD Squad miklu's description of her sekai",
+                "Vivid BAD Squad miklu's description of her sekai and group members",
                 (command) =>
                     command
                     .option("name", {
@@ -209,34 +279,167 @@ const args = yargs(hideBin(process.argv))
                     //Vivid BAD Squad miklu's sekai description
                     .command(
                         "$0",
-                        "desc",
+                        "Vivid BAD Squad miklu's description of her sekai",
                         () => {},
                         ({ name }) => {
-                            console.log("This sekai is mostly a bunch of streets and allyways. \nAlthough, MEIKO has a cafe over there. She makes pretty good coffee and desserts, too! \n\nWell, I've got to go practice with the Kagamines. ")
+                            console.log("This sekai is mostly a bunch of streets and alleyways. ")
+                            console.log("Although, MEIKO has a cafe over there. She makes pretty good coffee and desserts, too\n")
+                            console.log("Well, I've got to go practice with the Kagamines.")
+                            console.log(" I promised I'd sing with them later today. See you around!")
                         }
                     )
-                
-                //console.log(" This sekai is mostly a bunch of streets and alleyways. \n Although, MEIKO has a cafe over there. She makes pretty good good drinks and coffees, If I do say so myself. \n\n Well, I've got to go practice with the Kagamines. \n i promised I'd sing with them later today. See you around!");
+
+                    //Vivid BAD Squad miklu's description of Kohane Azuzawa
+                    .command(
+                        "KohaA",
+                        "hamptster",
+                        () => {},
+                        ({ name }) => {
+                            console.log("hampptesr")
+                        }
+                    )
+
+                    //Vivid BAD Squad miklu's description of An Shiraishi
+                    .command(
+                        "AnS",
+                        "d",
+                        () => {},
+                        ({ name }) => {
+                            console.log("g")
+                        }
+                        
+                    )
+
+                    //Vivid BAD Squad miklu's description of Akito Shinonome
+                    .command(
+                        "AkitS",
+                        "f",
+                        () => {},
+                        ({ name }) => {
+                            console.log("g")
+                        }
+                    )
+
+                    //Vivid BAD Squad miklu's description of Toya Aoyagi
+                    .command(
+                        "ToyaA",
+                        "k",
+                        () => {},
+                        ({ name }) => {
+                            console.log("jk")
+                        }
+                    )
             )
 
             //Wonderlands x Showtime miklu's sekai description
             .command(
                 "WxS",
-                "Wonderlands x Showtime miklu's description of her sekai",
-                () => {},
-                ({ name }) => {
-                    console.log("This sekai has so many different things in it, I'm so excited to show all of them to you!\n Should I show you the super fwoosh-fwoosh train or - the plushies might also be holding a show right now... \nUuuee! There's so much to chose from...\n\n Oh, you wonder why this sekai is called the wonderland sekai and not something like the park sekai?\n I'll go find Tsukasa-kun and ask him right now! Tsukasa-kunnnn!")
-                }
+                "Wonderlands x Showtime miklu's description of her sekai and group members",
+                (command) =>
+                    command
+                    .option("name", {
+                        alias: "n",
+                        type: "string",
+                        default: "miklu",
+                        describe: "sekai description + character descriptions"
+                    })
+
+                    //
+                    .command(
+                        "$0",
+                        "Wonderlands x Showtime miklu's description of her sekai",
+                        () => {},
+                        ({ name }) => {
+                            console.log("This sekai has so many different things in it, I'm so excited to show all of them to you! \nShould I show you the super fwoosh-fwoosh train or - the plushies might also be holding a show right now... \nUuuee! There's so much to choose from... \n\nOh, you wonder why this sekai is called the wonderland sekai and not something like the park sekai? \n I'll go find Tsukasa-kun and ask him right now! Tsukasa-kunnnn!")
+                            console.log("Should I show you the super fwoosh-fwoosh train or - the plushies are holding a show right now too!...")
+                            console.log("Uuuee! There's so much to choose from...\n")
+                            console.log("Oh, you wonder why this sekai is called the wonderland sekai is called the wonderland sekai and not something like the park sekai?")
+                            console.log("I'll go find Tsukasa-kun and ask him right now! Tsukasa-kunnnn!")
+                        }
+                    )
+
+                    //Wonderlands x Showtime miklu's description of Tsukasa Tenma
+                    .command(
+                        "TsukT",
+                        "d",
+                        () => {},
+                        ({ name }) => {
+                            console.log("fih")
+                        }
+                    )
+
+                    //Wonderlands x Showtime miklu's description of Emu Otori
+                    .command(
+                        "EmuO",
+                        "m",
+                        () => {},
+                        ({ name }) => {
+                            console.log("k")
+                        }
+                    )
+
+                    //Wonderlands x Showtime miklu's description of Nene Kusanagi
+                    .command(
+                        "NeneK",
+                        "f",
+                        () => {},
+                        ({ name }) => {
+                            console.log("vvv")
+                        }
+                    )
+
+                    //Wonderlands x Showtime miklu's description of Rui Kamishiro
+                    .command(
+                        "RuiK",
+                        "f",
+                        () => {},
+                        ({ name }) => {
+                            console.log("dj")
+                        }
+                    )
             )
 
             //Nightcord at 25:00 miklu's sekai description 
             .command(
                 "n25",
-                "Nightcord at 25:00 miklu's description of her sekai",
-                () => {},
-                ({ name }) => {
-                    console.log("Ah... You want to know about this sekai? \n ...there isn't very much here to see though. Sorry... \n\n ...Mafu- Yuki and the others sometimes bring us things from outside... \n so you could see those later.")
-                }
+                "Nightcord at 25:00 miklu's description of her sekai and group members",
+                (command) =>
+                    command
+                    .option("name", {
+                        alias: "n",
+                        type: "string",
+                        default: "miklu",
+                        describe: "sekai description + character descriptions"
+
+                    })
+
+                    .command(
+                        "$0",
+                        "Nightcord at 25:00 miklu's description of her sekai",
+                        () => {},
+                        ({ name }) => {
+                            console.log("Ah... You want to know about this sekai?")
+                            console.log(" ...there isn't very much here to see though. Sorry...\n") 
+                            console.log("...Mafu- Yuki and the others sometime bring us things from outside...")
+                            console.log(" so you could see those later.")
+                        }
+                    )
+
+                    //Nightcord at 25:00 miklu's description of Kanade Yoisaki
+                    .command(
+                        "K",
+                        "",
+                        () => {},
+                        ({ name }) => [
+                            console.log("kanad")
+                        ]
+                    )
+
+                    //Nightcord at 25:00 miklu's description of Mafuyu Asahina
+
+                    //Nightcord at 25:00 miklu's description of Ena Shinonome
+
+                    //Nightcord at 25:00 miklu's description of Mizuki Akiyama
             )
     )
 
@@ -274,6 +477,6 @@ const args = yargs(hideBin(process.argv))
     .parse();
 
     //to do: test miklu desc legacy (+ all the other legacy commands)
-    //       test all the new desc commands (just leonii for now)
+    //       test all the new desc commands (just leonii for now) 
     // eventually: visiual novel from the pov of all the main characters fallowing through main story 2nd person with bad end being world link 2 based
     // difjirbvignbn bmb.kujgifngpeifiehieirffffieofosfdiswfffwerwhgjfheifhewihfiw
