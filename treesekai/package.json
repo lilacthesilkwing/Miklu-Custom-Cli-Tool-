@@ -14,7 +14,7 @@
   "type": "commonjs",
   "main": "bin/index.js",
   "scripts": {
-    "test": "node bin/index.js greeting"
+    "test": "node bin/index.js greeting og"
   },
   "bin": {
     "miklu": "./bin/index.js"
