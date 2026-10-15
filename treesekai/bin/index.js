@@ -48,7 +48,7 @@ const args = yargs(hideBin(process.argv))
                     "Original Miklu's greeting~",
                     () => {},
                     ({ name }) => {
-                        console.log("Hallo, friend! I'm Hacksune Miklu!");
+                        console.log("Hello, friend! I'm Hacksune Miklu!");
                     }
                 )
                 
