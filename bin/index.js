@@ -211,8 +211,9 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("Honami is the leader of the band and the band's drummer.")
-                            console.log("She like")
-                            console.log("leaedr of the band walking her dog shibao gardenign apple pie (hates cheese and drawing) stargazing guide")
+                            console.log("She likes walking her dog, Shibao, gardening, and she knows a lot about astronomy.")
+                            console.log("She left a whole bunch of stargazing guides in the sekai so we couldd try to find some constalations in the sekai's night sky!")
+                            console.log("She loves apple pie and she hates cheese and drawing (it's one of her weak spots).")
                         }
                     )
 
@@ -223,8 +224,9 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("Shiho is the band's bassist.")
-                            console.log("She likes...")
-                            console.log("girl band gigs and playing guitar ramen salibury steak (dislaike tofu + shikusku) bass guitsar she might be down to play bass though phenny plushies (techincally sakis but...) i even saw her holding one of the pheny phlusheis that saki brought bu don;t tell her i told yout that...")
+                            console.log("She likes going to girl band gigs and practicing on her bass, so she's usually down to play bass.")
+                            console.log("She loves ramen and salisbury steak but she dislikes tofu and her sister's clingyness.")
+                            console.log("She also loves rabbits and cute fluffy animals, but don't tell her I told you that!")
                         }
                     )
             )
