@@ -10,9 +10,7 @@ Start with typing 'miklu' into the terminal, and follow the directions from ther
 
 Goals: 
 1. Add greeting commands for all 6 different miklus: Complete!
-2. Add description commands for all 6 different miklus: Pending
-     Sekai descriptions: Complete!
-     Group member descriptions: Unstarted
+2. Add description commands for all 6 different miklus: Pending (Sekai descriptions: Complete!; Group member descriptions: Unstarted)
 3. Add text art to most (or all) commands: Pending
 
 NOTE: Code changes may be in main branch instead of default branch. Check the main branch to see all code.
