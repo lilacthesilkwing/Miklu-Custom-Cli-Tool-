@@ -340,7 +340,7 @@ const args = yargs(hideBin(process.argv))
                     //Vivid BAD Squad miklu's description of An Shiraishi
                     .command(
                         "AnS",
-                        "d",
+                        "Vivid BAD SQUAD miklu's description of An Shiraishi",
                         () => {},
                         ({ name }) => {
                             console.log("anchan")
@@ -351,7 +351,7 @@ const args = yargs(hideBin(process.argv))
                     //Vivid BAD Squad miklu's description of Akito Shinonome
                     .command(
                         "AkitS",
-                        "f",
+                        "Vivid BAD SQUAD miklu's description of Akito Shinonome",
                         () => {},
                         ({ name }) => {
                             console.log("ginger")
@@ -361,7 +361,7 @@ const args = yargs(hideBin(process.argv))
                     //Vivid BAD Squad miklu's description of Toya Aoyagi
                     .command(
                         "ToyaA",
-                        "k",
+                        "Vivid BAD SQUAD miklu's description of Toya Aoyagi",
                         () => {},
                         ({ name }) => {
                             console.log("coffe")
@@ -399,7 +399,7 @@ const args = yargs(hideBin(process.argv))
                     //Wonderlands x Showtime miklu's description of Tsukasa Tenma
                     .command(
                         "TsukT",
-                        "d",
+                        "Wonderlands x Showtime miklu's description of Tsukasa Tenma",
                         () => {},
                         ({ name }) => {
                             console.log("fih")
@@ -409,7 +409,7 @@ const args = yargs(hideBin(process.argv))
                     //Wonderlands x Showtime miklu's description of Emu Otori
                     .command(
                         "EmuO",
-                        "m",
+                        "Wonderlands x Showtime miklu's description of Emu Otori",
                         () => {},
                         ({ name }) => {
                             console.log("k")
@@ -419,7 +419,7 @@ const args = yargs(hideBin(process.argv))
                     //Wonderlands x Showtime miklu's description of Nene Kusanagi
                     .command(
                         "NeneK",
-                        "f",
+                        "Wonderlands x Showtime miklu's descrption of Nene Kusanagi",
                         () => {},
                         ({ name }) => {
                             console.log("vvv")
@@ -429,7 +429,7 @@ const args = yargs(hideBin(process.argv))
                     //Wonderlands x Showtime miklu's description of Rui Kamishiro
                     .command(
                         "RuiK",
-                        "f",
+                        "Wonderlands x Showtime miklu's description of Rui Kamishiro",
                         () => {},
                         ({ name }) => {
                             console.log("dj")
@@ -466,7 +466,7 @@ const args = yargs(hideBin(process.argv))
                     //Nightcord at 25:00 miklu's description of Kanade Yoisaki
                     .command(
                         "K",
-                        "KAnad",
+                        "Nightcord at 25:00 miklu's description of Kanade Yoisaki",
                         () => {},
                         ({ name }) => {
                             console.log("kanad")
@@ -476,7 +476,7 @@ const args = yargs(hideBin(process.argv))
                     //Nightcord at 25:00 miklu's description of Mafuyu Asahina
                     .command(
                         "Yuki",
-                        "Mafu",
+                        "Nightcord at 25:00 miklu's desciption of Mafuyu Asahina",
                         () => {},
                         ({ name }) => {
                             console.log("snow")
@@ -486,7 +486,7 @@ const args = yargs(hideBin(process.argv))
                     //Nightcord at 25:00 miklu's description of Ena Shinonome
                     .command(
                         "Enanan",
-                        "SHNONONONONONONOONONONONONOONONONONONOONOONOme",
+                        "Nightcord at 25:00 miklu's description of Ena Shinonome",
                         () => {},
                         ({ name }) => {
                             console.log("isntagram")
@@ -496,7 +496,7 @@ const args = yargs(hideBin(process.argv))
                     //Nightcord at 25:00 miklu's description of Mizuki Akiyama
                     .command(
                         "Amia",
-                        "Mizu",
+                        "Nightcord at 25:00 miklu's description of Mizuki Akiyama",
                         () => {},
                         ({ name }) => {
                             console.log("d")
