@@ -1,6 +1,6 @@
 {
   "name": "treesekai",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "This is a cli tool based on Hatsune Miku from Project Sekai. \nCurrently, it has greetings for all of the different miku versions and descriptions for the sekai's that each of those mikus reside in. \n\n Character descriptions and main story visual novels coming soon! \n Dependencies: yargs",
   "keywords": [
     "miku",

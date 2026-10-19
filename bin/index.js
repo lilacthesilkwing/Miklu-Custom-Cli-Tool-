@@ -349,7 +349,7 @@ const args = yargs(hideBin(process.argv))
                         "Vivid BAD SQUAD miklu's description of An Shiraishi",
                         () => {},
                         ({ name }) => {
-                            console.log("An is the oldest member of the Vivids, one of the duos that make up Vivid BAD SQUAD.")
+                            console.log("An is the oldest member of the Vivids, one of the two duos that make up Vivid BAD SQUAD.")
                             console.log("She is good at making different styles of coffee and tea, and she enjoys growing mint.")
                             console.log("She likes rum raisin ice cream, but she dislikes tomatoes and scary stories or ghosts.")
                         }
@@ -362,8 +362,9 @@ const args = yargs(hideBin(process.argv))
                         "Vivid BAD SQUAD miklu's description of Akito Shinonome",
                         () => {},
                         ({ name }) => {
-                            console.log("Akito is the yoiungest? member of the BAD DOGS, one of the duo that makes up Vivisl ")
-                            console.log("fashion styling beatboxign pancak cheescak (dislikes carrots + dogs)")
+                            console.log("Akito is the youngest member (by age) of the BAD DOGS, one of the two duos that makes up Vivid BAD SQUAD.")
+                            console.log("He has a good sense of fashion and he's pretty good at beatboxing.")
+                            console.log("He likes pancakes and cheescake, but he dislikes carrots and is afraid of dogs.")
                         }
                     )
 
@@ -373,8 +374,9 @@ const args = yargs(hideBin(process.argv))
                         "Vivid BAD SQUAD miklu's description of Toya Aoyagi",
                         () => {},
                         ({ name }) => {
-                            console.log("Toyya is the oldest menrber of the bad dogs neo fo the dueos that fmmthenvivis dbad squad rhvid dabd swuad")
-                            console.log("reading piano violin coffe cookie (dislikes squib + hieghts)")
+                            console.log("Toya is the oldest member (by age) of the BAD DOGS, one of the two duos that makes up Vivid BAD SQUAD.")
+                            console.log("He enjoys reading and he's good at playing the piano and violin.")
+                            console.log("He also likes coffee and cookies, but he doesn't like squid and he is afraid of heights.")
                         }
                     )
             )
