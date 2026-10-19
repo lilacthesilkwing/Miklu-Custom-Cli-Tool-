@@ -300,7 +300,7 @@ const args = yargs(hideBin(process.argv))
                         ({ name }) => {
                             console.log("Shizuku is super elegant and she loves reading and taking walks, even though she gets lost really easily!")
                             console.log("She's great at archery and she loves udon noodles and tofu skin, but she dislikes spicy foods.")
-                            console.log("She also doesn't like reading taking walks archery udon nnodles tofu skin (dislikes spicy fooods reading mpas using computers) towel for airi")
+                            console.log("She also doesn't like using computers or reading maps, which is probably why she gets lost so often!")
                         }
                     )
             )
