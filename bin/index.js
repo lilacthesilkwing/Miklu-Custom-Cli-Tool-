@@ -135,7 +135,7 @@ const args = yargs(hideBin(process.argv))
             .option("name", {
                 alias: "n",
                 type: "string",
-                default: "miklu",
+                default: "friend",
                 describe: "The summary of their group + their role" 
             })
 
@@ -305,7 +305,7 @@ const args = yargs(hideBin(process.argv))
                     )
             )
 
-            //Vivid BAD SQUAD miklu's sekai description
+            //Vivid BAD SQUAD miklu's sekai description + character description
             .command(
                 "VBS",
                 "Vivid BAD SQUAD miklu's description of her sekai and group members",
@@ -343,7 +343,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Vivid BAD Squad miklu's description of An Shiraishi
+                    //Vivid BAD SQUAD miklu's description of An Shiraishi
                     .command(
                         "AnS",
                         "Vivid BAD SQUAD miklu's description of An Shiraishi",
@@ -368,7 +368,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Vivid BAD Squad miklu's description of Toya Aoyagi
+                    //Vivid BAD SQUAD miklu's description of Toya Aoyagi
                     .command(
                         "ToyaA",
                         "Vivid BAD SQUAD miklu's description of Toya Aoyagi",
@@ -376,12 +376,12 @@ const args = yargs(hideBin(process.argv))
                         ({ name }) => {
                             console.log("Toya is the oldest member (by age) of the BAD DOGS, one of the two duos that makes up Vivid BAD SQUAD.")
                             console.log("He enjoys reading and he's good at playing the piano and violin.")
-                            console.log("He also likes coffee and cookies, but he doesn't like squid and he is afraid of heights.")
+                            console.log("He also likes coffee and cookies, but he doesn't like squid and he's afraid of heights.")
                         }
                     )
             )
 
-            //Wonderlands x Showtime miklu's sekai description
+            //Wonderlands x Showtime miklu's sekai description + character descrptions
             .command(
                 "WxS",
                 "Wonderlands x Showtime miklu's description of her sekai and group members",
@@ -415,7 +415,8 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("Tsukasa-kun is the leader of the troupe!")
-                            console.log("musicals making costumes strikeing cool poses piano acqua pazza ginger fied pork (dsilikes peppers and bugs)")
+                            console.log("He likes musicals, making costumes, and he even has 100 super-duper cool poses! and he can even play the piano all fwuaafwuaa!")
+                            console.log("He told me he likes ginger fried pork and... a-cu-wa pat-sa? Buuut he hates peppers and really hates bugs!")
                         }
                     )
 
@@ -425,8 +426,9 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's description of Emu Otori",
                         () => {},
                         ({ name }) => {
-                            console.log("Emu-chan is the _")
-                            console.log("exploring the neaihgborrhod acrobistics foodie takiyaki (dislkikel dusk)")
+                            console.log("Emu-chan is our super fwuaafwuaaa dreamer!")
+                            console.log("She loves exploring the neighborhood and she's super good at acrobatics!")
+                            console.log("She likes all foods, but she really loves takiyaki! Although, she doesn't really like dusk...")
                         }
                     )
 
@@ -436,8 +438,9 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's descrption of Nene Kusanagi",
                         () => {},
                         ({ name }) => {
-                            console.log("Nene-chan ")
-                            console.log("fighnith games misucald movies singing tech graprfruit (dislikes mint floaved thing + croswd places)")
+                            console.log("Nene-chan is our lalala songstress because she's sooo amazing at singing!")
+                            console.log("She loves fighing games, musicals and movies!")
+                            console.log("She also likes grapefruit, but she doesn't like mint flavored things or crowded places.")
                         }
                     )
 
@@ -447,8 +450,10 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's description of Rui Kamishiro",
                         () => {},
                         ({ name }) => {
-                            console.log("Rui-kun")
-                            console.log("planing shows ballon art invineting soda candy (dislikes vegatbels + cleanig menial tasks)")
+                            console.log("Rui-kun is our super amazing director!")
+                            console.log("He loves planning our shows and coming up with super (insrt ound effects here) tricks for Tsukasa-kun to do and-")
+                            console.log(" Hi, Robo-Nene!! He also built Robo-Nene and he makes super (poofy sound effect here) balloon art. and soda candy. planing shows ballon art invineting soda candy (dislikes vegatbels + cleanig menial tasks)")
+                            console.log("He loves soda candy, but he hates vegtables and cleaning!")
                         }
                     )
             )
@@ -565,31 +570,37 @@ const args = yargs(hideBin(process.argv))
             console.log("⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⠇⣼⣶⣦⣤⣬⣉⣉⠉⠛⠛⠛⠛⠛⠀⢻⢠⡄⢢⠰⣦⠰⡘⣿⣦⢰⠀⡄⢠⠈⣍⠉⠉⣉⢁⡀⢀⠈⠻⣷⡈⠆⢻⡇⡇⠀⠘⣿⣿⣿")
             console.log("============================================================================\n");
             console.log("Commands:");
-            console.log("  greeting    All of the Miklus' greetings for you!"); 
-            console.log("     legacy       Original miklu's greeting");
-            console.log("     L/n          Leo/need miklu's greeting");
-            console.log("     MMJ          MORE! MORE JUMP! miklu's greeting");
-            console.log("     VBS          Vivid BAD Squad miklu's greeting");
-            console.log("     WxS          Wonderlands x Showtime miklu's greeting");
-            console.log("     n25          Nightcord at 25 miklu's greeting");
-            console.log("  desc        Each miklu's summary of their sekai's appearance or their main role!");
-            console.log("     legacy       Explains miklu's role in the Tree of Feelings Sekai");
-            console.log("     L/n          Leo/need miklu's description of her sekai");
-            console.log("        IchiH         Leo/need miklu's description of Ichika Hoshino");
-            console.log("        SakiT         Leo/need miklu's description of Saki Tenma");
-            console.log("        HonaM         Leo/need miklu's description of Honami Mochizuki");
-            console.log("        ShihH         Leo/need miklu's description of Shiho Hinomori");
-            console.log("     MMJ          MORE! MORE! JUMP! miklu's description of her sekai");
-            console.log("        MinoH         MORE! MORE! JUMP! miklu's description of Minori Hanasato");
-            console.log("        HaruK         MORE! MORE! JUMP! miklu's description of Haruka Kiritani");
-            console.log("        AiriM         MORE! MORE! JUMP! miklu's description of Airi Momoi");
-            console.log("        ShizH         MORE! MORE! JUMP! miklu's description of Shizuku Hinomori");
-            console.log("     VBS          Vivid BAD SQUAD miklu's description of her sekai");
-            console.log("        KohaA         Vivid BAD SQUAD miklu's description of Kohane Azuzawa"); 
-            console.log("        AnS           Vivid BAD SQUAD miklu's description of An Shiraishi");
-            console.log("     WxS          Wonderlands x Showtime miklu's description of her sekai"); 
-            console.log("     n25          Nightcord at 25:00 miklu's description of her sekai");
-            console.log("  helpme    Shows this information, duh!");
+            console.log("  greeting       All of the Miklus' greetings for you!"); 
+            console.log("     legacy            Original miklu's greeting");
+            console.log("     leonii            Leo/need miklu's greeting");
+            console.log("     momojan           MORE! MORE JUMP! miklu's greeting");
+            console.log("     vivibasu          Vivid BAD Squad miklu's greeting");
+            console.log("     wondasho          Wonderlands x Showtime miklu's greeting");
+            console.log("     niigo             Nightcord at 25 miklu's greeting\n");
+            console.log("  desc           Each miklu's summary of their sekai's appearance or their main role!");
+            console.log("     legacy            Explains miklu's role in the Tree of Feelings Sekai");
+            console.log("     leonii            Leo/need miklu's description of her sekai");
+            console.log("        IchiH             Leo/need miklu's description of Ichika Hoshino");
+            console.log("        SakiT             Leo/need miklu's description of Saki Tenma");
+            console.log("        HonaM             Leo/need miklu's description of Honami Mochizuki");
+            console.log("        ShihH             Leo/need miklu's description of Shiho Hinomori");
+            console.log("     momojan           MORE! MORE! JUMP! miklu's description of her sekai");
+            console.log("        MinoH             MORE! MORE! JUMP! miklu's description of Minori Hanasato");
+            console.log("        HaruK             MORE! MORE! JUMP! miklu's description of Haruka Kiritani");
+            console.log("        AiriM             MORE! MORE! JUMP! miklu's description of Airi Momoi");
+            console.log("        ShizH             MORE! MORE! JUMP! miklu's description of Shizuku Hinomori");
+            console.log("     vivibasu          Vivid BAD SQUAD miklu's description of her sekai");
+            console.log("        KohaA             Vivid BAD SQUAD miklu's description of Kohane Azuzawa"); 
+            console.log("        AnS               Vivid BAD SQUAD miklu's description of An Shiraishi");
+            console.log("        AkitS             Vivid BAD SQUAD miklu's description of Akito Shinonome");
+            console.log("        ToyaA             Vivid BAD SQUAD miklu's description of Toya Aoyagi")
+            console.log("     wondasho          Wonderlands x Showtime miklu's description of her sekai"); 
+            console.log("        TsukT             Wonderlands x Showtime miklu's description of Tsukasa Tenma")
+            console.log("        EmuO              Wonderlands x Showtime miklu's description of Emu Otori")
+            console.log("        NeneK             Wonderlands x Showtime miklu's description of Nene Kusanagi")
+            console.log("        RuiK              Wonderlands x Showtime miklu's description of Rui Kamishiro")
+            console.log("     niigo             Nightcord at 25:00 miklu's description of her sekai \n");
+            console.log("  helpme         Shows this information, duh!");
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
