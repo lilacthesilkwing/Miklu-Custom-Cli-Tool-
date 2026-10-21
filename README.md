@@ -17,6 +17,5 @@ NOTE: Code changes may be in main branch instead of default branch. Check the ma
 
 Demo videos: 
 
-V1.1.1 - https://www.youtube.com/watch?v=VpT4e_ACJNY
-
-V1.2.0 - https://www.youtube.com/watch?v=SV-jQmOiD0Y
+V1.1.1 - https://www.youtube.com/watch?v=VpT4e_ACJNY      
+V1.2.0 - https://www.youtube.com/watch?v=SV-jQmOiD0Y      
