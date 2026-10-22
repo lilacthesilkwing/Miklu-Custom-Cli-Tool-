@@ -67,7 +67,7 @@ const args = yargs(hideBin(process.argv))
                 //legacy miklu's greeting option
                 .command(
                     "legacy",
-                    "Original Miklu's greeting~",
+                    "Original Miklu's greeting!",
                     () => {},
                     ({ name }) => {
                         console.log(`Hello, ${name}! I'm Hacksune Miklu!`);
@@ -76,8 +76,8 @@ const args = yargs(hideBin(process.argv))
                 
                 //Leo/need miklu's greeting option
                 .command(
-                    "L/n",
-                    "Leo/need's Miklu's greeting~",
+                    "leonii",
+                    "Leo/need's Miklu's greeting!",
                     () => {},
                     ({ name }) => {
                         console.log(`Hello, ${name}! I'm the Miklu from the School Sekai! Nice to meet you!`);
@@ -86,7 +86,7 @@ const args = yargs(hideBin(process.argv))
 
                 //MORE! MORE! JUMP! miklu's greeting option
                 .command(
-                    "MMJ",
+                    "momojan",
                     "MORE! MORE! JUMP! Miklu's greeting!",
                     () => {},
                     ({ name }) => {
@@ -96,8 +96,8 @@ const args = yargs(hideBin(process.argv))
 
                 //Vivid BAD SQUAD miklu's greeting option
                 .command(
-                    "VBS",
-                    "Vivid BAD SQUAD Miklu's greeting~",
+                    "vivibasu",
+                    "Vivid BAD SQUAD Miklu's greeting!",
                     () => {},
                     ({ name }) => {
                         console.log(`Hello, ${name}! I'm the Miklu from the Street Sekai. Nice to meet you.`);
@@ -107,8 +107,8 @@ const args = yargs(hideBin(process.argv))
 
                 //Wonderlands x Showtime miklu's greeting option
                 .command(
-                    "WxS",
-                    "Wonderlands x Showtime Miklu's greeting~",
+                    "wondasho",
+                    "Wonderlands x Showtime Miklu's greeting!",
                     () => {},
                     ({ name }) => {
                         console.log(`Wonderhoy, ${name}! I'm Miklu from the Wonderlands Sekai, and it's so wonderhoy to meet you all!!!`);
@@ -117,8 +117,8 @@ const args = yargs(hideBin(process.argv))
 
                 //Nightcord at 25:00 miklu's greeting option
                 .command(
-                    "n25",
-                    "Nightcord at 25 Miklu's greeting~",
+                    "niigo",
+                    "Nightcord at 25 Miklu's greeting!",
                     () => {},
                     ({ name }) => {
                         console.log(`Hello, ${name}... I'm from the Empty Sekai... Its.. nice to meet you.`);
@@ -156,7 +156,7 @@ const args = yargs(hideBin(process.argv))
 
             //Leo/need miklu's sekai description + character descriptions 
             .command(
-                "leoni",
+                "leonii",
                 "Leo/need miklu's description of her sekai and group members",
                 (command) => 
                     command.option ("name", {
@@ -173,7 +173,7 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("Well, as you've probably guessed based on the name, this sekai mostly resembles an empty school.")
-                            console.log("There are even lots of enpty classrooms and an acessible roof where you can see the stars at night!\n")
+                            console.log("There are lots of enpty classrooms and even an acessible roof where you can see the stars at night!\n")
                             console.log("Oh, you want to know what I'm doing?")
                             console.log(" I'm tuning my guitar so I can practice with the girls and Luka later!")
                         }
@@ -250,7 +250,7 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("This sekai has soooo many different stages in it!")
-                            console.log("If you look out over the stages, you can see all the ligth sticks waving in the crowd!\n")
+                            console.log("If you look out over the stages, you can see all the light sticks waving in the crowd!\n")
                             console.log("Ah! I'm late for my idol trainng session with Rin!")
                         }
                     )
@@ -263,7 +263,7 @@ const args = yargs(hideBin(process.argv))
                         ({ name }) => {
                             console.log("Minori is super cheerful and she loves making dance covers with the rest of MORE! MORE! JUMP!")
                             console.log(" She even helped come up with most of the name for the group and her idol catchphrases!")
-                            console.log("She enjoys looking after animals and used to be part of the Animal Care Committee before she switched over to a credit based course to focus on becoming a better idol")
+                            console.log("She enjoys looking after animals and used to be part of the Animal Care Committee before she switched over to a credit based course to focus on her idol duties!")
                             console.log("She especially loves collecting ASRUN idol merch, but she dislikes brocoli and relaxing activities, so she is always working hard to become an even better idol!")
                             console.log("  Oh, and her favorite food is salmon!")
                         }
@@ -297,7 +297,7 @@ const args = yargs(hideBin(process.argv))
                         "MORE! MORE! JUMP! miklu's description of Shizuku Hinomori",
                         () => {},
                         ({ name }) => {
-                            console.log("Shizuku is super elegant and she loves reading and taking walks, even though she gets lost really easily!")
+                            console.log("Shizuku is super elegant and she loves reading and taking walks, although she tends to always end up lost!")
                             console.log("She's great at archery and she loves udon noodles and tofu skin, but she dislikes spicy foods.")
                             console.log("She also doesn't like using computers or reading maps, which is probably why she gets lost so often!")
                         }
@@ -323,7 +323,7 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("This sekai is mostly a bunch of streets and alleyways. ")
-                            console.log("Although, MEIKO has a cafe over there. She makes pretty good coffee and desserts, too\n")
+                            console.log("Although, MEIKO has a cafe over there. She makes pretty good coffee and desserts, too.\n")
                             console.log("Well, I've got to go practice with the Kagamines.")
                             console.log(" I promised I'd sing with them later today. See you around!")
                         }
@@ -332,11 +332,11 @@ const args = yargs(hideBin(process.argv))
                     //Vivid BAD SQUAD miklu's description of Kohane Azuzawa
                     .command(
                         "KohaA",
-                        "Vivid BAD SQUAD miklu's description of Kohane Azuzawa",
+                        "Vivid BAD SQUAD miklu's description of Kohane Azuzawa ",
                         () => {},
                         ({ name }) => {
                             console.log("Kohane is the newest member of the Vivids, one of the two duos that make up Vivid BAD SQUAD.")
-                            console.log("She is really good at phaotgaphy and she loves taking care of her pet snake, Count Pearl.")
+                            console.log("She is really good at photography and she loves taking care of her pet snake, Count Pearl.")
                             console.log("She likes peach buns and sesame balls, but she dislikes pickled foods and public speaking.")
                         }
                     )
@@ -397,10 +397,10 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's description of her sekai",
                         () => {},
                         ({ name }) => {
-                            console.log("This sekai has so many different things in it, I'm so excited to show all of them to you! \nShould I show you the super fwoosh-fwoosh train or - the plushies might also be holding a show right now... \nUuuee! There's so much to choose from... \n\nOh, you wonder why this sekai is called the wonderland sekai and not something like the park sekai? \n I'll go find Tsukasa-kun and ask him right now! Tsukasa-kunnnn!")
+                            console.log("This sekai has so many different things in it, I'm so excited to show all of them to you!")
                             console.log("Should I show you the super fwoosh-fwoosh train or - the plushies are holding a show right now too!...")
                             console.log("Uuuee! There's so much to choose from...\n")
-                            console.log("Oh, you wonder why this sekai is called the wonderland sekai is called the wonderland sekai and not something like the park sekai?")
+                            console.log("Oh, you wonder why this sekai is called the wonderland sekai and not something like the park sekai?")
                             console.log("I'll go find Tsukasa-kun and ask him right now! Tsukasa-kunnnn!")
                         }
                     )
@@ -411,7 +411,7 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's description of Tsukasa Tenma",
                         () => {},
                         ({ name }) => {
-                            console.log("Tsukasa-kun is the leader of the troupe and also the original owner of this sekai!")
+                            console.log("Tsukasa-kun is the leader of the troupe and also the original owner of this sekai! ")
                             console.log("He likes musicals, making costumes, and he even has 100 super-duper cool poses! and he can even play the piano all fwuaafwuaa!")
                             console.log("He told me he likes ginger fried pork and... a-cu-wa pat-sa? Buuut he hates peppers and really hates bugs!")
                         }
@@ -448,8 +448,8 @@ const args = yargs(hideBin(process.argv))
                         () => {},
                         ({ name }) => {
                             console.log("Rui-kun is our super amazing director!")
-                            console.log("He loves planning our shows and coming up with super (insrt ound effects here) tricks for Tsukasa-kun to do and-")
-                            console.log(" Hi, Robo-Nene!! He also built Robo-Nene and he makes super (poofy sound effect here) balloon art. and soda candy. planing shows ballon art invineting soda candy (dislikes vegatbels + cleanig menial tasks)")
+                            console.log("He loves planning our shows and coming up with super cool tricks for Tsukasa-kun to do and-")
+                            console.log(" Hi, Robo-Nene!! He also built Robo-Nene and he makes balloon animals!")
                             console.log("He loves soda candy, but he hates vegtables and cleaning!")
                         }
                     )
@@ -473,10 +473,10 @@ const args = yargs(hideBin(process.argv))
                         "Nightcord at 25:00 miklu's description of her sekai",
                         () => {},
                         ({ name }) => {
-                            console.log("Ah... You want to know about this sekai?")
+                            console.log("Ah... potatoYou want to know about this sekai?")
                             console.log(" ...there isn't very much here to see though. Sorry...\n") 
                             console.log("...Mafu- Yuki and the others sometime bring us things from outside...")
-                            console.log(" so you could see those later...")
+                            console.log(" so you could see those later... ")
                         }
                     )
 
@@ -490,7 +490,7 @@ const args = yargs(hideBin(process.argv))
                             console.log("She spends most of her time composing, and she likes finding new music, movies, anime, manga, and art.")
                             console.log(" ...she's also really good at tracking time down to the second.")
                             console.log("She also likes canned foods and instant noodles... she brought me some once... ")
-                            console.log(" she doesn't like smelly foods, direct sunlight, or housework.")
+                            console.log(" she doesn't like smelly foods, direct sunlight, or housework... she said Mochizuki-san helps her out a lot with that..")
                         }
                     )
 
@@ -528,7 +528,7 @@ const args = yargs(hideBin(process.argv))
                             console.log("Amia... Mizuki is Nightcord at 25:00's animator and video editor..")
                             console.log("She likes making collages and redesiging clothes... she also sews a lot of her clothes..") 
                             console.log(" ..I've seen her try some of her accesories on Rin... I'm not sure if she likes them, though...")
-                            console.log("She also likes curry rice and french fries... but she doesn't like mushrooms... miking hobies collages reesignin clothes curry rice french fries")
+                            console.log("She also likes curry rice and french fries... but she doesn't like mushrooms... ")
                         }
                     )
             )
@@ -555,7 +555,7 @@ const args = yargs(hideBin(process.argv))
 
     //help command
     .command(
-        "help me",
+        "helpme",
         "Show help information",
         () => {},
         () => {
@@ -597,34 +597,34 @@ const args = yargs(hideBin(process.argv))
             console.log("Commands:");
             console.log("  greeting       All of the Miklus' greetings for you!"); 
             console.log("     legacy          Original miklu's greeting");
-            console.log("     leoni           Leo/need miklu's greeting");
+            console.log("     leonii          Leo/need miklu's greeting");
             console.log("     momojan         MORE! MORE JUMP! miklu's greeting");
             console.log("     vivibasu        Vivid BAD Squad miklu's greeting");
             console.log("     wondasho        Wonderlands x Showtime miklu's greeting");
             console.log("     niigo           Nightcord at 25 miklu's greeting\n");
             console.log("  desc           Each miklu's summary of their sekai's appearance or their main role!");
             console.log("     legacy          Explains miklu's role in the Tree of Feelings Sekai");
-            console.log("     leoni           Leo/need miklu's description of her sekai");
+            console.log("     leonii          Leo/need miklu's description of the School Sekai");
             console.log("        IchiH             Leo/need miklu's description of Ichika Hoshino");
             console.log("        SakiT             Leo/need miklu's description of Saki Tenma");
             console.log("        HonaM             Leo/need miklu's description of Honami Mochizuki");
             console.log("        ShihH             Leo/need miklu's description of Shiho Hinomori");
-            console.log("     momojan         MORE! MORE! JUMP! miklu's description of her sekai");
+            console.log("     momojan         MORE! MORE! JUMP! miklu's description of the Stage Sekai");
             console.log("        MinoH             MORE! MORE! JUMP! miklu's description of Minori Hanasato");
             console.log("        HaruK             MORE! MORE! JUMP! miklu's description of Haruka Kiritani");
             console.log("        AiriM             MORE! MORE! JUMP! miklu's description of Airi Momoi");
             console.log("        ShizH             MORE! MORE! JUMP! miklu's description of Shizuku Hinomori");
-            console.log("     vivibasu        Vivid BAD SQUAD miklu's description of her sekai");
+            console.log("     vivibasu        Vivid BAD SQUAD miklu's description of the Street Sekai");
             console.log("        KohaA             Vivid BAD SQUAD miklu's description of Kohane Azuzawa"); 
             console.log("        AnS               Vivid BAD SQUAD miklu's description of An Shiraishi");
             console.log("        AkitS             Vivid BAD SQUAD miklu's description of Akito Shinonome");
             console.log("        ToyaA             Vivid BAD SQUAD miklu's description of Toya Aoyagi")
-            console.log("     wondasho        Wonderlands x Showtime miklu's description of her sekai"); 
+            console.log("     wondasho        Wonderlands x Showtime miklu's description of the Wonderlands Sekai"); 
             console.log("        TsukT             Wonderlands x Showtime miklu's description of Tsukasa Tenma")
             console.log("        EmuO              Wonderlands x Showtime miklu's description of Emu Otori")
             console.log("        NeneK             Wonderlands x Showtime miklu's description of Nene Kusanagi")
             console.log("        RuiK              Wonderlands x Showtime miklu's description of Rui Kamishiro")
-            console.log("     niigo           Nightcord at 25:00 miklu's description of her sekai");
+            console.log("     niigo           Nightcord at 25:00 miklu's description of the Empty Sekai");
             console.log("        K                 Nightcord at 25:00 miklu's description of Kanade Yoisaki");
             console.log("        Yuki              Nightcord at 25:00 miklu's description of Mafuyu Asahina")
             console.log("        Enanan            Nightcord at 25:00 miklu's description of Ena Shinonome")
