@@ -2,6 +2,7 @@
 
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
+const { select } = require("@inquirer/prompts")
 
 // Define the CLI commands and options is what it told me to write, but... 
 // i honestly hnave no ide what this code does, but...
@@ -155,11 +156,10 @@ const args = yargs(hideBin(process.argv))
 
             //Leo/need miklu's sekai description + character descriptions 
             .command(
-                "L/n",
+                "leoni",
                 "Leo/need miklu's description of her sekai and group members",
                 (command) => 
-                    command
-                    .option ("name", {
+                    command.option ("name", {
                         alias: "n",
                         type: "string",
                         default: "miklu",
@@ -179,7 +179,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Leo/need miklu's description of Ichika Hoshino unfinshed
+                    //Leo/need miklu's description of Ichika Hoshino 
                     .command(
                         "IchiH",
                         "Leo/need miklu's description of Ichika Hoshino",
@@ -192,7 +192,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Leo/need miklu's description of Saki Tenma uninehs
+                    //Leo/need miklu's description of Saki Tenma 
                     .command(
                         "SakiT",
                         "Leo/need miklu's description of Saki Tenma",
@@ -204,7 +204,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Leo/need miklu's description of Honami Mochizuki unfineds
+                    //Leo/need miklu's description of Honami Mochizuki 
                     .command(
                         "HonaM",
                         "Leo/need miklu's description of Honami Mochizuki",
@@ -217,7 +217,7 @@ const args = yargs(hideBin(process.argv))
                         }
                     )
 
-                    //Leo/need miklu's description of Shiho Hinomori unfineshed
+                    //Leo/need miklu's description of Shiho Hinomori 
                     .command(
                         "ShihH",
                         "Leo/need miklu's description of Shiho Hinomori",
@@ -233,11 +233,10 @@ const args = yargs(hideBin(process.argv))
 
             //MORE! MORE! JUMP! miklu's sekai description + character description
             .command(
-                "MMJ",
+                "momojan",
                 "MORE! MORE! JUMP! miklu's description of her sekai and her group members",
                 (command) => 
-                    command
-                    .option("name", {
+                    command.option("name", {
                         alias: "n",
                         type: "string",
                         default: "miklu",
@@ -307,11 +306,10 @@ const args = yargs(hideBin(process.argv))
 
             //Vivid BAD SQUAD miklu's sekai description + character description
             .command(
-                "VBS",
+                "vivibasu", 
                 "Vivid BAD SQUAD miklu's description of her sekai and group members",
                 (command) =>
-                    command
-                    .option("name", {
+                    command.option("name", {
                         alias: "n",
                         type: "string",
                         default: "friend",
@@ -356,7 +354,7 @@ const args = yargs(hideBin(process.argv))
                         
                     )
 
-                    //Vivid BAD Squad miklu's description of Akito Shinonome
+                    //Vivid BAD SQUAD miklu's description of Akito Shinonome
                     .command(
                         "AkitS",
                         "Vivid BAD SQUAD miklu's description of Akito Shinonome",
@@ -383,18 +381,17 @@ const args = yargs(hideBin(process.argv))
 
             //Wonderlands x Showtime miklu's sekai description + character descrptions
             .command(
-                "WxS",
+                "wondasho",
                 "Wonderlands x Showtime miklu's description of her sekai and group members",
                 (command) =>
-                    command
-                    .option("name", {
+                    command.option("name", {
                         alias: "n",
                         type: "string",
                         default: "miklu",
                         describe: "sekai description + character descriptions"
                     })
 
-                    //descrptiion of ehr skeis djcdff 
+                    //Wonderlands x Showtime miklu's sekai description
                     .command(
                         "$0",
                         "Wonderlands x Showtime miklu's description of her sekai",
@@ -414,7 +411,7 @@ const args = yargs(hideBin(process.argv))
                         "Wonderlands x Showtime miklu's description of Tsukasa Tenma",
                         () => {},
                         ({ name }) => {
-                            console.log("Tsukasa-kun is the leader of the troupe!")
+                            console.log("Tsukasa-kun is the leader of the troupe and also the original owner of this sekai!")
                             console.log("He likes musicals, making costumes, and he even has 100 super-duper cool poses! and he can even play the piano all fwuaafwuaa!")
                             console.log("He told me he likes ginger fried pork and... a-cu-wa pat-sa? Buuut he hates peppers and really hates bugs!")
                         }
@@ -460,11 +457,10 @@ const args = yargs(hideBin(process.argv))
 
             //Nightcord at 25:00 miklu's sekai description 
             .command(
-                "n25",
+                "niigo",
                 "Nightcord at 25:00 miklu's description of her sekai and group members",
                 (command) =>
-                    command
-                    .option("name", {
+                    command.option("name", {
                         alias: "n",
                         type: "string",
                         default: "miklu",
@@ -490,7 +486,11 @@ const args = yargs(hideBin(process.argv))
                         "Nightcord at 25:00 miklu's description of Kanade Yoisaki",
                         () => {},
                         ({ name }) => {
-                            console.log("finding new music movie manga anim art can accuratgely ttack time really well actually insitna nodle canned foods (dilikes smelly foods (clianotor and natto) + direct sunlight & house work")
+                            console.log("K... Kanade is Nightcord at 25:00's composer...")
+                            console.log("She spends most of her time composing, and she likes finding new music, movies, anime, manga, and art.")
+                            console.log(" ...she's also really good at tracking time down to the second.")
+                            console.log("She also likes canned foods and instant noodles... she brought me some once... ")
+                            console.log(" she doesn't like smelly foods, direct sunlight, or housework.")
                         }
                     )
 
@@ -500,7 +500,9 @@ const args = yargs(hideBin(process.argv))
                         "Nightcord at 25:00 miklu's desciption of Mafuyu Asahina",
                         () => {},
                         ({ name }) => {
-                            console.log("aquarium sqeaking english mom's cooking")
+                            console.log("Yuki... Mafuyu is Nightcord at 25:00's lyricist..")
+                            console.log("She has a really cool aquarium... no fish, but nice to look at...")
+                            console.log("She's also really good at sqeaking english and she likes... her mom's cooking...")
                         }
                     )
 
@@ -510,7 +512,10 @@ const args = yargs(hideBin(process.argv))
                         "Nightcord at 25:00 miklu's description of Ena Shinonome",
                         () => {},
                         ({ name }) => {
-                            console.log("draing taking slefies social media egosurign reasitng fachino acesories pickon gout the best cooking in gresdients pancak chaes cak (dislkimgs carots + getign iup in moring)")
+                            console.log("Enanan... Ena is Nightcord at 25:00's artist... she makes the cover art for the music videos...")
+                            console.log("She likes drawing, and taking selfies for her social media page... and she likes fashion accessories.")
+                            console.log("She's also good at picking out ingredient for cooking... she likes pancakes and cheesecake... and she hates carrots and gettting up early...")
+                            console.log(" ..probably because the group usually meets up really late at night...")
                         }
                     )
 
@@ -520,17 +525,37 @@ const args = yargs(hideBin(process.argv))
                         "Nightcord at 25:00 miklu's description of Mizuki Akiyama",
                         () => {},
                         ({ name }) => {
-                            console.log("miking hobies collages reesignin clothes curry rice friench fries (dislikes mushrooms + foods tahth are too hot)")
+                            console.log("Amia... Mizuki is Nightcord at 25:00's animator and video editor..")
+                            console.log("She likes making collages and redesiging clothes... she also sews a lot of her clothes..") 
+                            console.log(" ..I've seen her try some of her accesories on Rin... I'm not sure if she likes them, though...")
+                            console.log("She also likes curry rice and french fries... but she doesn't like mushrooms... miking hobies collages reesignin clothes curry rice french fries")
                         }
                     )
             )
+    )
+
+    //visual novel thing 
+    .command(
+        "letsplay",
+        "visual novel section based on Project Sekai events", 
+        (comand) =>
+            command.option
+    )
+
+    //Project Sekai Story Adventure!
+    .command(
+        "story",
+        "Play through one of the main stories as a Project Sekai group leader!",
+        (command) => 
+            command.option
+
     )
 
     //silly stuff here(tbd)
 
     //help command
     .command(
-        "helpme",
+        "help me",
         "Show help information",
         () => {},
         () => {
@@ -571,43 +596,54 @@ const args = yargs(hideBin(process.argv))
             console.log("============================================================================\n");
             console.log("Commands:");
             console.log("  greeting       All of the Miklus' greetings for you!"); 
-            console.log("     legacy            Original miklu's greeting");
-            console.log("     leonii            Leo/need miklu's greeting");
-            console.log("     momojan           MORE! MORE JUMP! miklu's greeting");
-            console.log("     vivibasu          Vivid BAD Squad miklu's greeting");
-            console.log("     wondasho          Wonderlands x Showtime miklu's greeting");
-            console.log("     niigo             Nightcord at 25 miklu's greeting\n");
+            console.log("     legacy          Original miklu's greeting");
+            console.log("     leoni           Leo/need miklu's greeting");
+            console.log("     momojan         MORE! MORE JUMP! miklu's greeting");
+            console.log("     vivibasu        Vivid BAD Squad miklu's greeting");
+            console.log("     wondasho        Wonderlands x Showtime miklu's greeting");
+            console.log("     niigo           Nightcord at 25 miklu's greeting\n");
             console.log("  desc           Each miklu's summary of their sekai's appearance or their main role!");
-            console.log("     legacy            Explains miklu's role in the Tree of Feelings Sekai");
-            console.log("     leonii            Leo/need miklu's description of her sekai");
+            console.log("     legacy          Explains miklu's role in the Tree of Feelings Sekai");
+            console.log("     leoni           Leo/need miklu's description of her sekai");
             console.log("        IchiH             Leo/need miklu's description of Ichika Hoshino");
             console.log("        SakiT             Leo/need miklu's description of Saki Tenma");
             console.log("        HonaM             Leo/need miklu's description of Honami Mochizuki");
             console.log("        ShihH             Leo/need miklu's description of Shiho Hinomori");
-            console.log("     momojan           MORE! MORE! JUMP! miklu's description of her sekai");
+            console.log("     momojan         MORE! MORE! JUMP! miklu's description of her sekai");
             console.log("        MinoH             MORE! MORE! JUMP! miklu's description of Minori Hanasato");
             console.log("        HaruK             MORE! MORE! JUMP! miklu's description of Haruka Kiritani");
             console.log("        AiriM             MORE! MORE! JUMP! miklu's description of Airi Momoi");
             console.log("        ShizH             MORE! MORE! JUMP! miklu's description of Shizuku Hinomori");
-            console.log("     vivibasu          Vivid BAD SQUAD miklu's description of her sekai");
+            console.log("     vivibasu        Vivid BAD SQUAD miklu's description of her sekai");
             console.log("        KohaA             Vivid BAD SQUAD miklu's description of Kohane Azuzawa"); 
             console.log("        AnS               Vivid BAD SQUAD miklu's description of An Shiraishi");
             console.log("        AkitS             Vivid BAD SQUAD miklu's description of Akito Shinonome");
             console.log("        ToyaA             Vivid BAD SQUAD miklu's description of Toya Aoyagi")
-            console.log("     wondasho          Wonderlands x Showtime miklu's description of her sekai"); 
+            console.log("     wondasho        Wonderlands x Showtime miklu's description of her sekai"); 
             console.log("        TsukT             Wonderlands x Showtime miklu's description of Tsukasa Tenma")
             console.log("        EmuO              Wonderlands x Showtime miklu's description of Emu Otori")
             console.log("        NeneK             Wonderlands x Showtime miklu's description of Nene Kusanagi")
             console.log("        RuiK              Wonderlands x Showtime miklu's description of Rui Kamishiro")
-            console.log("     niigo             Nightcord at 25:00 miklu's description of her sekai \n");
+            console.log("     niigo           Nightcord at 25:00 miklu's description of her sekai");
+            console.log("        K                 Nightcord at 25:00 miklu's description of Kanade Yoisaki");
+            console.log("        Yuki              Nightcord at 25:00 miklu's description of Mafuyu Asahina")
+            console.log("        Enanan            Nightcord at 25:00 miklu's description of Ena Shinonome")
+            console.log("        Amia              Nightcord at 25:00 miklu's description of Mizuki Akiyama\n")
             console.log("  helpme         Shows this information, duh!");
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
     .help()
-    .parse();
+    .parseAsync();
 
-    //to do: test miklu desc legacy (+ all the other legacy commands)
-    //       test all the new desc commands (just leonii for now) 
-    // eventually: visiual novel from the pov of all the main characters fallowing through main story 2nd person with bad end being world link 2 based
+//
+
+
+
+
+
+
+//to do: test miklu desc legacy (+ all the other legacy commands)
+//       test all the new desc commands (just leonii for now) 
+// eventually: visiual novel from the pov of all the main characters fallowing through main story 2nd person with bad end being world link 2 based
 // cgh;jjhllb   nbhhghghghb  trt lhnbjj hjih ujbjhh
