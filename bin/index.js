@@ -566,10 +566,22 @@ const args = yargs(hideBin(process.argv))
                 return;
             }
 
+            //codes for the result
+            let result;
+
             //codes for the different calculations 
+            if (operation === "add") {
+                result = firstNum + secondNum;
+            } else if (operation === "subtract") {
+                result = firstNum - secondNum;
+            } else if (operation === "multiply"){
+                result = firstNum * secondNum;
+            } else if (operation === "divide") {
+                result = firstNum / secondNum;
+            }
 
             //gives user the answer
-            console.log(`Your answer is...... $(result)`);
+            console.log(`Your answer is...... ${result}!`);
         }
     )
 
