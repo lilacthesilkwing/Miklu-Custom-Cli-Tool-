@@ -7,6 +7,8 @@ Using the commands available should allow you to talk with the cli tool and lear
 
 Start with typing 'miklu' into the terminal, and follow the directions from there.
 
+To open the interactive calculator, run `miklu calc`, choose an operation from the menu, and enter two numbers.
+
 
 Goals: 
 1. Add greeting commands for all 6 different miklus: Complete!

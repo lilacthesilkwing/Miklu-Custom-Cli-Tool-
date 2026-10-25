@@ -2,7 +2,8 @@
 
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
-const { select } = require("@inquirer/prompts")
+const { input, select } = require("@inquirer/prompts");
+const { command } = require("yargs");
 
 // Define the CLI commands and options is what it told me to write, but... 
 // i honestly hnave no ide what this code does, but...
@@ -534,7 +535,43 @@ const args = yargs(hideBin(process.argv))
             )
     )
 
-    //
+    //mikcalculator
+    .command(
+        "calc",
+        "cacls",
+        () => {},
+        async () => {
+            //prompts for the calculation type
+            const operation = await select({
+                message: "Which calculation would you like me to perform?",
+                choices: [
+                    {name: "Add (+)", value: "add"},
+                    {name: "Subtract (-)", value: "subtract"},
+                    {name: "Multiply (*)", value: "multiply"},
+                    {name: "Divide (/), ", value: "divide"}   
+                ]
+            })
+
+            //variables for the 2 numbers being used in the calculation
+            const firstNum = Number(await input({message: "What's your first number?"}));
+            const secondNum = Number(await input({message: "Great! What's your second number?" }));
+
+            //codes to check if answer is valid
+            if (!Number.isFinite(firstNum) || !Number.isFinite(secondNum)) {
+                console.log("Oops!~ It seems that at least one of your numbers isn't valid! \nPlease enter a valid number or I can't perform the calculation! >_<");
+                return;
+            }
+            if (operation === "divide" && secondNum === 0) {
+                console.log("Ahhh! Did you just try to divide by zero?? You CAN't do that!!!!11!!1!!11!!!")
+                return;
+            }
+
+            //codes for the different calculations 
+
+            //gives user the answer
+            console.log(`Your answer is...... $(result)`);
+        }
+    )
 
     //Project Sekai Story Adventure!
     //will be worked on more week 2!
@@ -654,6 +691,7 @@ const args = yargs(hideBin(process.argv))
             console.log("        Yuki              Nightcord at 25:00 miklu's description of Mafuyu Asahina")
             console.log("        Enanan            Nightcord at 25:00 miklu's description of Ena Shinonome")
             console.log("        Amia              Nightcord at 25:00 miklu's description of Mizuki Akiyama\n")
+            console.log("     calc            Does arthmitheic functions (+ - * /)");
             console.log("  helpme         Shows this information, duh!");
         }
     )
