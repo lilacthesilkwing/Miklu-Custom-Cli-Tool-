@@ -592,36 +592,87 @@ const args = yargs(hideBin(process.argv))
         "Play through one of the main stories as a Project Sekai group leader!",
         () => {},
         async () => {
-            //const storySection2 = await select({
-            //})
-
-            const storySelection1 = {
-                leonii1: ["po","dd"],
-                monojan1: ["ta","ddd"],
-                vivibasu1: ["to", "dd"],
-                wondasho1: ["tt","dd"],
-                niigo1: ["Rr","sss"],
+            //decides what path you are playing as (which sekai?)
+            const storySelection = {
+                //work on leonii now, other groups to be worked on later
+                leonii: {
+                    walkingtoclass: {
+                        prompt: "On her way to class, Ichika sees a phone on the ground. Ichika...",
+                        choices: [
+                            {name: "picks up the phone.", value: "pickup"},
+                            {name: "ignores the phone and continues to walk to her next class.", value: "deadend1"}
+                        ]
+                    },
+                    afterSaki: {
+                        prompt: "that one scene where saki jumpscares Ichika in the main story",
+                        choices: [
+                            {name: "greet saki!", value: "goodchoice?"},
+                            {name: "stay silent like a chud", value: "smhichansmh"}
+                        ]                       
+                    }
+                    //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
+                },
+                momojan: [
+                    {name: "sec1", value: "opening", prompt: "Minori is late for the 10Oth time ig"}
+                ],
+                vivibasu: [
+                    {name: "sec1", value: "opening", prompt: "Kohane takes a walk ik"}
+                ],
+                wondasho: [
+                    {name: "sec1", value: "opening", prompt: "Tsukasa seeks employment"}
+                ],
+                niigo: [
+                    {name: "sec1", value: "opening", prompt: "Kanade compose"}
+                ]
             };
 
+            //makes the above tags 'readable' to player (hopefully)
 
+            //actual player selection
             const group = await select({
-                message: "Who would you like to play as?",
+                message: "Who would you like to play as? \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n(This function does not work as intended and will be fixed in the next update, so do NOT continue any further!!!!!!!! \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n\n or do, I can't really stop you, can I?",
                 choices: [
-                    { name: "Ichika Hoshino", value: "leonii1" },
-                    { name: "Minori Hanasato", value: "momojan1" },
-                    { name: "Kohane Azuzawa", value: "vivbasu1" },
-                    { name: "Tsukasa Tenma", value: "wondasho1" },
-                    { name: "Kanade Yoisaki", value: "niigo1" }
+                    { name: "Ichika Hoshino", value: "leonii" },
+                    { name: "Minori Hanasato", value: "momojan" },
+                    { name: "Kohane Azuzawa", value: "vivibasu" },
+                    { name: "Tsukasa Tenma", value: "wondasho" },
+                    { name: "Kanade Yoisaki", value: "niigo" }
                 ]
             });
 
-            const storySection = await select({
-                message: "idk",
-                choices: storySection1[group].map(({name, value}) => ({name, value}))
+            //first section of story for the player (should have one for each of the five paths; 5 total)
+            const storySection1 = await select({
+                message: "You are...",
+                choices: Object.keys(storySelection[group]).map(sectionName => ({
+                    name: sectionName,
+                    value: sectionName
+                }))
+                //storySelection[group].map(({name, value}) => ({name, value}))
             });
 
-            console.log(`${group}.`);
+            const storyScene1 = storySelection[group][storySection1];
 
+            console.log(storyScene1.prompt);
+
+            const action = await select({
+                message: "...",
+                choices: storyScene1.choices
+            });
+
+            //shows the text accosiated w/ the choice selected in the last command
+            ///const selectedSection1 = storySelection[group].find(item => item.value === storySection1);
+            ///console.log(selectedSection1.prompt);
+            
+            //first set of player choices (need to figure out how to make them depend on the path choice, maybe with some type of if command?)
+            ///const nextChoice1 = await select({                
+            ///    message: "section",
+            ///    choices: [
+            ///        {name: "help", value: "help"}, 
+            ///        {name: "continue", value: "continue"}
+            ///    ]
+            ///});
+
+            ///console.log(`${nextChoice1}.`);
         }
     )
 
