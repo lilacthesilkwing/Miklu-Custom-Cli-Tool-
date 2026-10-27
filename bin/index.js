@@ -599,7 +599,7 @@ const args = yargs(hideBin(process.argv))
                     walkingtoclass: {
                         prompt: "On her way to class, Ichika sees a phone on the ground. Ichika...",
                         choices: [
-                            {name: "picks up the phone.", value: "pickup"},
+                            {name: "picks up the phone.", value: "pickup potato"},
                             {name: "ignores the phone and continues to walk to her next class.", value: "deadend1"}
                         ]
                     },
@@ -610,6 +610,7 @@ const args = yargs(hideBin(process.argv))
                             {name: "stay silent like a chud", value: "smhichansmh"}
                         ]                       
                     }
+
                     //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
                 },
                 momojan: [
@@ -772,4 +773,6 @@ const args = yargs(hideBin(process.argv))
 //to do: test miklu desc legacy (+ all the other legacy commands)
 //       test all the new desc commands (just leonii for now) 
 // eventually: visiual novel from the pov of all the main characters fallowing through main story 2nd person with bad end being world link 2 based
-// cgh;jjhllb   nbhhghghghb  trt lhnbjj hjih ujbjhh
+
+//instructions for publishing
+//RUN: npm link (to test) -> npm version patch -> npm login -> npm publish i think
