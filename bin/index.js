@@ -456,7 +456,7 @@ const args = yargs(hideBin(process.argv))
                     )
             )
 
-            //Nightcord at 25:00 miklu's sekai description 
+            //Nightcord at 25:00 miklu's sekai description + character descriptions
             .command(
                 "niigo",
                 "Nightcord at 25:00 miklu's description of her sekai and group members",
@@ -469,6 +469,7 @@ const args = yargs(hideBin(process.argv))
 
                     })
 
+                    //Nightcord at 25:00 miklu's description of her sekai
                     .command(
                         "$0",
                         "Nightcord at 25:00 miklu's description of her sekai",
@@ -599,10 +600,16 @@ const args = yargs(hideBin(process.argv))
                     walkingtoclass: {
                         prompt: "On her way to class, Ichika sees a phone on the ground. Ichika...",
                         choices: [
-                            {name: "picks up the phone.", value: "pickup potato"},
+                            {name: "picks up the phone.", value: "sekaimeet"},
                             {name: "ignores the phone and continues to walk to her next class.", value: "deadend1"}
                         ]
                     },
+                    deadend1: {
+                        prompt: "idk bro"
+                    },
+                    sekaimeet: {},
+                    //leads to saki + other dead end
+
                     afterSaki: {
                         prompt: "that one scene where saki jumpscares Ichika in the main story",
                         choices: [
