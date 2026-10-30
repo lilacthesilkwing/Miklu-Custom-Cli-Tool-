@@ -605,36 +605,143 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     deadend1: {
-                        prompt: "idk bro"
+                        prompt: "Ichika walks back to class and lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
+                        choices: [
+                            {name: "try again?", value: "walkingtoclass"},
+                            {name: "try a new path!", value: "chooseGroup"}
+                        ]
                     },
-                    sekaimeet: {},
+                    sekaimeet: {
+                        prompt: "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
+                        choices: [
+                            {name: "potato", value: "group"}
+                        ]
+                    },
                     //leads to saki + other dead end
 
                     afterSaki: {
                         prompt: "that one scene where saki jumpscares Ichika in the main story",
                         choices: [
-                            {name: "greet saki!", value: "goodchoice?"},
+                            {name: "greet saki!", value: "goodchoice"},
                             {name: "stay silent like a chud", value: "smhichansmh"}
                         ]                       
+                    },
+                    goodchoice: {
+                        prompt: "h",
+                        choices: {
+                            name: "back", value: "walkingtoclass"
+                        }
+                    },
+                    smhichansmh: {
+                        prompt: "h",
+                        choices: {
+                            name: "back", value: "walkingtoclass"
+                        }
                     }
 
                     //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
                 },
-                momojan: [
-                    {name: "sec1", value: "opening", prompt: "Minori is late for the 10Oth time ig"}
-                ],
-                vivibasu: [
-                    {name: "sec1", value: "opening", prompt: "Kohane takes a walk ik"}
-                ],
-                wondasho: [
-                    {name: "sec1", value: "opening", prompt: "Tsukasa seeks employment"}
-                ],
-                niigo: [
-                    {name: "sec1", value: "opening", prompt: "Kanade compose"}
-                ]
+                momojan: {
+                    minori: { 
+                        prompt: "mimrnori dwatches idoll!!!",
+                        choices: [       
+                            {name: "tapp random thing", value: "harula"},
+                            {name: "leeave it alone :(", value: "j"} 
+                        ]
+                    },
+                    harula: {
+                        prompt: "miku pops ou an ebeocems i ahuluscianotion",
+                        choices: [
+                            {name: "go back!", value: "minori"},
+                            {name: "go forward!", value: "airli"}
+                        ]
+                    },
+                    airli: {
+                        prompt: "didnt work. minori dead :(",
+                        choices: [
+                            {name: "Ddjo", value: "minori"},
+                            {name: "miku!!!", value: "harula"}
+                        ]
+                    }
+                },
+                vivibasu: {
+                    koha: {
+                        prompt: "to",
+                        choices: [
+                            {name: "d", value: "anchanzero"},
+                            {name: "eoe", value: "ginger"}
+                        ]
+                    },
+                    anchanzero: {
+                        prompt: "difn",
+                        choices: [
+                            {name: "ejf", value: "koha"},
+                            {name: "jfi", value: "ginger"}
+                        ]
+                    },
+                    ginger: {
+                        prompt: "rrk",
+                        choices: [
+                            {name: "ffk", value: "anchanzero"},
+                            {name: "dinc", value: "koha"}
+                        ]
+                    }
+                },
+                
+                //[
+                //    {name: "sec1", value: "opening", prompt: "Kohane takes a walk ik"}
+                //],    
+                wondasho: {
+                    tsukasaskun: {
+                        prompt: "potaptos",
+                        choices: [
+                            {name: "fj", value: "emu"},
+                            {name: "djv", value: "nane"}
+                        ]
+                    },
+                    emu: {
+                        prompt: "dov",
+                        choices: [
+                            {name: "dsmc", value: "tsukasaskun"},
+                            {name: "dvo", value: "nane"}
+                        ]
+                    },
+                    nane: {
+                        prompt: "eood",
+                        choices: [
+                            {name: "sosd", value: "emu"},
+                            {name: "dofodj", value: "tsukasaskun"}
+                        ]
+                    }
+                    //{name: "sec1", value: "opening", prompt: "Tsukasa seeks employment"}
+                },
+                niigo: {
+                    kande: {
+                        prompt: "kml",
+                        choices: [
+                            {name: "djov", value: "mafu"},
+                            {name: "emovv", value: "enams"}
+                        ]
+                    },
+                    mafu: {
+                        prompt: "potapd",
+                        choices: [
+                            {name: "so", value: "kande"},
+                            {name: "emoved", value: "enams"}
+                        ]
+                    },
+                    enams: {
+                        prompt: "xidj",
+                        choices: [
+                            {name: "dinc", value: "kande"},
+                            {name: "omcos", value: "mafu"}
+                        ]
+                    }
+                    //{name: "sec1", value: "opening", prompt: "Kanade compose"}
+                }
             };
 
-            //makes the above tags 'readable' to player (hopefully)
+            //makes the above tags 'readable' to player (hopefully) tba
 
             //actual player selection
             const group = await select({
@@ -648,24 +755,108 @@ const args = yargs(hideBin(process.argv))
                 ]
             });
 
+           if (group === "leonii") {
+            //starts beginning scene
+            let sceneName = "walkingtoclass";
+            while (storySelection[group][sceneName]) {
+                const scene = storySelection[group][sceneName];
+                console.log(scene.prompt); 
+
+                sceneName = await select({
+                    message: "What do you do?",
+                    choices: scene.choices
+                })
+            }
+
+            //sends back to start after one of the ends is reached
+            let chooseAnotherGroup = true;
+            while (chooseAnotherGroup) {
+                const group = await select({
+                    message: "who would you like to play as now?",
+                    choices: [
+                        {name: "Ichika Hoshino", value: "leonii"},
+                        {name: "Minori Hanasato", value: "momojan"},
+                        {name: "Kohane Azuzawa", value: "vivibasu"},
+                        {name: "Tsukasa Tenma", value: "wondasho"},
+                        {name: "Kanade Yoisaki", value: "niigo"}
+                    ]
+                })
+            }
+
+            //restarts beginning scene
+            let newScene = "walking to class";
+            while (storySelection[group][newScene]) {
+                const scene = storySelection[group][newScene];
+                console.log(scene.prompt);
+
+                newScene = await select({
+                    message: "...",
+                    choices: scene.choices
+                }); 
+
+                if (newScene === "chooseGroup") {
+                    break;
+                }
+            }
+            
+
+           } else if (group === "momojan") {
+            let chooseAnotherGroup = true;
+            while (chooseAnotherGroup) {
+                const group = await select ({
+                    message: "Who do you want to play as now?",
+                    choices: [
+                        {name: "Ichika Hoshino", value: "leonii"},
+                        {name: "Minori Hanasato", value: "momojan"},
+                        {name: "Kohane Azuzawa", value: "vivibasu"},
+                        {name: "Tsukasa Tenma", value: "wondasho"},
+                        {name: "Kanade Yoisaki", value: "niigo"}
+                    ]
+                })
+            }
+
+           } else if (group === "vivibasu") {
+            storySelection === "vivibasu"; 
+
+           } else if (group === "wondasho") {
+            storySelection === "wondasho";
+
+           } else if (group === "niigo") {
+            storySelection === "niigo";
+           }
+           
+           let chooseAnotherGroup = true;
+           while (chooseAnotherGroup) {
+            const group = await select({
+                message: "who?",
+                choices: [
+                    {name: "Ichika Hoshino", value: "leonii"},
+                    {name: "Minori Hanasato", value: "momojan"},
+                    {name: "Kohane Azuzawa", value: "vivibasu"},
+                    {name: "Tsukasa Tenma", value: "wondasho"},
+                    {name: "Kanade Yoisaki", value: "niigo"}
+                ]
+            });
+           }
+           
             //first section of story for the player (should have one for each of the five paths; 5 total)
             const storySection1 = await select({
                 message: "You are...",
                 choices: Object.keys(storySelection[group]).map(sectionName => ({
                     name: sectionName,
-                    value: sectionName
+                    value: sectionName 
                 }))
                 //storySelection[group].map(({name, value}) => ({name, value}))
             });
 
-            const storyScene1 = storySelection[group][storySection1];
+            //const storyScene1 = storySelection[group][storySection1];
 
-            console.log(storyScene1.prompt);
+            //console.log(storyScene1.prompt);
 
-            const action = await select({
-                message: "...",
-                choices: storyScene1.choices
-            });
+            //const action = await select({
+            //    message: "...",
+            //    choices: storyScene1.choices
+            //});
 
             //shows the text accosiated w/ the choice selected in the last command
             ///const selectedSection1 = storySelection[group].find(item => item.value === storySection1);
@@ -680,7 +871,7 @@ const args = yargs(hideBin(process.argv))
             ///    ]
             ///});
 
-            ///console.log(`${nextChoice1}.`);
+            ///console.log(`${nextChoice1}.`}
         }
     )
 
