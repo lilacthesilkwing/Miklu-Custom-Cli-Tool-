@@ -614,7 +614,8 @@ const args = yargs(hideBin(process.argv))
                     sekaimeet: {
                         prompt: "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
                         choices: [
-                            {name: "potato", value: "group"}
+                            {name: "potato", value: "chooseGroup"},
+                            {name: "end it all!!!!!", value: "itisfinished"}
                         ]
                     },
                     //leads to saki + other dead end
@@ -743,17 +744,21 @@ const args = yargs(hideBin(process.argv))
 
             //makes the above tags 'readable' to player (hopefully) tba
 
-            //actual player selection
-            const group = await select({
-                message: "Who would you like to play as? \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n(This function does not work as intended and will be fixed in the next update, so do NOT continue any further!!!!!!!! \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n\n or do, I can't really stop you, can I?",
-                choices: [
-                    { name: "Ichika Hoshino", value: "leonii" },
-                    { name: "Minori Hanasato", value: "momojan" },
-                    { name: "Kohane Azuzawa", value: "vivibasu" },
-                    { name: "Tsukasa Tenma", value: "wondasho" },
-                    { name: "Kanade Yoisaki", value: "niigo" }
-                ]
-            });
+            let chooseAnotherGroup = true;
+            while (chooseAnotherGroup) {
+                let chooseAnotherGroup = false;
+                //actual player selection 
+                const group = await select({
+                    message: "Who would you like to play as? \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n(This function does not work as intended and will be fixed in the next update, so do NOT continue any further!!!!!!!! \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n\n or do, I can't really stop you, can I?",
+                    choices: [
+                        { name: "Ichika Hoshino", value: "leonii" },
+                        { name: "Minori Hanasato", value: "momojan" },
+                        { name: "Kohane Azuzawa", value: "vivibasu" },
+                        { name: "Tsukasa Tenma", value: "wondasho" },
+                        { name: "Kanade Yoisaki", value: "niigo" }
+                    ]
+                });
+            
 
            if (group === "leonii") {
             //starts beginning scene
@@ -766,88 +771,59 @@ const args = yargs(hideBin(process.argv))
                     message: "What do you do?",
                     choices: scene.choices
                 })
-            }
 
-            //sends back to start after one of the ends is reached
-            let chooseAnotherGroup = true;
-            while (chooseAnotherGroup) {
-                const group = await select({
-                    message: "who would you like to play as now?",
-                    choices: [
-                        {name: "Ichika Hoshino", value: "leonii"},
-                        {name: "Minori Hanasato", value: "momojan"},
-                        {name: "Kohane Azuzawa", value: "vivibasu"},
-                        {name: "Tsukasa Tenma", value: "wondasho"},
-                        {name: "Kanade Yoisaki", value: "niigo"}
-                    ]
-                })
-            }
-
-            //restarts beginning scene
-            let newScene = "walking to class";
-            while (storySelection[group][newScene]) {
-                const scene = storySelection[group][newScene];
-                console.log(scene.prompt);
-
-                newScene = await select({
-                    message: "...",
-                    choices: scene.choices
-                }); 
-
-                if (newScene === "chooseGroup") {
+                if (sceneName === "chooseGroup") {
+                    chooseAnotherGroup = true;
                     break;
                 }
             }
+
+            //sends back to start after one of the ends is reached
+
+            //restarts beginning scene 
+            //let newScene = "walkingtoclass";
+            //while (storySelection[group][newScene]) {
+            //    const scene = storySelection[group][newScene];
+            //    console.log(scene.prompt);
+
+            //    newScene = await select({
+            //        message: "...",
+            //        choices: scene.choices
+            //    }); 
+
+            //    if (newScene === "chooseGroup") {
+            //        chooseAnotherGroup = true;
+            //        break;
+            //    }
+            //}
             
 
            } else if (group === "momojan") {
-            let chooseAnotherGroup = true;
-            while (chooseAnotherGroup) {
-                const group = await select ({
-                    message: "Who do you want to play as now?",
-                    choices: [
-                        {name: "Ichika Hoshino", value: "leonii"},
-                        {name: "Minori Hanasato", value: "momojan"},
-                        {name: "Kohane Azuzawa", value: "vivibasu"},
-                        {name: "Tsukasa Tenma", value: "wondasho"},
-                        {name: "Kanade Yoisaki", value: "niigo"}
-                    ]
-                })
-            }
+            let sceneName = "minori";
 
            } else if (group === "vivibasu") {
-            storySelection === "vivibasu"; 
+            let sceneName = "koha"; 
 
            } else if (group === "wondasho") {
-            storySelection === "wondasho";
+            //storySelection === "wondasho";
 
            } else if (group === "niigo") {
-            storySelection === "niigo";
+            //storySelection === "niigo";
            }
+            
            
-           let chooseAnotherGroup = true;
-           while (chooseAnotherGroup) {
-            const group = await select({
-                message: "who?",
-                choices: [
-                    {name: "Ichika Hoshino", value: "leonii"},
-                    {name: "Minori Hanasato", value: "momojan"},
-                    {name: "Kohane Azuzawa", value: "vivibasu"},
-                    {name: "Tsukasa Tenma", value: "wondasho"},
-                    {name: "Kanade Yoisaki", value: "niigo"}
-                ]
-            });
-           }
            
             //first section of story for the player (should have one for each of the five paths; 5 total)
-            const storySection1 = await select({
-                message: "You are...",
-                choices: Object.keys(storySelection[group]).map(sectionName => ({
-                    name: sectionName,
-                    value: sectionName 
-                }))
-                //storySelection[group].map(({name, value}) => ({name, value}))
-            });
+            //const storySection1 = await select({
+            //    message: "You are...",
+            //    choices: Object.keys(storySelection[group]).map(sectionName => ({
+            //        name: sectionName,
+            //        value: sectionName 
+            //    }))
+            //    //storySelection[group].map(({name, value}) => ({name, value}))
+            //});
+
+        }
 
             //const storyScene1 = storySelection[group][storySection1];
 
