@@ -608,7 +608,8 @@ const args = yargs(hideBin(process.argv))
                         prompt: "Ichika walks back to class and lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
                         choices: [
                             {name: "try again?", value: "walkingtoclass"},
-                            {name: "try a new path!", value: "chooseGroup"}
+                            {name: "try a new path!", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     sekaimeet: {
@@ -628,7 +629,7 @@ const args = yargs(hideBin(process.argv))
                         ]                       
                     },
                     goodchoice: {
-                        prompt: "h",
+                        prompt: "hello! saki is weaired tf out and she hate u now.",
                         choices: {
                             name: "back", value: "walkingtoclass"
                         }
@@ -687,11 +688,7 @@ const args = yargs(hideBin(process.argv))
                             {name: "dinc", value: "koha"}
                         ]
                     }
-                },
-                
-                //[
-                //    {name: "sec1", value: "opening", prompt: "Kohane takes a walk ik"}
-                //],    
+                }, 
                 wondasho: {
                     tsukasaskun: {
                         prompt: "potaptos",
@@ -742,9 +739,8 @@ const args = yargs(hideBin(process.argv))
                 }
             };
 
-            //makes the above tags 'readable' to player (hopefully) tba
-
-            let chooseAnotherGroup = true;
+            //setts upp....
+            let chooseAnotherGroup = true; 
             while (chooseAnotherGroup) {
                 let chooseAnotherGroup = false;
                 //actual player selection 
@@ -760,99 +756,122 @@ const args = yargs(hideBin(process.argv))
                 });
             
 
-           if (group === "leonii") {
-            //starts beginning scene
-            let sceneName = "walkingtoclass";
-            while (storySelection[group][sceneName]) {
-                const scene = storySelection[group][sceneName];
-                console.log(scene.prompt); 
+                if (group === "leonii") {
+                    //starts beginning scene
+                    let sceneName = "walkingtoclass";
+                    //does somethimg idk
+                    while (storySelection[group][sceneName]) {
+                        const scene = storySelection[group][sceneName];
+                        console.log(scene.prompt); 
 
-                sceneName = await select({
-                    message: "What do you do?",
-                    choices: scene.choices
-                })
+                        sceneName = await select({
+                            message: "...",
+                            choices: scene.choices
+                        })
 
-                if (sceneName === "chooseGroup") {
-                    chooseAnotherGroup = true;
-                    break;
+                        if (sceneName === "chooseGroup") {
+                            chooseAnotherGroup = true;
+                            break;
+                        }
+
+                        if (sceneName === "itisfinished") {
+                            console.log("Thank you for playing!!");
+                            return;
+                        }
+                    }
+                } else if (group === "momojan") {
+                    let sceneName = "minori";
+                    while (storySelection[group][sceneName]) {
+                        const scene = storySelection[group][sceneName];
+                        console.log(scene.prompt);
+
+                        sceneName = await select({
+                            message: "...",
+                            choices: scene.choices
+                        })
+
+                        if (sceneName === "chooseGroup") {
+                            chooseAnotherGroup = true;
+                            break;
+                        }
+
+                        if (sceneName === "itisfinished") {
+                            console.log("Thank you for playing!")
+                            return;
+                        }
+                    }
+
+                } else if (group === "vivibasu") {
+                    let sceneName = "koha"; 
+                    while (storySelection[group][sceneName]) {
+                        const scene = storySelection[group][sceneName];
+                        console.log(scene.prompt);
+
+                        sceneName = await select({
+                            message: "...",
+                            choices: scene.choices
+                        })
+
+                        if (sceneName === "chooseGroup") {
+                            chooseAnotherGroup = true;
+                            break;
+                        }
+
+                        if (sceneName === "chooseGroup") {
+                            console.log("Thank you for playing!")
+                            return;
+                        }
+                    }
+
+                } else if (group === "wondasho") {
+                    let sceneName = "tsukasaskun";
+                    while (storySelection[group][sceneName]) {
+                        const scene = storySelection[group][sceneName];
+                        console.log(scene.prompt)
+
+                        sceneName = await select({
+                            message: "...",
+                            choices: scene.choices
+                        })
+
+                        if (sceneName === "chooseGroup") {
+                            chooseAnotherGroup = true;
+                            break;
+                        }
+
+                        if (sceneName === "itisfinished") {
+                            console.log("Thank you for playing!")
+                            return;
+                        }
+                    }
+
+                } else if (group === "niigo") {
+                    let sceneName = "kande";
+                    while (storySelection[group][sceneName]) {
+                        const scene = storySelection[group][sceneName];
+                        console.log(scene.prompt);
+
+                        sceneName = await select({
+                            message: "...",
+                            choices: scene.choices
+                        })
+
+                        if (sceneName === "chooseGroup") {
+                            chooseAnotherGroup = true;
+                            break;
+                        }
+                        
+                        if (sceneName === "itisfinished") {
+                            console.log("Thank you for playing!")
+                            return;
+                        }
+                    }
                 }
             }
-
-            //sends back to start after one of the ends is reached
-
-            //restarts beginning scene 
-            //let newScene = "walkingtoclass";
-            //while (storySelection[group][newScene]) {
-            //    const scene = storySelection[group][newScene];
-            //    console.log(scene.prompt);
-
-            //    newScene = await select({
-            //        message: "...",
-            //        choices: scene.choices
-            //    }); 
-
-            //    if (newScene === "chooseGroup") {
-            //        chooseAnotherGroup = true;
-            //        break;
-            //    }
-            //}
-            
-
-           } else if (group === "momojan") {
-            let sceneName = "minori";
-
-           } else if (group === "vivibasu") {
-            let sceneName = "koha"; 
-
-           } else if (group === "wondasho") {
-            //storySelection === "wondasho";
-
-           } else if (group === "niigo") {
-            //storySelection === "niigo";
-           }
-            
-           
-           
-            //first section of story for the player (should have one for each of the five paths; 5 total)
-            //const storySection1 = await select({
-            //    message: "You are...",
-            //    choices: Object.keys(storySelection[group]).map(sectionName => ({
-            //        name: sectionName,
-            //        value: sectionName 
-            //    }))
-            //    //storySelection[group].map(({name, value}) => ({name, value}))
-            //});
-
-        }
-
-            //const storyScene1 = storySelection[group][storySection1];
-
-            //console.log(storyScene1.prompt);
-
-            //const action = await select({
-            //    message: "...",
-            //    choices: storyScene1.choices
-            //});
-
-            //shows the text accosiated w/ the choice selected in the last command
-            ///const selectedSection1 = storySelection[group].find(item => item.value === storySection1);
-            ///console.log(selectedSection1.prompt);
-            
-            //first set of player choices (need to figure out how to make them depend on the path choice, maybe with some type of if command?)
-            ///const nextChoice1 = await select({                
-            ///    message: "section",
-            ///    choices: [
-            ///        {name: "help", value: "help"}, 
-            ///        {name: "continue", value: "continue"}
-            ///    ]
-            ///});
-
-            ///console.log(`${nextChoice1}.`}
         }
     )
-
-    //silly stuff here(tbd)
-
+            //silly stuff here(tbd)
+    
     //help command
     .command(
         "helpme",
