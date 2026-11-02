@@ -597,14 +597,67 @@ const args = yargs(hideBin(process.argv))
             const storySelection = {
                 //work on leonii now, other groups to be worked on later
                 leonii: {
-                    walkingtoclass: {
-                        prompt: "On her way to class, Ichika sees a phone on the ground. Ichika...",
+                    LNclass1C_1: {
+                        prompt: "You sit in a clasroom, taking notes as the teacher reviews English sentence stucture. \n" + 
+                            "Writng down the information in your notebook, you happen to look outside, and you see Honami and another classmate in the school courtyard. \n" + 
+                            "You look at her, and your eyes meet for a split second, as she mouths something that sounds like your name. You...", //ichika is inclass -> sees honami +eycontact byt look away + meet shiho at scramble crossing
                         choices: [
-                            {name: "picks up the phone.", value: "sekaimeet"},
-                            {name: "ignores the phone and continues to walk to her next class.", value: "deadend1"}
+                            {name: "wave at her.", value: "LNclass1C_1a"},
+                            {name: "continue to look out the window", value: "LNclass1C_1b"},
+                            {name: "turn back to your notebook and continue taking notes", value: "deadend1_a"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    deadend1: {
+                    LNclass1C_1a: {
+                        prompt: "Eyes widening in recognition, Honami smiles at you, but quickly looks away. \n" + 
+                            "\x1b[3mshe still remembers me\x1b[23m" + ", you think, smiling to yourself. \n" +
+                            "The person siting next to her notices her distraction, asking her what is wrong. \n" + 
+                            "Honami replies, saying that it was nothing, and the two of them leave for their next class, as you turn back to your notes.",
+                        choices: [ 
+                            {name: "-> next", value: "LNscramCross_1"}
+                        ]
+                    },
+                    LNclass1C_1b: {
+                        prompt: "Honami continues staring at the window for such a long time that the person sitting next to her turns to her, asking what is wrong." + 
+                            "Honami replies, saying that it was nothing, and the two of them leave for their next class, as you turn back to your notes.",
+                        choices: [
+                            {name: "-> next", value: "LNscramCross_1"}
+                        ]
+                    },
+                    deadend1_a: {
+                        prompt: "You turn back to your notes, missing the wistful look Honami sends to the window before leaving.",
+                        choices: [
+                            {name: "-> next", value: "deadend1_b"}
+                        ]
+                    },
+                    deadend1_b: {
+                        prompt: "At Scramble Crossing, you are too focused on getting home to notice Shiho looking at you from a short distance away, \n" + 
+                            "and you cross the busy street without ever looking her way.",
+                        choices: [
+                            {name: "-> next", value: "deadend1_c"}
+                        ]
+                    },
+                    deadend1_c: {
+                        prompt: "You make it home, and after dinner, you place your phone facedown on your desk as you begin your homework, \n" +
+                            "ignoring the flashes of light coming from the screen. After you fini sh your homework, you go to sleep, ready to do this again the next day!\n\n" + 
+                            "and again \n\n\nand again \n\n\n\n\x1b[3mand again \n\n\n\n\n\nthis is boring. Do you wanna... \x1b[23m",
+                        choices: [
+                            {name: "try again?", value: "LNclass1C_1"},
+                            {name: "try a new path!", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
+                    },
+                    LNscramCross_1: {
+                        prompt: "While waiting for the light to change at Scramble Crossing, you notice Shiho near you at the crosswalk.\n" +
+                             "\"Ichika?\" Shiho questions",
+                        choices: [
+                            {name: "leave cu", value: "x"},
+                            {name: "dd", value: "k"}
+                        ] 
+                        
+                    },
+                    deadend2: {
                         prompt: "Ichika walks back to class and lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
                         choices: [
                             {name: "try again?", value: "walkingtoclass"},
@@ -617,7 +670,7 @@ const args = yargs(hideBin(process.argv))
                         choices: [
                             {name: "potato", value: "chooseGroup"},
                             {name: "end it all!!!!!", value: "itisfinished"}
-                        ]
+                        ] 
                     },
                     //leads to saki + other dead end
 
@@ -639,73 +692,87 @@ const args = yargs(hideBin(process.argv))
                         choices: {
                             name: "back", value: "walkingtoclass"
                         }
+                    },
+                    LNplaceholder: {
+                        prompt: "uh oh! if you're seeing this, then that means that this part of the story hasn't been finished yet!",
+                        choices: [
+                            {name: "try again?", value: "LNclass1C_1"},
+                            {name: "try a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
                     }
 
                     //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
                 },
                 momojan: {
                     minori: { 
-                        prompt: "mimrnori dwatches idoll!!!",
+                        prompt: "mimrnori dwatches idoll!!! as phone blinks!!!!",
                         choices: [       
                             {name: "tapp random thing", value: "harula"},
-                            {name: "leeave it alone :(", value: "j"} 
+                            {name: "leeave it alone :(", value: "airli"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     harula: {
                         prompt: "miku pops ou an ebeocems i ahuluscianotion",
                         choices: [
                             {name: "go back!", value: "minori"},
-                            {name: "go forward!", value: "airli"}
+                            {name: "diff path?", value: "airli"}
                         ]
                     },
                     airli: {
                         prompt: "didnt work. minori dead :(",
                         choices: [
-                            {name: "Ddjo", value: "minori"},
-                            {name: "miku!!!", value: "harula"}
+                            {name: "begin", value: "minori"},
+                            {name: "diff path?", value: "harula"}
                         ]
                     }
                 },
                 vivibasu: {
                     koha: {
-                        prompt: "to",
+                        prompt: "hamptster gose on walk home form schoool. should she take her normal path or choose a new path?",
                         choices: [
-                            {name: "d", value: "anchanzero"},
-                            {name: "eoe", value: "ginger"}
+                            {name: "same old, same old", value: "anchanzero"},
+                            {name: "choose a new path", value: "ginger"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     anchanzero: {
-                        prompt: "difn",
+                        prompt: "ohane goes home. thae end.",
                         choices: [
-                            {name: "ejf", value: "koha"},
-                            {name: "jfi", value: "ginger"}
+                            {name: "go back to the beginning?", value: "koha"},
+                            {name: "diff path?", value: "ginger"}
                         ]
                     },
                     ginger: {
-                        prompt: "rrk",
+                        prompt: "haopmter finsds new place! what!!!!!!",
                         choices: [
-                            {name: "ffk", value: "anchanzero"},
-                            {name: "dinc", value: "koha"}
+                            {name: "diff path?", value: "anchanzero"},
+                            {name: "go back tot he beginning?", value: "koha"}
                         ]
                     }
                 }, 
                 wondasho: {
                     tsukasaskun: {
-                        prompt: "potaptos",
+                        prompt: "tsukasa gets emoployed!!! a job so cool frfr",
                         choices: [
-                            {name: "fj", value: "emu"},
-                            {name: "djv", value: "nane"}
+                            {name: "get to job early", value: "emu"},
+                            {name: "get to job late", value: "nane"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     emu: {
-                        prompt: "dov",
+                        prompt: "tuskas doen not get ajob b/c he is choppped!!! unemplyed loser lol *insert emu jumpscare here*",
                         choices: [
-                            {name: "dsmc", value: "tsukasaskun"},
+                            {name: "go back to the beginndg?", value: "tsukasaskun"},
                             {name: "dvo", value: "nane"}
                         ]
                     },
                     nane: {
-                        prompt: "eood",
+                        prompt: "tsuksa get a job!!!!! employed ending! no wnderstage :(",
                         choices: [
                             {name: "sosd", value: "emu"},
                             {name: "dofodj", value: "tsukasaskun"}
@@ -715,14 +782,16 @@ const args = yargs(hideBin(process.argv))
                 },
                 niigo: {
                     kande: {
-                        prompt: "kml",
+                        prompt: "kanade sees a her screen flashing!!! what uis happlened?",
                         choices: [
-                            {name: "djov", value: "mafu"},
-                            {name: "emovv", value: "enams"}
+                            {name: "click the screen", value: "mafu"},
+                            {name: "don't click the screen", value: "enams"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     mafu: {
-                        prompt: "potapd",
+                        prompt: "kandade gets transprted to new place- oh my gosh is that Hatsune Miku from the hit game Project Sekai Colorful Stage featuring Hatsune Miku!!!!!??!?!????!??!?!??!?!?!?!?!?!?!?? omg wow so cool!!!!!",
                         choices: [
                             {name: "so", value: "kande"},
                             {name: "emoved", value: "enams"}
@@ -758,7 +827,7 @@ const args = yargs(hideBin(process.argv))
 
                 if (group === "leonii") {
                     //starts beginning scene
-                    let sceneName = "walkingtoclass";
+                    let sceneName = "LNclass1C";
                     //does somethimg idk
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
@@ -948,8 +1017,12 @@ const args = yargs(hideBin(process.argv))
             console.log("        Yuki              Nightcord at 25:00 miklu's description of Mafuyu Asahina")
             console.log("        Enanan            Nightcord at 25:00 miklu's description of Ena Shinonome")
             console.log("        Amia              Nightcord at 25:00 miklu's description of Mizuki Akiyama\n")
-            console.log("     calc            Does arthmitheic functions (+ - * /)");
+            console.log("  calc           Does arthmitheic functions (+ - * /) \n");
+            console.log("  letsplay       Text-based choose-your-own-adveture game that allows you to experience each groups main story as the group leader");
+            console.log("                 NOTE: currently unfinished, however, at least one of the main stories is partially playable")
             console.log("  helpme         Shows this information, duh!");
+
+            //helpme
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
