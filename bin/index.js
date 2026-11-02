@@ -650,10 +650,11 @@ const args = yargs(hideBin(process.argv))
                     },
                     LNscramCross_1: {
                         prompt: "While waiting for the light to change at Scramble Crossing, you notice Shiho near you at the crosswalk.\n" +
-                             "\"Ichika?\" Shiho questions",
+                             "\"Ichika?\" Shiho questions. You decide to...",
                         choices: [
-                            {name: "leave cu", value: "x"},
-                            {name: "dd", value: "k"}
+                            {name: "turn away from her.", value: "LNplaceholder"},
+                            {name: "wave at her.", value: "LNplaceholder"},
+                            {name: "dash over to her and start a conversation.", value: "LNplaceholder"}
                         ] 
                         
                     },
