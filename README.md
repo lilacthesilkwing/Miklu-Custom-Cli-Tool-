@@ -1,11 +1,11 @@
 Hello.
 
 
-This is a cli tool that I made based on the vocaloid Hatsune Miku and the mobile rhythm game Project Sekai: Colorful Stage.
-Using the commands available should allow you to talk with the cli tool and learn more information about the characters and setting of the game.
+This is a CLI tool that I made based on the Vocaloid Hatsune Miku and the mobile rhythm game Project Sekai: Colorful Stage, using JavaScript.
+Using the available commands should allow you to talk with the CLI tool and learn more information about the characters and setting of the game, as well as even play as the group leader of each group.
 
 
-Start with typing 'miklu' into the terminal, and follow the directions from there.
+Start by typing 'miklu' into the terminal, and follow the directions from there.
 
 To open the interactive calculator, run `miklu calc`, choose an operation from the menu, and enter two numbers.
 
@@ -15,7 +15,7 @@ Goals:
 2. Add description commands for all 6 different miklus: Pending (Sekai descriptions: Complete!; Group member descriptions: Unstarted)
 3. Add text art to most (or all) commands: Pending
 
-NOTE: Code changes may be in main branch instead of default branch. Check the main branch to see all code.
+NOTE: Code changes may be in the main branch instead of the default branch. Check the main branch to see all code.
 
 Demo videos: 
 
@@ -24,4 +24,4 @@ V1.2.0 - https://www.youtube.com/watch?v=SV-jQmOiD0Y
 
 <img width="801" height="363" alt="image" src="https://github.com/user-attachments/assets/af0d7407-a8e7-4ff8-b523-3b1d9457ad39" />
 
-display of the miklu command
+Display of the 'miklu' command
