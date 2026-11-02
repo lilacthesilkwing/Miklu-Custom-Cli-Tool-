@@ -20,4 +20,8 @@ NOTE: Code changes may be in main branch instead of default branch. Check the ma
 Demo videos: 
 
 V1.1.1 - https://www.youtube.com/watch?v=VpT4e_ACJNY      
-V1.2.0 - https://www.youtube.com/watch?v=SV-jQmOiD0Y      
+V1.2.0 - https://www.youtube.com/watch?v=SV-jQmOiD0Y  
+
+<img width="801" height="363" alt="image" src="https://github.com/user-attachments/assets/af0d7407-a8e7-4ff8-b523-3b1d9457ad39" />
+
+display of the miklu command
