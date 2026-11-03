@@ -828,7 +828,7 @@ const args = yargs(hideBin(process.argv))
 
                 if (group === "leonii") {
                     //starts beginning scene
-                    let sceneName = "LNclass1C";
+                    let sceneName = "LNclass1C_1";
                     //does somethimg idk
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
