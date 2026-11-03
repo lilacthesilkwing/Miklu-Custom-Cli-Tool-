@@ -600,18 +600,19 @@ const args = yargs(hideBin(process.argv))
                     LNclass1C_1: {
                         prompt: "You sit in a clasroom, taking notes as the teacher reviews English sentence stucture. \n" + 
                             "Writng down the information in your notebook, you happen to look outside, and you see Honami and another classmate in the school courtyard. \n" + 
-                            "You look at her, and your eyes meet for a split second, as she mouths something that sounds like your name. You...", //ichika is inclass -> sees honami +eycontact byt look away + meet shiho at scramble crossing
+                            "You look at her, and your eyes meet for a split second, as she mouths something that looks like your name. You...", //ichika is inclass -> sees honami +eycontact byt look away + meet shiho at scramble crossing
                         choices: [
                             {name: "wave at her.", value: "LNclass1C_1a"},
-                            {name: "continue to look out the window", value: "LNclass1C_1b"},
-                            {name: "turn back to your notebook and continue taking notes", value: "deadend1_a"},
+                            {name: "continue to look out the window.", value: "LNclass1C_1b"},
+                            {name: "turn back to your notebook and continue taking notes.", value: "deadend1_a"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     LNclass1C_1a: {
+                        // \x1b[38;2;51;170;238m for ichika's thoughts/words
                         prompt: "Eyes widening in recognition, Honami smiles at you, but quickly looks away. \n" + 
-                            "\x1b[3mshe still remembers me\x1b[23m" + ", you think, smiling to yourself. \n" +
+                            "\x1b[3m\x1b[38;2;51;170;238mshe still remembers me\x1b[0m\x1b[23m" + ", you think, smiling to yourself. \n" +
                             "The person siting next to her notices her distraction, asking her what is wrong. \n" + 
                             "Honami replies, saying that it was nothing, and the two of them leave for their next class, as you turn back to your notes.",
                         choices: [ 
@@ -628,10 +629,10 @@ const args = yargs(hideBin(process.argv))
                     deadend1_a: {
                         prompt: "You turn back to your notes, missing the wistful look Honami sends to the window before leaving.",
                         choices: [
-                            {name: "-> next", value: "deadend1_b"}
+                            {name: "-> next", value: "deadend1_ba"}
                         ]
                     },
-                    deadend1_b: {
+                    deadend1_ba: {
                         prompt: "At Scramble Crossing, you are too focused on getting home to notice Shiho looking at you from a short distance away, \n" + 
                             "and you cross the busy street without ever looking her way.",
                         choices: [
@@ -650,13 +651,37 @@ const args = yargs(hideBin(process.argv))
                     },
                     LNscramCross_1: {
                         prompt: "While waiting for the light to change at Scramble Crossing, you notice Shiho near you at the crosswalk.\n" +
-                             "\"Ichika?\" Shiho questions. You decide to...",
+                             "\"\x1b[38;2;187;221;34mIchika?\x1b[0m\" Shiho questions. You decide to...",
                         choices: [
-                            {name: "turn away from her.", value: "LNplaceholder"},
-                            {name: "wave at her.", value: "LNplaceholder"},
-                            {name: "dash over to her and start a conversation.", value: "LNplaceholder"}
-                        ] 
-                        
+                            {name: "turn away from her.", value: "deadend1_bb"},
+                            {name: "wave at her.", value: "LNscramCross_1a"},
+                            {name: "dash over to her and start a conversation.", value: "LNscramCross_1b"}
+                        ]    
+                    },
+                    deadend1_bb: {
+                        prompt: "You cross quickly across the busy interesction, missing the chance to reply to Shiho.",
+                        choices: [
+                            {name: "-> next", value: "deadend1_c"}
+                        ]
+                    },
+                    LNscramCross_1a: {
+                        prompt: "Waving at Shiho, you begin to make your way over to her, but by the time you reach her, the light has changed and she is gone.",
+                        choices: [
+                            {name: "-> next", value: "ichiroom_1"}
+                        ]
+                    },
+                    LNscramCross_1b: {
+                        prompt: "\"\x1b[38;2;51;170;238mShiho...! Um, you have your bass guitar... Are you going to practice?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;187;221;34mSo what if I am?\x1b[0m\" \"\x1b[38;2;51;170;238mAh.. Well...\x1b[0m\" ...Shiho crosses the street ahead of you before you can say another word.",
+                        choices: [
+                            {name: "-> next", value: "ichiroom_1"}
+                        ]
+                    },
+                    ichiroom_1: {
+                        prompt: "ff",
+                        choices: [
+                            {name: "no", value: "LNplaceholder"}
+                        ]
                     },
                     deadend2: {
                         prompt: "Ichika walks back to class and lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
@@ -1022,8 +1047,6 @@ const args = yargs(hideBin(process.argv))
             console.log("  letsplay       Text-based choose-your-own-adveture game that allows you to experience each groups main story as the group leader");
             console.log("                 NOTE: currently unfinished, however, at least one of the main stories is partially playable")
             console.log("  helpme         Shows this information, duh!");
-
-            //helpme
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
@@ -1043,3 +1066,18 @@ const args = yargs(hideBin(process.argv))
 
 //instructions for publishing
 //RUN: npm link (to test) -> npm version patch -> npm login -> npm publish i think
+
+//color codes notes
+// \x1b[36m to start and \x1b[0m to end (same end for all methods)
+// 1st number can be replaced with: 36->cyan; 31->red; 32->green; 33->yellow; 34->blue; 35->magenta (don't use! can't be used for all 26 characters)
+// rgb true color: \x1b[38;2;<r>;<g>;<b>m to begin 
+// pjsk character hex codes: (will be changed to rgb codes)
+//  l/n - 4455dd->68,85,221: ichi - 33aaee->51,170,238; saki - ffdd45->255,221,69; hona - ee6666->238,102,102; shio - bbdd22->187,221,34
+//  mmj - 6ccb20->108,203,32: mino - ffcdac->225,205,172; haru - 99cdff->153,205,255; airi - ffa9cc->255,169,204; shizu - 9aeede->154,238,222
+//  vbs - ee1166->238,17,102: koha - ff679a->255,103,154; an - 00bbdc->0,187,220; ginger - ff7721->255,119,33; toya - 0077dd->0,119,221
+//  wxs - ff9900->255,153,0: tsuk - ffbb00->255,187,0; emu - ff66bc->255,102,188; nene - 34dd9a->52,221,154; rui - bb88ed->187,136,237
+//  n25 - 884499->136,68,153: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
+//  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103
+
+//polish ideas: 
+// add colors to the character descriptions
