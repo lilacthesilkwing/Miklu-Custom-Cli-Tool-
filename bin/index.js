@@ -7,7 +7,7 @@ const { command } = require("yargs");
 
 // Define the CLI commands and options is what it told me to write, but... 
 // i honestly hnave no ide what this code does, but...
-
+ 
 // it looks like it makes a command line interface 
 // for a character named Miklu to greet people in different ways 
 // based on the command used. 
@@ -616,11 +616,11 @@ const args = yargs(hideBin(process.argv))
                             "The person siting next to her notices her distraction, asking her what is wrong. \n" + 
                             "Honami replies, saying that it was nothing, and the two of them leave for their next class, as you turn back to your notes.",
                         choices: [ 
-                            {name: "-> next", value: "LNscramCross_1"}
+                            {name: "-> next", value: "LNscramCross_1"} 
                         ]
                     },
                     LNclass1C_1b: {
-                        prompt: "Honami continues staring at the window for such a long time that the person sitting next to her turns to her, asking what is wrong." + 
+                        prompt: "Honami continues staring at the window for such a long time that the person sitting next to her turns to her, asking what is wrong. \n" + 
                             "Honami replies, saying that it was nothing, and the two of them leave for their next class, as you turn back to your notes.",
                         choices: [
                             {name: "-> next", value: "LNscramCross_1"}
@@ -632,7 +632,7 @@ const args = yargs(hideBin(process.argv))
                             {name: "-> next", value: "deadend1_ba"}
                         ]
                     },
-                    deadend1_ba: {
+                    deadend1_ba: { 
                         prompt: "At Scramble Crossing, you are too focused on getting home to notice Shiho looking at you from a short distance away, \n" + 
                             "and you cross the busy street without ever looking her way.",
                         choices: [
@@ -641,7 +641,7 @@ const args = yargs(hideBin(process.argv))
                     },
                     deadend1_c: {
                         prompt: "You make it home, and after dinner, you place your phone facedown on your desk as you begin your homework, \n" +
-                            "ignoring the flashes of light coming from the screen. After you fini sh your homework, you go to sleep, ready to do this again the next day!\n\n" + 
+                            "ignoring the flashes of light coming from the screen. After you finish your homework, you go to sleep, ready to do this again the next day!\n\n" + 
                             "and again \n\n\nand again \n\n\n\n\x1b[3mand again \n\n\n\n\n\nthis is boring. Do you wanna... \x1b[23m",
                         choices: [
                             {name: "try again?", value: "LNclass1C_1"},
@@ -650,8 +650,9 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     LNscramCross_1: {
-                        prompt: "While waiting for the light to change at Scramble Crossing, you notice Shiho near you at the crosswalk.\n" +
-                             "\"\x1b[38;2;187;221;34mIchika?\x1b[0m\" Shiho questions. You decide to...",
+                        prompt: "___________________________________________________________________________ \n" +
+                            "While waiting for the light to change at Scramble Crossing, you notice Shiho near you at the crosswalk.\n" +
+                            "\"\x1b[38;2;187;221;34mIchika?\x1b[0m\" Shiho questions. You decide to...",
                         choices: [
                             {name: "turn away from her.", value: "deadend1_bb"},
                             {name: "wave at her.", value: "LNscramCross_1a"},
@@ -664,41 +665,108 @@ const args = yargs(hideBin(process.argv))
                             {name: "-> next", value: "deadend1_c"}
                         ]
                     },
-                    LNscramCross_1a: {
+                    LNscramCross_1a: { 
                         prompt: "Waving at Shiho, you begin to make your way over to her, but by the time you reach her, the light has changed and she is gone.",
                         choices: [
-                            {name: "-> next", value: "ichiroom_1"}
+                            {name: "-> next", value: "LNscramWalk_1"}
                         ]
                     },
                     LNscramCross_1b: {
                         prompt: "\"\x1b[38;2;51;170;238mShiho...! Um, you have your bass guitar... Are you going to practice?\x1b[0m\" \n" + 
                             "\"\x1b[38;2;187;221;34mSo what if I am?\x1b[0m\" \"\x1b[38;2;51;170;238mAh.. Well...\x1b[0m\" ...Shiho crosses the street ahead of you before you can say another word.",
                         choices: [
+                            {name: "-> next", value: "LNscramWalk_1"}
+                        ]
+                    },
+                    LNscramWalk_1: {
+                        prompt: "\x1b[3m\x1b[38;2;51;170;238mHaa... I wasn't able to talk to her again this time...,\x1b[0m you sigh dejectedly as you turn around a corner. \n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238mHonami and Shiho,... When did I get so awkward around them?... And Saki isn't...\x1b[0m \n" + 
+                            "\"\x1b[38;2;51;170;238mIs is always going to be like this? Never talking to each other again until we graduate?\x1b[0m\" Absorbed in your thoughts, your head snaps up as you suddenly hear a familiar tune coming from nearby. You...",
+                        choices: [
+                            {name: "pause, and turn towards the sound.", value: "LNscramWalk_1a"},
+                            {name: "ignore the sound and continue walking towards home.", value: "LNscramWalk_1b"}
+                        ]
+                    },
+                    LNscramWalk_1a: {
+                        //maybe link intergalactic bound music video? + make sure to run this one to check it later
+                        prompt: "\x1b[3m\x1b[38;2;51;170;238mAh.. It's one of Miku's music videos..\x1b[0m  You turn your head towards the large screen and see Hatsune Miku's Intergalactic Bound music video playing. \n" +
+                            "\x1b[3m\x1b[38;2;51;204;186m♪♫ Our hearts are connected through these sound waves~ ♪ Nothing but up!up!up! ♫ Cut though the clouds! ♪ \n" + 
+                            "♫ Jump! Jump! Without a doubt~ ♪ Nothing but up!up!up! ♫ Intergalactic Bound~ ♪♫ \x1b[0m \n" + 
+                            "\"\x1b[38;2;51;170;238mMiku is so.. amazing... She's so free and versatile... She can probably do anything.. \x1b[3mUnlike me..\x1b[0m\" \n" + 
+                            "\x1b[3m\x1b[38;2;51;204;186m♪ Whoa oh, whoa oh oh ♫ Intergalactic Bound ♪\x1b[0m  You turn back around and make your way back home as the music slowly fades away.", 
+                        choices: [
                             {name: "-> next", value: "ichiroom_1"}
                         ]
                     },
-                    ichiroom_1: {
-                        prompt: "ff",
+                    LNscramWalk_1b: {
+                        prompt: "\x1b[3m\x1b[38;2;51;170;238mWe used to be such good friends...\x1b[0m \n\n" + 
+                            "\x1b[38;2;68;85;221m" +
+                            "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \n" +
+                            "⠀⠀⠀⠀⠀⠀⠀⠀⠠⣀⡀⠀⠀⠀⠀⠀⢀⣜⠉⣏⠀⠀⠀⠀⠀⠀⠀⢀⣴⠃ \n" +
+                            "⠀⠀⠀⠀⠀⠀⠀⠀⠚⡬⠧⠀⠀⠀⠀⠀⠀⠈⠎⠉⠀⠀⠀⠀⠀⣠⢶⡿⠃⠀ \n" +
+                            "⠀⠀⠀⠀⠀⣄⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠠⡒⢕⢕⠕⠁⠀⠀ \n" +
+                            "⠀⠀⠀⠀⠀⡇⠙⢦⡀⠀⢀⣀⠤⡴⠀⠀⢀⡀⠤⢒⡨⠐⡉⠔⡡⠂⠀⠀⠀⠀ \n" +
+                            "⠀⠀⠀⠀⠀⠃⠀⠀⠈⠉⠁⠀⢰⠃⢀⡉⠤⠐⠈⡁⠔⢊⠔⠈⠀⠀⠀⠀⠀⠀ \n" +
+                            "⠀⠀⢀⡤⠚⠁⠀⠀⠀⠀⠀⢀⠏⠁⣀⠠⠔⠂⢁⠠⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀ \n" +
+                            "⠠⢶⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡁⠀⡀⠄⠂⠁⠀⠀⠀⠀⡀⢀⠀⠀⠀⠀⠀ \n" +
+                            "⠀⠀⠀⠉⠑⢲⠀⠀⠀⢀⣀⣀⣀⡙⣅⠀⠀⠀⠀⠀⠀⠠⠔⡈⣫⡀⠀⠀⠀⠀ \n" +
+                            "⠀⠀⠀⠀⠀⠘⡆⠀⡰⠋⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠏⠀⠀⠀⠀⠀⠀ \n" +
+                            "⠀⢠⡀⣀⠀⠀⢣⠜⠁⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \n" + 
+                            "⠠⢮⢀⣢⡀⠀⠈⠀⠀⠀⠀⠀⠀⢀⠏⠒⢺⠃⠀⠀⠀⠀⠀⠀⠀⠀⢠⣀⡀⠀ \n" +
+                            "⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠃⡄⢠⢈⣆⠀⠀⠀⠀⠀⠀⠀⠐⠻⡼⠆⠀ \n" +
+                            "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \n" +
+                            //"insert shooting star art here" + hona, ichi, saki, shih, saki; use rgb 68 85 221 to color stars maybe 5 stars w/ miklu colored star in middle
+                            "\x1b[3m\x1b[38;2;238;102;102mThere's another one! \n\x1b[38;2;51;170;238mThey are all so pretty! \n\x1b[38;2;255;221;69mWe should all make a wish! I'm gonna wish we could stay like this forever! \n\x1b[38;2;187;221;34mSaki, you're not supposed to tell us your wish! \n\x1b[38;2;255;221;69mOh..Well I'm sure it will come true anyways!\x1b[0m \n\n\n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238mThe stars were so bright that night...\x1b[0m  You walk back home, reminicing about your past.",
+                        //you walk home, still abosrbded in thoughts about your friends *insert flashback here specifialcl of the own where theye afre on the junghle gym an them see the shoting stars* i wish we could be close like that again.... (maybe different place)
                         choices: [
-                            {name: "no", value: "LNplaceholder"}
+                            {name: "-> next", value: "ichiroom_1"}
+                        ]
+                    },
+                    //switch these two'
+                    ichiroom_1: {
+                        prompt: "___________________________________________________________________________ \n" + 
+                            "Once you get home, you enter your room. The first thing you do is...",
+                        choices: [
+                            {name: "open your closet.", value: "ichiroom_1a"},
+                            {name: "sit down and begin working on your homework.", value: "ichiroom_1b"}
+                        ]
+                    },
+                    ichiroom_1a: {
+                        // ichi finds her old guitar cover idust and remarkt hat it sprobalb/c s heo sdoues't using it any more -> closes clos
+                        prompt: "d" + 
+                            "...You close the closet and...",
+                        choices: [
+                            {name: "sit down and begin working on your homework.", value: "ichiroom_1b"}
+                        ]
+                    },
+                    ichiroom_1b: {
+                        //ichi is seat and begin ot work when she notcie s phoen screem flashing. 
+                        prompt: "dn" + 
+                            "You...",
+                        choices: [
+                            {name: "check your phone.", value: "schoolSekai_1"},
+                            {name: "ignore it and continue working.", value: "deadend2"}
                         ]
                     },
                     deadend2: {
-                        prompt: "Ichika walks back to class and lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
+                        //similar to deadend1_c minus the 1st part
+                        prompt: "de" + 
+                            "Ichika walks back to class and  lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
                         choices: [
                             {name: "try again?", value: "walkingtoclass"},
                             {name: "try a new path!", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    sekaimeet: {
+                    schoolSekai_1: {
                         prompt: "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
                         choices: [
                             {name: "potato", value: "chooseGroup"},
                             {name: "end it all!!!!!", value: "itisfinished"}
                         ] 
                     },
-                    //leads to saki + other dead end
+                    //leads to saki + other dead end 
 
                     afterSaki: {
                         prompt: "that one scene where saki jumpscares Ichika in the main story",
@@ -1078,6 +1146,8 @@ const args = yargs(hideBin(process.argv))
 //  wxs - ff9900->255,153,0: tsuk - ffbb00->255,187,0; emu - ff66bc->255,102,188; nene - 34dd9a->52,221,154; rui - bb88ed->187,136,237
 //  n25 - 884499->136,68,153: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
 //  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103
+
+// all scene separators are 75 '_'s long
 
 //polish ideas: 
 // add colors to the character descriptions
