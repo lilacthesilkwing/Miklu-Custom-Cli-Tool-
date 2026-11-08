@@ -642,7 +642,7 @@ const args = yargs(hideBin(process.argv))
                     deadend1_c: {
                         prompt: "You make it home, and after dinner, you place your phone facedown on your desk as you begin your homework, \n" +
                             "ignoring the flashes of light coming from the screen. After you finish your homework, you go to sleep, ready to do this again the next day!\n\n" + 
-                            "and again \n\n\nand again \n\n\n\n\x1b[3mand again \n\n\n\n\n\nthis is boring. Do you wanna... \x1b[23m",
+                            "and again \n\n\nand again \n\n\n\n\x1b[3mand again \n\n\n\n\n\n\x1b[38;2;224;196;255mthis is boring. Do you wanna... \x1b[0m",
                         choices: [
                             {name: "try again?", value: "LNclass1C_1"},
                             {name: "try a new path!", value: "chooseGroup"},
@@ -685,7 +685,7 @@ const args = yargs(hideBin(process.argv))
                         choices: [
                             {name: "pause, and turn towards the sound.", value: "LNscramWalk_1a"},
                             {name: "ignore the sound and continue walking towards home.", value: "LNscramWalk_1b"}
-                        ]
+                        ] 
                     },
                     LNscramWalk_1a: {
                         //maybe link intergalactic bound music video? + make sure to run this one to check it later
@@ -723,7 +723,6 @@ const args = yargs(hideBin(process.argv))
                             {name: "-> next", value: "ichiroom_1"}
                         ]
                     },
-                    //switch these two'
                     ichiroom_1: {
                         prompt: "___________________________________________________________________________ \n" + 
                             "Once you get home, you enter your room. The first thing you do is...",
@@ -733,17 +732,20 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     ichiroom_1a: {
-                        // ichi finds her old guitar cover idust and remarkt hat it sprobalb/c s heo sdoues't using it any more -> closes clos
-                        prompt: "d" + 
-                            "...You close the closet and...",
+                        // ichi finds her old guitar cover idust and remarkt hat it sprobalb/c s heo sdoues't using it any more -> closes clos after dagging guitarcase to rest on side of desk
+                        prompt: "\x1b[3m\x1b[38;2;51;170;238m*Haa..*\x1b[0m You notice your old guitar case in the corner of your closet, and pull it out. \n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238m*Achoo!* My guitar case is covered in dust... I'll probably never pick it up again though..\x1b[0m \n" + 
+                            "You pull the guitar case out of your closet and dust it off regardless, carefully leaning it on the side of your dresser. \n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238mWe had promised to stay together and create a band together, but now...\x1b[0m \n" +
+                            "...Leaving the guitar case unopened, you turn around to close the closet and...",
                         choices: [
                             {name: "sit down and begin working on your homework.", value: "ichiroom_1b"}
                         ]
                     },
                     ichiroom_1b: {
-                        //ichi is seat and begin ot work when she notcie s phoen screem flashing. 
-                        prompt: "dn" + 
-                            "You...",
+                        //ichi is seated and begins to work when she notcies phone screen flashing. 
+                        prompt: "Pulling out an assignment, you begin to fill it out. \n" +
+                            "Suddenly, your phone screen starts flashing white! You...",
                         choices: [
                             {name: "check your phone.", value: "schoolSekai_1"},
                             {name: "ignore it and continue working.", value: "deadend2"}
@@ -751,20 +753,48 @@ const args = yargs(hideBin(process.argv))
                     },
                     deadend2: {
                         //similar to deadend1_c minus the 1st part
-                        prompt: "de" + 
-                            "Ichika walks back to class and  lives the rest of her life alone and sad, feeling like she is missing something important in her life. \nEnding?",
+                        prompt: "You continue to finish your homework, completing it much faster than you usually do. \n" + 
+                            "After dinner, you check your phone, but nothing seems to be wrong, although the brightness of the screen has dulled a bit, and won't brighten up, no matter what you do. \n" + 
+                            "You decide to go back to sleep, and soon you will wake up and do all of those things again. \n\n" + 
+                            "and again \n\n\nand again \n\n\n\n\x1b[3mand again \n\n\n\n\n\n\x1b[38;2;224;196;255mthis is boring. Do you want to...\x1b[0m",
                         choices: [
-                            {name: "try again?", value: "walkingtoclass"},
+                            {name: "try again?", value: "LNclass1C_1"},
                             {name: "try a new path!", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    schoolSekai_1: {
-                        prompt: "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
+                    ichiroom_1c: {
+                        //contians scetion before ichi gets teleported to school sekai 
+                        prompt: "ns",
+                        choices: [
+                            {name: "-> next", value: "f"}
+                        ]
+                    },
+                    schoolSekai_1a: {
+                        //intial convo w/ miku + luka
+                        prompt: " " + 
+                            "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
                         choices: [
                             {name: "potato", value: "chooseGroup"},
                             {name: "end it all!!!!!", value: "itisfinished"}
                         ] 
+                    },
+                    schoolSekai_1b: {
+                        //flashback sequence
+                        prompt: "idk"
+                    },
+                    schoolSekai_1c: {
+                        //sekai section after flashbakc sequence
+                        prompt: "idk"
+                    },
+                    ichiroom_2: {
+                        //ichi wakes up and wnders + minor not flashback things + end of opening! maybe include comment from narrator about ending of opening
+                        prompt: "idk",
+                        choices: [
+                            {name: "-> next", value: "LNplaceholder"}, 
+                            {name: "choose a new path?", value: "chooseGroup"},  
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
                     },
                     //leads to saki + other dead end 
 
@@ -795,7 +825,6 @@ const args = yargs(hideBin(process.argv))
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     }
-
                     //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
                 },
                 momojan: {
@@ -1145,7 +1174,8 @@ const args = yargs(hideBin(process.argv))
 //  vbs - ee1166->238,17,102: koha - ff679a->255,103,154; an - 00bbdc->0,187,220; ginger - ff7721->255,119,33; toya - 0077dd->0,119,221
 //  wxs - ff9900->255,153,0: tsuk - ffbb00->255,187,0; emu - ff66bc->255,102,188; nene - 34dd9a->52,221,154; rui - bb88ed->187,136,237
 //  n25 - 884499->136,68,153: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
-//  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103
+//  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103,203
+//  narrator - e0c4ff->224,196,255
 
 // all scene separators are 75 '_'s long
 
