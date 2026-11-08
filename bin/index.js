@@ -767,25 +767,30 @@ const args = yargs(hideBin(process.argv))
                         //contians scetion before ichi gets teleported to school sekai 
                         prompt: "ns",
                         choices: [
-                            {name: "-> next", value: "f"}
+                            {name: "-> next", value: "schoolSekai_1a"}
                         ]
                     },
                     schoolSekai_1a: {
                         //intial convo w/ miku + luka
-                        prompt: " " + 
+                        prompt: "" + 
                             "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
                         choices: [
-                            {name: "potato", value: "chooseGroup"},
-                            {name: "end it all!!!!!", value: "itisfinished"}
+                            {name: "-> next", value: "schoolSekai_1b"}
                         ] 
                     },
                     schoolSekai_1b: {
                         //flashback sequence
-                        prompt: "idk"
+                        prompt: "idk",
+                        choices: [
+                            {name: "-> name", value: "schoolSekai_1c"}
+                        ]
                     },
                     schoolSekai_1c: {
                         //sekai section after flashbakc sequence
-                        prompt: "idk"
+                        prompt: "idk",
+                        choices: [
+                            {name: "-> name", value: "ichiroom_2"}
+                        ]
                     },
                     ichiroom_2: {
                         //ichi wakes up and wnders + minor not flashback things + end of opening! maybe include comment from narrator about ending of opening
