@@ -747,7 +747,7 @@ const args = yargs(hideBin(process.argv))
                         prompt: "Pulling out an assignment, you begin to fill it out. \n" +
                             "Suddenly, your phone screen starts flashing white! You...",
                         choices: [
-                            {name: "check your phone.", value: "schoolSekai_1"},
+                            {name: "pick up your phone.", value: "schoolSekai_1a"},
                             {name: "ignore it and continue working.", value: "deadend2"}
                         ]
                     },
@@ -765,7 +765,10 @@ const args = yargs(hideBin(process.argv))
                     },
                     ichiroom_1c: {
                         //contians scetion before ichi gets teleported to school sekai 
-                        prompt: "ns",
+                        prompt: "The moment you pick up your phone, it stops flashing, and you realize that it is unlocked and open to your music playlists. \n" + 
+                            "*Untitled?* You squint at the new music track. *What song is that?* \n" + 
+                            "As you try to see the details of the music file, you click it, and your phone starts flashing more frequently than before. \n" + 
+                            "Suddenly, \"Eh~!!! What's is happening?*\"",
                         choices: [
                             {name: "-> next", value: "schoolSekai_1a"}
                         ]
@@ -793,10 +796,35 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     ichiroom_2: {
-                        //ichi wakes up and wnders + minor not flashback things + end of opening! maybe include comment from narrator about ending of opening
-                        prompt: "idk",
+                        //ichi wakes up and wnders + minor not flashback things (plain dialogue; may be changed later) + end of opening! maybe include comment from narrator about ending of opening
+                        prompt: "idk \n" + 
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
+                            "honami's statement \n" + 
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
+                            "shiho's statement \n" +
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" +  
+                            "saki's statement" + "\n\n\n\n\n\n\x1b[38;2;51;170;238m" + 
+                            "                                                      +++++   ++                   \n" +
+                            "     *                                            ++++         +                   \n" +
+                            "   ***                                         ++++           ++                   \n" +
+                            "   ***             ***       ****           *++               +                    \n" +
+                            "   ***          ****+++++  ****+++++     **+                 +                *    \n" +
+                            "   ***         ***     +++***     +++  ***                + +               *++    \n" +
+                            "   ***        **++  *+++++*+       + ***                 ++                 *++    \n" +
+                            "    +++        +++        +++      **                                       *++    \n" +
+                            "     +++++++++++++++        ++++ ** *****+++    ****+++    ****+++    ****+++++    \n" +
+                            "                              ***  ****   ++++****   ++++****   ++++****   +++++   \n" +
+                            "                             **    ***      ++**     +++***     +++***      +++    \n" +
+                            "                           ***     +++      ++++*   ++++*+++  *+++++++*     +      \n" +
+                            "                        ****       +++      +++++++       +++++     +++++++        \n" +
+                            "                      *****        +++      +    +          +          ++          \n" +
+                            "                      *****        +                                               \n" +
+                            "                        *  *                                                       \n" +
+                            "                        *                                                          \x1b[0m\n" + 
+                            "\x1b[3m\x1b[38;2;224;196;204mCongratulations, you have finished the opening section of Leo/need's story and reached a checkpoint! \n" + 
+                            "Do you want to...\x1b[0m",
                         choices: [
-                            {name: "-> next", value: "LNplaceholder"}, 
+                            {name: "continue", value: "LNplaceholder"}, 
                             {name: "choose a new path?", value: "chooseGroup"},  
                             {name: "Exit game", value: "itisfinished"}
                         ]
@@ -1182,7 +1210,7 @@ const args = yargs(hideBin(process.argv))
 //  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103,203
 //  narrator - e0c4ff->224,196,255
 
-// all scene separators are 75 '_'s long
+// all scene separators are 75 '_'s long & pov switches are 50 '~'s long
 
 //polish ideas: 
 // add colors to the character descriptions
