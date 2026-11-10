@@ -777,10 +777,11 @@ const args = yargs(hideBin(process.argv))
                     },
                     schoolSekai_1a: {
                         //intial convo w/ miku + luka
-                        prompt: "After a moment, the haze of triangles clears and your surroundings come back into focus. \n" + 
+                        prompt: "___________________________________________________________________________ \n" +
+                            "After a moment, the haze of triangles clears and your surroundings come back into focus. \n" + 
                             "\x1b[3m\x1b[38;2;51;170;238mwhat is this place? where am I?\x1b[0m Disoriented from the experience, you have barely shaken off your dizziness before you hear a familiar voice. \n" + 
                             "\"\x1b[38;2;51;204;186mThis is your SEKAI.\x1b[0m\" A girl with her marroon-tipped hair in dark blueish-green twintails extends a hand to help you up from the floor that you have just realized you are sitting on. \n" + 
-                            "As you take the offered hand, you take the chance to scrutinize the person who has just helped you and you notice that she is wearing a *will be added later*, but more importantly, she seems very familiar to you, and once you see her face, you recognize her instantly. \"\x1b[38;2;51;170;238mAre you..Miku!?\x1b[0m\" \n" + 
+                            "As you take the offered hand, you take the chance to scrutinize the person who has just helped you and you notice that she is wearing a school band uniform, but more importantly, she seems very familiar to you, and once you see her face, you recognize her instantly. \"\x1b[38;2;51;170;238mAre you..Miku!?\x1b[0m\" \n" + 
                             "\"\x1b[38;2;51;204;186mThat's my name~ Nice to meet you, Ichika.\x1b[0m\" \n" +
                             "\"\x1b[38;2;51;170;238mThis can't be real.. and how do you know my name?\x1b[0m\" You ask. \n" + 
                             "\"\x1b[38;2;255;186;204mThat is because this place- this SEKAi is created from the feelings of you and your friends.\x1b[0m\" \n" + 
@@ -814,7 +815,8 @@ const args = yargs(hideBin(process.argv))
                     },
                     ichiroom_2: {
                         //ichi wakes up and wnders + minor not flashback things (plain dialogue; may be changed later) + end of opening! maybe include comment from narrator about ending of opening
-                        prompt: "\n\n\n\n" + "..You blink open your eyes to find yourself face down on your desk. \n" + 
+                        prompt: "\n\n\n\n" + 
+                            "..You blink open your eyes to find yourself face down on your desk. \n" + 
                             "\x1b[3m\x1b[38;2;51;170;238mAh, I must have fallen asleep... That was such an odd dream\x1b[0m You stretch, yawning as you glance out the window. \x1b[3m\x1b[38;2;51;170;238m..its dark outside... I must have been asleep for a while\x1b[0m \n" +
                             "\x1b[3m\x1b[38;2;51;170;238m!..Wow,\x1b[0m You pause, mid-yawn, and turn fully towards the window. \"\x1b[38;2;51;170;238mThe stars are so bright tonight...\x1b[0m\" \n" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
