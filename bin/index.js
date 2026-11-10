@@ -673,7 +673,8 @@ const args = yargs(hideBin(process.argv))
                     },
                     LNscramCross_1b: {
                         prompt: "\"\x1b[38;2;51;170;238mShiho...! Um, you have your bass guitar... Are you going to practice?\x1b[0m\" \n" + 
-                            "\"\x1b[38;2;187;221;34mSo what if I am?\x1b[0m\" \"\x1b[38;2;51;170;238mAh.. Well...\x1b[0m\" ...Shiho crosses the street ahead of you before you can say another word.",
+                            "\"\x1b[38;2;187;221;34mSo what if I am?\x1b[0m\" \"\x1b[38;2;51;170;238mAh.. Well...\x1b[0m\" \"\x1b[38;2;187;221;34mLook, I need to go now.\x1b[0m\" \n" +
+                            "...Shiho crosses the street ahead of you before you can say another word.",
                         choices: [
                             {name: "-> next", value: "LNscramWalk_1"}
                         ]
@@ -716,7 +717,7 @@ const args = yargs(hideBin(process.argv))
                             "⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠃⡄⢠⢈⣆⠀⠀⠀⠀⠀⠀⠀⠐⠻⡼⠆⠀ \n" +
                             "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \n" +
                             //"insert shooting star art here" + hona, ichi, saki, shih, saki; use rgb 68 85 221 to color stars maybe 5 stars w/ miklu colored star in middle
-                            "\x1b[3m\x1b[38;2;238;102;102mThere's another one! \n\x1b[38;2;51;170;238mThey are all so pretty! \n\x1b[38;2;255;221;69mWe should all make a wish! I'm gonna wish we could stay like this forever! \n\x1b[38;2;187;221;34mSaki, you're not supposed to tell us your wish! \n\x1b[38;2;255;221;69mOh..Well I'm sure it will come true anyways!\x1b[0m \n\n\n" + 
+                            "\x1b[3m\x1b[38;2;238;102;102mThere's another one! \n\x1b[38;2;51;170;238mThey are all so pretty! \n\x1b[38;2;255;221;69mWe should all make a wish! I'm gonna wish we could stay like this, together, forever! \n\x1b[38;2;187;221;34mSaki, you're not supposed to tell us your wish! \n\x1b[38;2;255;221;69mOh..Well I'm sure it will come true anyways!\x1b[0m \n\n\n" + 
                             "\x1b[3m\x1b[38;2;51;170;238mThe stars were so bright that night...\x1b[0m  You walk back home, reminicing about your past.",
                         //you walk home, still abosrbded in thoughts about your friends *insert flashback here specifialcl of the own where theye afre on the junghle gym an them see the shoting stars* i wish we could be close like that again.... (maybe different place)
                         choices: [
@@ -745,7 +746,7 @@ const args = yargs(hideBin(process.argv))
                     ichiroom_1b: {
                         //ichi is seated and begins to work when she notcies phone screen flashing. 
                         prompt: "Pulling out an assignment, you begin to fill it out. \n" +
-                            "Suddenly, your phone screen starts flashing white! You...",
+                            "All of a sudden, your phone screen starts flashing white! You...",
                         choices: [
                             {name: "pick up your phone.", value: "schoolSekai_1a"},
                             {name: "ignore it and continue working.", value: "deadend2"}
@@ -766,44 +767,65 @@ const args = yargs(hideBin(process.argv))
                     ichiroom_1c: {
                         //contians scetion before ichi gets teleported to school sekai 
                         prompt: "The moment you pick up your phone, it stops flashing, and you realize that it is unlocked and open to your music playlists. \n" + 
-                            "*Untitled?* You squint at the new music track. *What song is that?* \n" + 
-                            "As you try to see the details of the music file, you click it, and your phone starts flashing more frequently than before. \n" + 
-                            "Suddenly, \"Eh~!!! What's is happening?*\"",
+                            "\x1b[3m\x1b[38;2;51;170;238mUntitled?\x1b[0m You squint at the new music track. \x1b[3m\x1b[38;2;51;170;238mWhat song is that?\x1b[0m \n" + 
+                            "As you try to see the details of the music file, you accidentally click it, and your phone starts flashing more frequently than before. \n" + 
+                            "Suddenly, translucent red, blue and yellow triangular shards appear and the world around you begins to fade into light as the shards begin to whirl around your body. \n" +
+                            "\"\x1b[38;2;51;170;238mEhhhh?! What's happening?\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "schoolSekai_1a"}
                         ]
                     },
                     schoolSekai_1a: {
                         //intial convo w/ miku + luka
-                        prompt: "" + 
-                            "\"Hello? IS anoy 1 thiere?\" idk ichika get tlak to miku and she comes tback to be still stand uin gup woith nophien and she gos to class. the end",
+                        prompt: "After a moment, the haze of triangles clears and your surroundings come back into focus. \n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238mwhat is this place? where am I?\x1b[0m Disoriented from the experience, you have barely shaken off your dizziness before you hear a familiar voice. \n" + 
+                            "\"\x1b[38;2;51;204;186mThis is your SEKAI.\x1b[0m\" A girl with her marroon-tipped hair in dark blueish-green twintails extends a hand to help you up from the floor that you have just realized you are sitting on. \n" + 
+                            "As you take the offered hand, you take the chance to scrutinize the person who has just helped you and you notice that she is wearing a *will be added later*, but more importantly, she seems very familiar to you, and once you see her face, you recognize her instantly. \"\x1b[38;2;51;170;238mAre you..Miku!?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;204;186mThat's my name~ Nice to meet you, Ichika.\x1b[0m\" \n" +
+                            "\"\x1b[38;2;51;170;238mThis can't be real.. and how do you know my name?\x1b[0m\" You ask. \n" + 
+                            "\"\x1b[38;2;255;186;204mThat is because this place- this SEKAi is created from the feelings of you and your friends.\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;170;238mLuka's here too!?\x1b[0m\" You gasp in surprise. \n" + 
+                            "\"\x1b[38;2;255;186;204mSorry to surprise you. However, there's nothing to be afraid of, we are here to help you.\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;170;238mHelp me... with what?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;204;186mHelping you discover your- no, you and your friends feelings!\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "schoolSekai_1b"}
                         ] 
                     },
                     schoolSekai_1b: {
                         //flashback sequence
-                        prompt: "idk",
+                        prompt: "\"\x1b[38;2;51;204;186mYou haven't forgotten who your friends are, right?~\x1b[0m\"" + 
+                            "\"\x1b[3m\x1b[38;2;255;221;69mI'm gonna wish we could stay like this, together, forever!\x1b[0m\" \"\x1b[3m\x1b[38;2;238;102;102mIt's nothing.\x1b[0m\" \"\x1b[3m\x1b[38;2;187;221;34mLook, I need to go now.\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;170;238mBut we aren't... And Saki...\x1b[0m\"",
                         choices: [
                             {name: "-> name", value: "schoolSekai_1c"}
                         ]
                     },
                     schoolSekai_1c: {
                         //sekai section after flashbakc sequence
-                        prompt: "idk",
+                        prompt: "\"\x1b[38;2;51;204;186mIt will be okay, Ichika. I'm sure you all share the same feelings.\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;170;238mWhat?\x1b[0m\" \n" + //ichi
+                            "\"\x1b[38;2;51;204;186mSo, don't worry. You'll see each other again, here.\x1b[0m\" \n" + //miku
+                            "\"\x1b[38;2;255;186;204mMiku and I will be waiting for you as well, so make sure to bring everyone here next time.\x1b[0m\" \n" + //luka
+                            "You see colorful shards begin to form around you, and as your surroundings begin to fade once more, you manage to gasp out one last question: \"\x1b[38;2;51;170;238mWhat exactly are you trying to tell me? Miku! Luka!\x1b[0m\" \n\n",  //ichi
                         choices: [
                             {name: "-> name", value: "ichiroom_2"}
                         ]
                     },
                     ichiroom_2: {
                         //ichi wakes up and wnders + minor not flashback things (plain dialogue; may be changed later) + end of opening! maybe include comment from narrator about ending of opening
-                        prompt: "idk \n" + 
+                        prompt: "\n\n\n\n" + "..You blink open your eyes to find yourself face down on your desk. \n" + 
+                            "\x1b[3m\x1b[38;2;51;170;238mAh, I must have fallen asleep... That was such an odd dream\x1b[0m You stretch, yawning as you glance out the window. \x1b[3m\x1b[38;2;51;170;238m..its dark outside... I must have been asleep for a while\x1b[0m \n" +
+                            "\x1b[3m\x1b[38;2;51;170;238m!..Wow,\x1b[0m You pause, mid-yawn, and turn fully towards the window. \"\x1b[38;2;51;170;238mThe stars are so bright tonight...\x1b[0m\" \n" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "honami's statement \n" + 
+                            "\"\x1b[38;2;238;102;102mHuh.. The stars are so pretty...\x1b[0m\"\n" + //hon
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "shiho's statement \n" +
+                            "\"\x1b[38;2;187;221;34mHmm?.. The stars are so visible tonight.. it's... been a while since I've looked up at the stars like this.\x1b[0m\" \n" + 
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" +  
-                            "saki's statement" + "\n\n\n\n\n\n\x1b[38;2;51;170;238m" + 
+                            "\"\x1b[38;2;255;221;69mHmmhmmhm ♪ hmmhmhmm ♪ I'm glad I changed to a new lip gloss! Now I'm all set for tomorrow.. I can't wait to start going to school again after so long! I bet Icchan and the others will be so surprised!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;221;69mOh! The stars are really super bright tonight! Whoa! A shooting star!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;221;69mI'll never forget that beautiful meteor shower we all saw together, a long time ago... Another shooting star? Well, I guess I should make another wish!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;221;69mI wish that the four of us will be able to watch a meteor shower again, just like we did back then!\x1b[0m\" \n" + "\n\n\n\n\n\n\x1b[38;2;51;170;238m" + 
                             "                                                      +++++   ++                   \n" +
                             "     *                                            ++++         +                   \n" +
                             "   ***                                         ++++           ++                   \n" +
