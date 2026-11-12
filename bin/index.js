@@ -799,7 +799,7 @@ const args = yargs(hideBin(process.argv))
                             "\"\x1b[3m\x1b[38;2;255;221;69mI'm gonna wish we could stay like this, together, forever!\x1b[0m\" \"\x1b[3m\x1b[38;2;238;102;102mIt's nothing.\x1b[0m\" \"\x1b[3m\x1b[38;2;187;221;34mLook, I need to go now.\x1b[0m\" \n" + 
                             "\"\x1b[38;2;51;170;238mBut we aren't... And Saki...\x1b[0m\"",
                         choices: [
-                            {name: "-> name", value: "schoolSekai_1c"}
+                            {name: "-> next", value: "schoolSekai_1c"}
                         ]
                     },
                     schoolSekai_1c: {
@@ -810,7 +810,7 @@ const args = yargs(hideBin(process.argv))
                             "\"\x1b[38;2;255;186;204mMiku and I will be waiting for you as well, so make sure to bring everyone here next time.\x1b[0m\" \n" + //luka
                             "You see colorful shards begin to form around you, and as your surroundings begin to fade once more, you manage to gasp out one last question: \"\x1b[38;2;51;170;238mWhat exactly are you trying to tell me? Miku! Luka!\x1b[0m\" \n\n",  //ichi
                         choices: [
-                            {name: "-> name", value: "ichiroom_2"}
+                            {name: "-> next", value: "ichiroom_2"}
                         ]
                     },
                     ichiroom_2: {
@@ -906,7 +906,9 @@ const args = yargs(hideBin(process.argv))
                         //minori dicides to elave early 
                         prompt: "ef",
                         choices: [
-                            {name: "Try again?", value ""}
+                            {name: "try again?", value: "MMJmiya_1"},
+                            {name: "try a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     }, 
                     MMJmiyagirlsroof_1b: {
@@ -918,9 +920,9 @@ const args = yargs(hideBin(process.argv))
                     },
                     stageSekai_1a: {
                         //minori arrives and describes the setting of the sekai
-                        prompt: "",
+                        prompt: "i forgot how the sekai snce goes, will check later",
                         choices: [
-                            {}
+                            {name: "-> next"}
                         ]
                     },
                     stageSekai_1b: {
