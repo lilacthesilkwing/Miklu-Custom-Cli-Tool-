@@ -854,7 +854,6 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     //leads to saki + other dead end 
-
                     afterSaki: {
                         prompt: "that one scene where saki jumpscares Ichika in the main story",
                         choices: [
@@ -885,28 +884,58 @@ const args = yargs(hideBin(process.argv))
                     //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
                 },
                 momojan: {
-                    minori: { 
+                    //minori submits her idol aplication and hopoes + flashback
+                    MMJmiya_1: { 
                         prompt: "mimrnori dwatches idoll!!! as phone blinks!!!!",
                         choices: [       
-                            {name: "tapp random thing", value: "harula"},
+                            {name: "->", value: "MMJmiyagirlsrool_1a"},
                             {name: "leeave it alone :(", value: "airli"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    harula: {
+                    MMJmiyagirlsroof_1a: {
+                        //minori trains on roof
                         prompt: "miku pops ou an ebeocems i ahuluscianotion",
                         choices: [
-                            {name: "go back!", value: "minori"},
-                            {name: "diff path?", value: "airli"}
+                            {name: "levae erly?", value: "minori"},
+                            {name: "keep practicing", value: "airli"}
                         ]
                     },
-                    airli: {
+                    MMJdeadend_1: {
+                        //minori dicides to elave early 
+                        prompt: "ef",
+                        choices: [
+                            {name: "Try again?", value ""}
+                        ]
+                    }, 
+                    MMJmiyagirlsroof_1b: {
+                        //minor loioks in
+                        prompt: "rf",
+                        choices: [
+                            {}
+                        ]
+                    },
+                    stageSekai_1a: {
+                        //minori arrives and describes the setting of the sekai
+                        prompt: "",
+                        choices: [
+                            {}
+                        ]
+                    },
+                    stageSekai_1b: {
+                        //minori talks to miku and rin idk i think endd on miku metioning that others are forgetting
                         prompt: "didnt work. minori dead :(",
                         choices: [
                             {name: "begin", value: "minori"},
                             {name: "diff path?", value: "harula"}
                         ]
+                    },
+                    stageSekai_1c: {
+                        //ending of talk with miku
+                    },
+                    MMJmiyagirlsroof_2: {
+                        //minori wakes up + haru cameo & checkpoint
                     }
                 },
                 vivibasu: {
@@ -1219,7 +1248,7 @@ const args = yargs(hideBin(process.argv))
 // eventually: visiual novel from the pov of all the main characters fallowing through main story 2nd person with bad end being world link 2 based
 
 //instructions for publishing
-//RUN: npm link (to test) -> npm version patch -> npm login -> npm publish i think
+//RUN: npm link (to test) -> npm version patch -> npm login -> npm publish ./Miklu-Custom-Cli-Tool- 2nd part not necessary sometimes tho i think
 
 //color codes notes
 // \x1b[36m to start and \x1b[0m to end (same end for all methods)

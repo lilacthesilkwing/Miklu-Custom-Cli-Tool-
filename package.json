@@ -1,6 +1,6 @@
 {
   "name": "treesekai",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "This is a cli tool based on Hatsune Miku from Project Sekai. \nCurrently, it has greetings for all of the different miku versions and descriptions for both the sekai's that each of those mikus reside in and the characters each miku is associated with + the opening chapter of the Leo/need main story.  \nOpening chapters for the rest of the groups coming soon! \n\nDependencies: yargs & @inquirer/prompts",
   "keywords": [
     "miku",
