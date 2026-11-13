@@ -3,7 +3,7 @@
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const { input, select } = require("@inquirer/prompts");
-const { command } = require("yargs");
+const { command } = require("yargs"); 
 
 // Define the CLI commands and options is what it told me to write, but... 
 // i honestly hnave no ide what this code does, but...
@@ -874,43 +874,63 @@ const args = yargs(hideBin(process.argv))
                         }
                     },
                     LNplaceholder: {
-                        prompt: "uh oh! if you're seeing this, then that means that this part of the story hasn't been finished yet!",
+                        prompt: "\x1b[3m\x1b[38;2;244;196;255muh oh! if you're seeing this, then that means that this part of the story hasn't been finished yet! \n" + 
+                            "Would you like to...\x1b[0m",
                         choices: [
                             {name: "try again?", value: "LNclass1C_1"},
                             {name: "try a new path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     }
-                    //{name: "sec1", value: "opening", prompt: "Ichika does something idk what it is"}
+                    //{name: "sec1", value: "opening", 
                 },
                 momojan: {
                     //minori submits her idol aplication and hopoes + flashback
                     MMJmiya_1: { 
-                        prompt: "mimrnori dwatches idoll!!! as phone blinks!!!!",
-                        choices: [       
-                            {name: "->", value: "MMJmiyagirlsrool_1a"},
-                            {name: "leeave it alone :(", value: "airli"},
+                        prompt: "You are walking to school, and you see a nearby mailbox and pause your walk to put an envelope into it. \n" + 
+                            "\"\x1b[38;2;255;205;172mOk, I've put it in.. Oh, I hope my application gets accepted this time!\x1b[0m\" \n" + 
+                            "\x1b[3m\x1b[38;2;255;205;172mI've always wanted to be an idol, but my applications keep getting rejected...\x1b[0m You stand in front of the mailbox, unmoving and deep in thought. \n" + 
+                            "\"\x1b[3m\x1b[38;2;153;205;255mTomorrow will be a better day.\x1b[0m\" \n" + 
+                            "\"\x1b[3m\x1b[38;2;153;205;255mIt's my duty to spread hope as an idol.. So I'll keep trying harder and harder to become the best idol for all of you!\x1b[0m\" \n " + 
+                            "\"\x1b[38;2;255;205;172mI'll just have to keep trying harder and harder!\x1b[0m\" Glancing at your watch, you gasp, startled. \n" +
+                            "\"\x1b[38;2;255;205;172m..Oh no, I'm going to be laaaaaaaaaate!\x1b[0m\"",
+                        choices: [
+                            {name: "-> next", value: "MMJmiyagirlsroof_1a"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     MMJmiyagirlsroof_1a: {
                         //minori trains on roof
-                        prompt: "miku pops ou an ebeocems i ahuluscianotion",
+                        prompt: "___________________________________________________________________________ \n" + 
+                            "After school, you go up to the roof of the school to practice your dancing so you can become the best idol you can be! \n" +
+                            "/1,2,3,4.. 1,2,3,whoa!/ You misstep, almost realizing it too late, but you catch yourself before you fall. \n" + 
+                            "*Haa..* /I always mess up during that section../ You sit down on the roof floor for a bit to rest, and you look at the sky over the rooftop, noting how the sun is beginning to start setting. \n" + 
+                            "/I guess I should start packing up now../ After resting for a bit longer, you..",
                         choices: [
-                            {name: "levae erly?", value: "minori"},
-                            {name: "keep practicing", value: "airli"}
+                            {name: "begin to pack up your things.", value: "MMJdeadend_1"},
+                            {name: "continue practicing.", value: "MMJmiyagirlsroof_1"}
                         ]
                     },
                     MMJdeadend_1: {
-                        //minori dicides to elave early 
-                        prompt: "ef",
+                        //minori dicides to elave early, she is not accepted to th eagency she aplleid to she never bcomes and idol i guess
+                        prompt: "After packing up your things, you exit the rooftop, glancing back once to see the sunset.",
                         choices: [
-                            {name: "try again?", value: "MMJmiya_1"},
-                            {name: "try a new path?", value: "chooseGroup"},
-                            {name: "Exit game", value: "itisfinished"}
+                            {name: "-> next", value: "MMJmiya_1"},
+                            {name: "try a new path?", value: "chooseGroup"}
                         ]
                     }, 
+                    MMJdeadend_1b: {
+                        //minor regjected over and over ag
+                        prompt: "You are rejcted but can mor trejct" + 
+                            "You don't ever /stop/ sending in applications, but you slowly start to lose hope in your dream.. \n\n\n\n\n\n\n"  + 
+                            "/Well, that was a rather unsatisfying ending, don't you think? \n A truly resilient hope, dimming ever so slowly...\n.\n.\n.\n..Would you like to...",
+                        choices: [
+                            {name: "try again?", value: "MMJmiya_1"}, 
+                            {name: "try a new path?", value: "chooseGroup"}, 
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
+                    },
                     MMJmiyagirlsroof_1b: {
                         //minor loioks in
                         prompt: "rf",
@@ -938,6 +958,14 @@ const args = yargs(hideBin(process.argv))
                     },
                     MMJmiyagirlsroof_2: {
                         //minori wakes up + haru cameo & checkpoint
+                    },
+                    MMJplaceholder: {
+                        prompt: "ff",
+                        choices: [
+                            {name: "try again?", value: "k"}, 
+                            {name: "try a new path?", value: "t"},
+                            {name: "Exit game", value: ""}
+                        ]
                     }
                 },
                 vivibasu: {
@@ -1025,7 +1053,9 @@ const args = yargs(hideBin(process.argv))
                 let chooseAnotherGroup = false;
                 //actual player selection 
                 const group = await select({
-                    message: "Who would you like to play as? \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n(This function does not work as intended and will be fixed in the next update, so do NOT continue any further!!!!!!!! \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n\n or do, I can't really stop you, can I?",
+                    message: "Who would you like to play as? \n" + 
+                        "~WARNING~WARNING~WARNING~WARNING~WARNING~ \n" + 
+                        "(Only the FIRST TWO selections work as intended and the others will be fixed in the next update, so do NOT continue any further!!!!!!!! \n~WARNING~WARNING~WARNING~WARNING~WARNING~ \n\n or do, I can't really stop you, can I? \n         • ᴗ < ",
                     choices: [
                         { name: "Ichika Hoshino", value: "leonii" },
                         { name: "Minori Hanasato", value: "momojan" },
@@ -1055,12 +1085,12 @@ const args = yargs(hideBin(process.argv))
                         }
 
                         if (sceneName === "itisfinished") {
-                            console.log("Thank you for playing!!");
+                            console.log("\x1b[3m\x1b[38;2;224;196;255mThank you for playing!!\x1b[0m");
                             return;
                         }
                     }
                 } else if (group === "momojan") {
-                    let sceneName = "minori";
+                    let sceneName = "MMJmiya_1";
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
                         console.log(scene.prompt);
@@ -1230,19 +1260,13 @@ const args = yargs(hideBin(process.argv))
             console.log("        Amia              Nightcord at 25:00 miklu's description of Mizuki Akiyama\n")
             console.log("  calc           Does arthmitheic functions (+ - * /) \n");
             console.log("  letsplay       Text-based choose-your-own-adveture game that allows you to experience each groups main story as the group leader");
-            console.log("                 NOTE: currently unfinished, however, at least one of the main stories is partially playable")
+            console.log("                 NOTE: currently unfinished, however, at least one of the main stories is playable!")
             console.log("  helpme         Shows this information, duh!");
         }
     )
     .demandCommand(1, "Choose a command. Try 'miklu greeting --name=YourName' to say hello to Miklu!")
     .help()
     .parseAsync();
-
-//
-
-
-
-
 
 
 //to do: test miklu desc legacy (+ all the other legacy commands)
@@ -1253,7 +1277,7 @@ const args = yargs(hideBin(process.argv))
 //RUN: npm link (to test) -> npm version patch -> npm login -> npm publish ./Miklu-Custom-Cli-Tool- 2nd part not necessary sometimes tho i think
 
 //color codes notes
-// \x1b[36m to start and \x1b[0m to end (same end for all methods)
+// \x1b[36m to start and \x1b[0m to end (same end for all methods) [to end just italics use \x1b[23m]
 // 1st number can be replaced with: 36->cyan; 31->red; 32->green; 33->yellow; 34->blue; 35->magenta (don't use! can't be used for all 26 characters)
 // rgb true color: \x1b[38;2;<r>;<g>;<b>m to begin 
 // pjsk character hex codes: (will be changed to rgb codes)
