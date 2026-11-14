@@ -8,9 +8,9 @@ const { command } = require("yargs");
 // Define the CLI commands and options is what it told me to write, but... 
 // i honestly hnave no ide what this code does, but...
  
-// it looks like it makes a command line interface 
+// it looks like it makes a command line interface
 // for a character named Miklu to greet people in different ways 
-// based on the command used. 
+// based on the command used.  
 // It uses the yargs library to parse command line arguments and define commands and options. 
 // The code defines a "greeting" command with subcommands for different greetings, 
 // and a "help" command to show help information. 
