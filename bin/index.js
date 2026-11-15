@@ -891,7 +891,7 @@ const args = yargs(hideBin(process.argv))
                             "\"\x1b[38;2;255;205;172mOk, I've put it in.. Oh, I hope my application gets accepted this time!\x1b[0m\" \n" + 
                             "\x1b[3m\x1b[38;2;255;205;172mI've always wanted to be an idol, but my applications keep getting rejected...\x1b[0m You stand in front of the mailbox, unmoving and deep in thought. \n" + 
                             "\"\x1b[3m\x1b[38;2;153;205;255mTomorrow will be a better day.\x1b[0m\" \n" + 
-                            "\"\x1b[3m\x1b[38;2;153;205;255mIt's my duty to spread hope as an idol.. So I'll keep trying harder and harder to become the best idol for all of you!\x1b[0m\" \n " + 
+                            "\"\x1b[3m\x1b[38;2;153;205;255mIt's my duty to spread hope as an idol.. So I'll keep trying harder and harder to become the best idol for all of you!\x1b[0m\" \n" + 
                             "\"\x1b[38;2;255;205;172mI'll just have to keep trying harder and harder!\x1b[0m\" Glancing at your watch, you gasp, startled. \n" +
                             "\"\x1b[38;2;255;205;172m..Oh no, I'm going to be laaaaaaaaaate!\x1b[0m\"",
                         choices: [
@@ -904,63 +904,90 @@ const args = yargs(hideBin(process.argv))
                         //minori trains on roof
                         prompt: "___________________________________________________________________________ \n" + 
                             "After school, you go up to the roof of the school to practice your dancing so you can become the best idol you can be! \n" +
-                            "/1,2,3,4.. 1,2,3,whoa!/ You misstep, almost realizing it too late, but you catch yourself before you fall. \n" + 
-                            "*Haa..* /I always mess up during that section../ You sit down on the roof floor for a bit to rest, and you look at the sky over the rooftop, noting how the sun is beginning to start setting. \n" + 
-                            "/I guess I should start packing up now../ After resting for a bit longer, you..",
+                            "\x1b[3m\x1b[38;2;225;205;172m1,2,3,4.. 1,2,3,whoa!\x1b[0m You misstep, and realizing it too late, you fall on your back. \n" + 
+                            "\x1b[3m\x1b[38;2;225;205;172m*Haa..* I always mess up during that section..\x1b[0m You push yourself up to a sitting position on the roof floor for a bit to rest, and you look at the sky over the rooftop, noting how the sun has begun to start setting. \n" + 
+                            "\x1b[3m\x1b[38;2;255;205;172mI guess I should start packing up now..\x1b[0m After resting for a bit longer, you..",
                         choices: [
-                            {name: "begin to pack up your things.", value: "MMJdeadend_1"},
+                            {name: "begin to pack up your things.", value: "MMJdeadend_1aa"},
                             {name: "continue practicing.", value: "MMJmiyagirlsroof_1"}
                         ]
                     },
-                    MMJdeadend_1: {
+                    MMJdeadend_1aa: {
                         //minori dicides to elave early, she is not accepted to th eagency she aplleid to she never bcomes and idol i guess
                         prompt: "After packing up your things, you exit the rooftop, glancing back once to see the sunset.",
                         choices: [
-                            {name: "-> next", value: "MMJmiya_1"},
-                            {name: "try a new path?", value: "chooseGroup"}
+                            {name: "-> next", value: "MMJdeadend_1b"}
                         ]
                     }, 
                     MMJdeadend_1b: {
                         //minor regjected over and over ag
-                        prompt: "You are rejcted but can mor trejct" + 
-                            "You don't ever /stop/ sending in applications, but you slowly start to lose hope in your dream.. \n\n\n\n\n\n\n"  + 
-                            "/Well, that was a rather unsatisfying ending, don't you think? \n A truly resilient hope, dimming ever so slowly...\n.\n.\n.\n..Would you like to...",
-                        choices: [
+                        prompt: "Unfortunately, your application is rejected, \x1b[3magain,\x1b[0m and all of the applications that you put together and submit are also rejected. \n" + 
+                            "You don't ever \x1b[3mstop\x1b[0m sending in applications, but you slowly start to lose hope in your dream.. \n\n\n\n\n\n\n"  + 
+                            "\x1b[3m\x1b[38;2;224;196;255mWell, that was a rather unsatisfying ending, don't you think? \nA truly resilient hope, dimming ever so slowly...\n.\n.\n.\n..Would you like to...\x1b[0m",
+                        choices: [ 
                             {name: "try again?", value: "MMJmiya_1"}, 
                             {name: "try a new path?", value: "chooseGroup"}, 
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     MMJmiyagirlsroof_1b: {
-                        //minor loioks in
-                        prompt: "rf",
+                        //minor loioks in (pls pls expand on 1st line before shipping)
+                        prompt: "/No, I need to focus! I bet Haruka's excercise routine is way more difficult than this!/ \n" + 
+                            "You stand up, ready to start practicing.. \"Did my phone just flash?\" \n" + 
+                            "The screen of your phone has started flashing white. \n" + 
+                            "Although, the music that you are practicing with is still playing.. You decide to...",
                         choices: [
-                            {}
+                            {name: "check your phone.", value: "stageSekai_1a"},
+                            {name: "continue practicing.", value: "MMJdeadend_1ab"}
+                        ]
+                    },
+                    MMJdeadend_1ab: {
+                        prompt: "You continue practicing, and while you aren't quite able to perfect that one move, you \x1b[3malmost\x1b[0m perfect the rest of the song!",
+                        choices: [
+                            {name: "-> next", value: "MMJdeadend_b"}
+                        ]
+                    },
+                    MMJmiyagirlsroof_1c: {
+                        prompt: "Picking up your phone, you notice a new song in your workout playlist. \n" + 
+                            "\"Untitled? I don't remember downloading this song...\" You press on the song's icon, and as your phone stops flashing white, the song icon starts flashing instead! \n" + 
+                            "Suddenly, translucent red, blue, and yellow triangles appear around you and the world around you begins to fade into light as the shards begin to swirl around your body. \n" + 
+                            "\"Wait! What's happening?\"",
+                        choices: [
+                            //
+                            {name: "-> next", value: "stageSekai_1a "}
                         ]
                     },
                     stageSekai_1a: {
                         //minori arrives and describes the setting of the sekai
-                        prompt: "i forgot how the sekai snce goes, will check later",
-                        choices: [
-                            {name: "-> next"}
+                        prompt: "___________________________________________________________________________ \n" +
+                            "You open your eyes, squinting at the bright lights all around you. \"\"i forgot how the sekai snc" + 
+                            "As your eyes adjust to the light, you can finally take in your surroundings, and you realize that you are in a concert hall, like the ones that you've seen Haruka perform in! \n" + 
+                            "/I must be dreamiing... I've always wanted to perform in a place like this as an idol!.../ As you look around, your eyes shining with awe, a voice calls out to you from behind. \n" + 
+                            "\"\" You whip around to see who spoke and you ",
+                        choices: [ 
+                            {name: "-> next", value: "stageSekai_1b"}
                         ]
                     },
                     stageSekai_1b: {
                         //minori talks to miku and rin idk i think endd on miku metioning that others are forgetting
                         prompt: "didnt work. minori dead :(",
                         choices: [
-                            {name: "begin", value: "minori"},
-                            {name: "diff path?", value: "harula"}
+                            {name: "-> next", value: "minori"}
                         ]
                     },
                     stageSekai_1c: {
                         //ending of talk with miku
+                        prompt: "h",
+                        choices: [
+                            {name: "-> next", value: "r"}
+                        ]
                     },
                     MMJmiyagirlsroof_2: {
                         //minori wakes up + haru cameo & checkpoint
                     },
                     MMJplaceholder: {
-                        prompt: "ff",
+                        prompt: "\x1b[38;2;224uh oh! if you're seeing this, then that means that this part of the story has n't been finished yet! \n" + 
+                            "Would you like to...\x1b[0m",
                         choices: [
                             {name: "try again?", value: "k"}, 
                             {name: "try a new path?", value: "t"},
