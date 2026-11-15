@@ -3,7 +3,7 @@ Hello.
 
 This is a CLI tool that I made based on the Vocaloid Hatsune Miku and the mobile rhythm game Project Sekai: Colorful Stage, using JavaScript.
 Using the available commands should allow you to talk with the CLI tool and learn more information about the characters and setting of the game, as well as even play as the group leader of each group. 
-- Start by typing 'miklu' into the terminal, and follow the directions from there.
+- Start by typing 'miklu' into the terminal after installing the npm treesekai package, and follow the directions from there.
 
 Command descriptions: 
 - greeting - Text-only command. 
