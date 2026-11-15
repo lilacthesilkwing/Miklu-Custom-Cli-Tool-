@@ -963,7 +963,7 @@ const args = yargs(hideBin(process.argv))
                             "You open your eyes, squinting at the bright lights all around you. \"\"i forgot how the sekai snc" + 
                             "As your eyes adjust to the light, you can finally take in your surroundings, and you realize that you are in a concert hall, like the ones that you've seen Haruka perform in! \n" + 
                             "/I must be dreamiing... I've always wanted to perform in a place like this as an idol!.../ As you look around, your eyes shining with awe, a voice calls out to you from behind. \n" + 
-                            "\"\" You whip around to see who spoke and you see a girl with her greenish-blue hair in ",
+                            "\"\" You whip around to see who spoke and you see a girl with her greenish-blue hair in twintails wave at you ",
                         choices: [ 
                             {name: "-> next", value: "stageSekai_1b"}
                         ]
