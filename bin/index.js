@@ -909,7 +909,7 @@ const args = yargs(hideBin(process.argv))
                             "\x1b[3m\x1b[38;2;255;205;172mI guess I should start packing up now..\x1b[0m After resting for a bit longer, you..",
                         choices: [
                             {name: "begin to pack up your things.", value: "MMJdeadend_1aa"},
-                            {name: "continue practicing.", value: "MMJmiyagirlsroof_1"}
+                            {name: "continue practicing.", value: "MMJmiyagirlsroof_1b"}
                         ]
                     },
                     MMJdeadend_1aa: {
@@ -932,8 +932,8 @@ const args = yargs(hideBin(process.argv))
                     },
                     MMJmiyagirlsroof_1b: {
                         //minor loioks in (pls pls expand on 1st line before shipping)
-                        prompt: "/No, I need to focus! I bet Haruka's excercise routine is way more difficult than this!/ \n" + 
-                            "You stand up, ready to start practicing.. \"Did my phone just flash?\" \n" + 
+                        prompt: "\x1b[3m\x1b[38;2;225;205;172mNo, I need to focus! I bet Haruka's excercise routine is way more difficult than this!\x1b[0m \n" + 
+                            "You stand up, ready to start practicing.. \"\x1b[38;2;225;205;172mDid my phone just flash?\x1b[0m\" \n" + 
                             "The screen of your phone has started flashing white. \n" + 
                             "Although, the music that you are practicing with is still playing.. You decide to...",
                         choices: [
@@ -949,9 +949,9 @@ const args = yargs(hideBin(process.argv))
                     },
                     MMJmiyagirlsroof_1c: {
                         prompt: "Picking up your phone, you notice a new song in your workout playlist. \n" + 
-                            "\"Untitled? I don't remember downloading this song...\" You press on the song's icon, and as your phone stops flashing white, the song icon starts flashing instead! \n" + 
+                            "\"\x1b[38;2;225;205;172mUntitled? I don't remember downloading this song...\x1b[0m\" You press on the song's icon, and as your phone stops flashing white, the song icon starts flashing instead! \n" + 
                             "Suddenly, translucent red, blue, and yellow triangles appear around you and the world around you begins to fade into light as the shards begin to swirl around your body. \n" + 
-                            "\"Wait! What's happening?\"",
+                            "\"\x1b[38;2;225;205;172mWait! What's happening?\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "stageSekai_1a "}
                         ]
@@ -959,58 +959,90 @@ const args = yargs(hideBin(process.argv))
                     stageSekai_1a: {
                         //minori arrives and describes the setting of the sekai
                         prompt: "___________________________________________________________________________ \n" +
-                            "You open your eyes, squinting at the bright lights all around you. \"\"i forgot how the sekai snc" + 
+                            "You open your eyes, squinting at the bright lights all around you. \"\x1b[38;2;225;205;172mWhere am I? What is this place?\x1b[0m\" \n" + 
                             "As your eyes adjust to the light, you can finally take in your surroundings, and you realize that you are in a concert hall, like the ones that you've seen Haruka perform in! \n" + 
-                            "/I must be dreamiing... I've always wanted to perform in a place like this as an idol!.../ As you look around, your eyes shining with awe, a voice calls out to you from behind. \n" + 
-                            "\"Hello, Minori!\" You whip around to see who spoke and you see a girl with her greenish-blue hair in twintails wave at you friendlily. \n" + 
-                            "\"Wh-Who are you?!\"",
+                            "\x1b[3m\x1b[38;2;225;205;172mI must be dreamiing... I've always wanted to perform in a place like this as an idol!...\x1b[0m As you look around, your eyes shining with awe, a voice calls out to you from behind. \n" + 
+                            "\"\x1b[38;2;51;204;186mHello, Minori!\x1b[0m\" You whip around to see who spoke and you see a girl with her greenish-blue hair in twintails wave at you friendlily. \n" + 
+                            "\"\x1b[38;2;225;201;172mWh-Who are you?!\x1b[0m\"",
                         choices: [ 
                             {name: "-> next", value: "stageSekai_1b"}
                         ]
                     },
                     stageSekai_1b: {
                         //minori talks to miku and rin idk i think endd on miku metioning that others are forgetting
-                        prompt: "\"Wait.. You're Miku, aren't you?\" The girl nods, smiling, and you notice she is wearing a white and gray idol-style dress with teal accents. \n" + 
-                            "\"Hey, don't forget about me! Welcome to your SEKAI, Minori-chan!\" Another girl, this time with her hair styled in a yellow bob, runs up behind the first girl. \n" + 
-                            "\"Well now, I absolutely /have/ to be dreaming.. How else would I be speaking to Miku and Rin otherwise?\" You exclaim, noticing that Rin is also wearing the same outfit as Miku, but instead with yellow accents. \"Then, what is this place?\" \n" + 
-                            "\"That is because this place is your SEKAI!\" \n" + //miku
-                            "\"Huuuh? SEKAI?\"" + //minori
-                            "\"Yup! A world created from all of your true feelings! And we're here in this SEKAI to help you discover those feelings!We are t\" \n" + //rin
-                            "\"That's right! Because when you all discover your true feelings, they will give birth to songs!\" \n" + //miku
-                            "\"Wait-Wait! True feelings? Songs? I don't understand anything that you guys are talking about!\" \n" + //minori
-                            "\"Not even a bit? Well, it seems that you have found your true feelings anyway.\" \n" + //rin
-                            "\"/My/ true feelings? Do you mean my dream of becoming an idol?\"" + //minori
-                            "\"It might be that or it might not, but either way you should try to hold on to those feelings and not forget them.. Because the others are starting to lose sight of theirs.\" \n",
+                        prompt: "\"\x1b[38;2;225;205;172mWait.. You're Miku, aren't you?\x1b[0m\" The girl nods, smiling, and you notice she is wearing a white and gray idol-style dress with teal accents. \n" + 
+                            "\"\x1b[38;2;255;204;17mHey, don't forget about me! Welcome to your SEKAI, Minori-chan!\x1b[0m\" Another girl, this time with her hair styled in a yellow bob, runs up behind the first girl. \n" + 
+                            "\"\x1b[38;2;225;205;172mWell now, I absolutely \x1b[3mhave\x1b[23m to be dreaming.. How else would I be speaking to Miku and Rin otherwise?\x1b[0m\" You exclaim, noticing that Rin is also wearing the same outfit as Miku, but instead with yellow accents. \"\x1b[38;2;225;205;172mThen, what is this place?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;51;204;186mThat is because this place is your SEKAI!\x1b[0m\" \n" + //miku
+                            "\"\x1b[38;2;225;205;172mHuuuh? SEKAI?\x1b[0m\" \n" + //minori
+                            "\"\x1b[38;2;255;204;17mYup! A world created from all of your true feelings! And we're here in this SEKAI to help you discover those feelings!\x1b[0m\" \n" + //rin
+                            "\"\x1b[38;2;51;204;186mThat's right! Because when you all discover your true feelings, they will give birth to songs!\x1b[0m\" \n" + //miku
+                            "\"\x1b[38;2;225;205;172mWait-Wait! True feelings? Songs? I don't understand anything that you guys are talking about!\x1b[0m\" \n" + //minori
+                            "\"\x1b[38;2;255;204;17mNot even a bit? Well, it seems that you've already found your true feelings either way.\x1b[0m\" \n" + //rin
+                            "\"\x1b[38;2;225;205;172mMy true feelings? Do you mean my dream of becoming an idol?\x1b[0m\" \n" + //minori
+                            "\"\x1b[38;2;51;204;186mIt might be that or it might not, but either way you should try to hold on to those feelings and not forget them.. Because the others are starting to lose sight of theirs.\x1b[0m\" \n",
                         choices: [
-                            {name: "-> next", value: "minori"}
+                            {name: "-> next", value: "stageSekai_1c"}
                         ]
                     },
                     stageSekai_1c: {
                         //ending of talk with miku
-                        prompt: "\"Um, what do you mean by that? Could you be a bit more specific?\" You ask, tilting your head to the side in confusion. \n" + 
-                            "\"...\" Miku peeks her head out of the side of the stage, and quickly pulls it back in worry. " + 
-                            "\"Ahh! the show is about to start! Sorry, Minori.. We have to go now. See you around!\" Before she even finished her sentence, Miku runs out onto the stage to start the show. \n" + 
-                            "\"We'll both be cheering for al of you!\" You open your mouth to respond, but Rin is gone befor she can hear you. \n" + 
-                            "\"Uh.. wait!\" The last thing you see is the girls waving to the audience as everything both fades and brightens into white light. \n\n",
+                        prompt: "\"\x1b[38;2;225;205;172mAh, what do you mean by that? Could you be a bit more specific?\x1b[0m\" You ask, tilting your head to the side in confusion. \n" + 
+                            "\"\x1b[38;2;51;204;186m...\x1b[0m\" Miku peeks her head out of the side of the stage, and quickly pulls it back in worry. \n" + 
+                            "\"\x1b[38;2;51;204;186mAhh! the show is about to start! Sorry, Minori.. We have to go now. See you around!\x1b[0m\" Before she even finishes her sentence, Miku runs out onto the stage to start the show. \n" + 
+                            "\"\x1b[38;2;255;204;17mWe'll both be cheering for all of you!\x1b[0m\" You open your mouth to respond, but Rin is gone before she can hear you. \n" + 
+                            "\"\x1b[38;2;225;205;172m..wait!\x1b[0m\" The last thing you see is the girls waving to the audience as everything both fades and brightens into white light. \n\n",
                         choices: [
-                            {name: "-> next", value: "r"}
+                            {name: "-> next", value: "MMJmiyagirlsroof_2"}
                         ]
                     },
                     MMJmiyagirlsroof_2: {
                         //minori wakes up + haru cameo & checkpoint
                         prompt: "\n\n\n\n" + 
-                            "*Achoo!* You open your eyes to find yourself slumped on the side of the roof. \n" + 
-                            "/Haaaa!? I fell asleep?..and on the roof too... I must have been really tired../ You stand up and stretch, yawning. \n" + 
-                            "\"Whelp, time to get back to practicing!\"" +
+                            "\x1b[3m\x1b[38;2;255;205;172m*Achoo!*\x1b[0m You open your eyes to find yourself slumped on the side of the roof. \n" + 
+                            "\x1b[3m\x1b[38;2;255;205;172mHaaaa!? I fell asleep?..and on the roof too... I must have been really tired..\x1b[0m You stand up and stretch, yawning. \n" + 
+                            "\"\x1b[38;2;255;205;172mWhelp, time to get back to practicing!\x1b[0m\"" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "\"Are my documents ready?\" A blue-haired girl asks a teacher." + 
+                            "\"\x1b[38;2;153;205;255mAre my documents ready?\x1b[0m\" A blue-haired girl asks a teacher." + 
                             "The teacher replies affimatively. \"Yes.. but are you sure? There is still time to..\" " + 
-                            "\"I won't need to. After all... I have decided to quit being an idol.\"" +
+                            "\"\x1b[38;2;153;205;255mI won't need to. After all... I have decided to quit being an idol.\x1b[0m\"" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "\"Okay, I'm going to tackle that part that I keep messing up on!\" \n" + 
-                            "\"As long as I keep trying harder and harder, I will be able to become a great idol like Haruka!\" \n" + 
+                            "\"\x1b[38;2;255;205;172mOkay, I'm going to tackle that part that I keep messing up on!\x1b[0m\" \n" + 
+                            "\x1b[3m\x1b[38;2;255;205;172mAs long as I keep trying harder and harder, I will be able to become a great idol like Haruka!\x1b[0m \n" + "\n\n\n\n\n\n\x1b[38;2;108;203;32m" +
+                            "   .=*######*-.   .+*######*-..+*#%######*=. =*#############*+-:+*###############**+**#####*+:   .=*######*+..-*#%%###%%#+. :+#############*+-.=*################*+.     \n" +
+                            "  *%+.......:*%*+##+.......:*%#+..       .+#%*:..............-*#=.................:*:.......=##+*%*........+%%*:.       .=#%#=..............:+#+..................+%+.   \n" +
+                            " -%=          .-+:    . ..   .   .:=++=:    .        .....             ..........             :*-           .    .-===-.   ..  .....              .                -%-   \n" +
+                            " -%-  *******:     +******:    =**********+    .=====++++++++=:   =====++++++++++:   .::.=**=     .+*****-    .+*********=.   .-====+++++++++-   ------=========-  -%=   \n" +
+                            " -%-  *********=.*********:  .**************.  .+++++++++++++++=  =====++++++++++:   .:-******+ :+******#+  .=*************=  .-====++++++++++=. -==============-  -%=   \n" +
+                            " -%-  ********************:  *****.    -*****. .++++-      .+++=. =++++.             :****************###+  =****-    .+****=  =++++.      -==== -====-            +#:   \n" +
+                            " -%-  *****:=*******:*****: +****.      :****- .+++++++++++#%**+. =++++********+.    :****=.+*****+--####+ :+***-       -:::-  =++++-------===-: -====+++++++++-  *#:    \n" +
+                            " -%-  *****:  :**+   *****: *****.      .****- .++++#%%%%%%%%%+   =++++********+.    :****=   =*=.  -####+ :+***-       -::::  =++++=========-.  -----+++++++++-  *#.    \n" +
+                            " -%-  *****:         *****: .*****.    :*****. .+++++---=****=.   =++++........      :****=         -####+ .*####-.   .=+*++:  =++++-----===+:   -====- .......   .+#:   \n" +
+                            " -%-  *****:         *****:  -**************:  .+++*=    .++==-   =++++##########:   :****=         -####+  .*######*******=  .--+++.    ====-. .=====-----======  -%=   \n" +
+                            " -%-  +****:         *****:   .***********=.   .****=     -+===-  =++++#%%%%%%%%%:   :####=         -####+    -########**=:....=---+.....:=====..==----------+++=  -%=   \n" +
+                            " -%-  ......         ......      :=***=-.      ......      .....  ....................::::...........::::........-=++=-........:::::......:::::...::::::::::...:.  -%=   \n" +
+                            " .*%=          .======.                      ..............................................................................................................:      -%*.   \n" +
+                            "   :*###%%##=  -======-    .................................................................................................................................  :%%#*.     \n" +
+                            "     .##:      .======.    .................................................................................................................................  .%+        \n" +
+                            "    .*#.  -=====:===-      .......========....-=======..........========:...:=========-............:=========-...:====================:........========:....   %*        \n" +
+                            "    .#+  .============.    .......========....========..........========:...:============........============-...:======================-......========.....   %*        \n" +
+                            "     *%:  -======.=======  .......========....========..........========:...:==============:...==============-...:========================    .========.      +%=        \n" +
+                            "     .#+  :====  .=======.  ......========....========..........========:...:================================-   ==========================   .========. .#%%%#.         \n" +
+                            "      +%=         .====.    ......========....========.......  .========:   -================================-   =========........=========.  .========. .#*             \n" +
+                            "       :#%*+=.      ..      .    .========.   ========:        .========:   -========-==============-========-   =========        :========:  .========. .#*             \n" +
+                            "          :*#. .-======-.        .========.   ========:        .========:   -========  :==========.  ========-   ==========================.  .========. .#*             \n" +
+                            "           *#. .========.        .========.   ========:        .========:   -========    .=====-     ========-   =========================.    ========  :#+             \n" +
+                            "           *#. .=========        =========.   =========        :========.   -========  --   ..   -:  ========-   ========================.  :   :====:  .*%.             \n" +
+                            "           -%-  ==========:    -==========    :==========    :==========    -========  =#%+.  .+%#-  ========-   ======================:   +%-   .:-.   -#*.             \n" +
+                            "           .##   ========================  ..  -=======================.    -=======-  =%:+%%%%+-%-  ========-   =========--------::.    =%#=  :======-  -#=             \n" +
+                            "            .#*  .======================  .*%:  :=====================   .  -=======-  =%-      -%-  ========-   =========           .:#%###. .========. .#*             \n" +
+                            "             :%#.  :==================.  .##*%-   ==================:  .*-  -=======-  =%-      -%-  ========-   =========  -@%%%%%%%#+.  *#.  ========. .#*             \n" +
+                            "              .*%+.   =============-   .+%+. -#*.   :============-.   -%%-  -========  =%-      =%-  ========-   =========  -%=           .%*  .=====-   +%:             \n" +
+                            "                :*%*:     .::--:     :*%+.    .+##:     .:--:.     .+%#-%*             +%:      :%+                         =%-            -%*:        .*#:              \n" +
+                            "                  .=#%*=..      .:+#%#=.         -*%#+:..     ..=*%#+.  -%#=:::::::::-*%=        =%#-:::::::::=*=:::::::::-*%=              .+##*=::-+#%+.               \n" +
+                            "                      :=*##%%%%#**=.                .-+*#%%%%##*+:.       :=++++++++++.            :++++++++++=.=++++++++++:.                  ..=++=:.                  \x1b[0m\n" +
                             //"" +  //this will be where the MORE! MORE! JUMP! text art will be when I add it
-                            "\x1b[3m\x1b[38;2;mCongratulations, you have finsihed the opening section of MORE! MORE! JUMP!'s story and unlocked a checkpoint! \n" + 
+                            "\x1b[3m\x1b[38;2;224;196;255mCongratulations, you have finsihed the opening section of MORE! MORE! JUMP!'s story and unlocked a checkpoint! \n" + 
                             "Do you want to...\x1b[0m",
                         choices: [
                             {name: "continue", value: "MMJplaceholder"}, 
