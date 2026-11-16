@@ -953,7 +953,6 @@ const args = yargs(hideBin(process.argv))
                             "Suddenly, translucent red, blue, and yellow triangles appear around you and the world around you begins to fade into light as the shards begin to swirl around your body. \n" + 
                             "\"Wait! What's happening?\"",
                         choices: [
-                            //
                             {name: "-> next", value: "stageSekai_1a "}
                         ]
                     },
@@ -963,35 +962,69 @@ const args = yargs(hideBin(process.argv))
                             "You open your eyes, squinting at the bright lights all around you. \"\"i forgot how the sekai snc" + 
                             "As your eyes adjust to the light, you can finally take in your surroundings, and you realize that you are in a concert hall, like the ones that you've seen Haruka perform in! \n" + 
                             "/I must be dreamiing... I've always wanted to perform in a place like this as an idol!.../ As you look around, your eyes shining with awe, a voice calls out to you from behind. \n" + 
-                            "\"\" You whip around to see who spoke and you see a girl with her greenish-blue hair in twintails wave at you ",
+                            "\"Hello, Minori!\" You whip around to see who spoke and you see a girl with her greenish-blue hair in twintails wave at you friendlily. \n" + 
+                            "\"Wh-Who are you?!\"",
                         choices: [ 
                             {name: "-> next", value: "stageSekai_1b"}
                         ]
                     },
                     stageSekai_1b: {
                         //minori talks to miku and rin idk i think endd on miku metioning that others are forgetting
-                        prompt: "didnt work. minori dead :(",
+                        prompt: "\"Wait.. You're Miku, aren't you?\" The girl nods, smiling, and you notice she is wearing a white and gray idol-style dress with teal accents. \n" + 
+                            "\"Hey, don't forget about me! Welcome to your SEKAI, Minori-chan!\" Another girl, this time with her hair styled in a yellow bob, runs up behind the first girl. \n" + 
+                            "\"Well now, I absolutely /have/ to be dreaming.. How else would I be speaking to Miku and Rin otherwise?\" You exclaim, noticing that Rin is also wearing the same outfit as Miku, but instead with yellow accents. \"Then, what is this place?\" \n" + 
+                            "\"That is because this place is your SEKAI!\" \n" + //miku
+                            "\"Huuuh? SEKAI?\"" + //minori
+                            "\"Yup! A world created from all of your true feelings! And we're here in this SEKAI to help you discover those feelings!We are t\" \n" + //rin
+                            "\"That's right! Because when you all discover your true feelings, they will give birth to songs!\" \n" + //miku
+                            "\"Wait-Wait! True feelings? Songs? I don't understand anything that you guys are talking about!\" \n" + //minori
+                            "\"Not even a bit? Well, it seems that you have found your true feelings anyway.\" \n" + //rin
+                            "\"/My/ true feelings? Do you mean my dream of becoming an idol?\"" + //minori
+                            "\"It might be that or it might not, but either way you should try to hold on to those feelings and not forget them.. Because the others are starting to lose sight of theirs.\" \n",
                         choices: [
                             {name: "-> next", value: "minori"}
                         ]
                     },
                     stageSekai_1c: {
                         //ending of talk with miku
-                        prompt: "h",
+                        prompt: "\"Um, what do you mean by that? Could you be a bit more specific?\" You ask, tilting your head to the side in confusion. \n" + 
+                            "\"...\" Miku peeks her head out of the side of the stage, and quickly pulls it back in worry. " + 
+                            "\"Ahh! the show is about to start! Sorry, Minori.. We have to go now. See you around!\" Before she even finished her sentence, Miku runs out onto the stage to start the show. \n" + 
+                            "\"We'll both be cheering for al of you!\" You open your mouth to respond, but Rin is gone befor she can hear you. \n" + 
+                            "\"Uh.. wait!\" The last thing you see is the girls waving to the audience as everything both fades and brightens into white light. \n\n",
                         choices: [
                             {name: "-> next", value: "r"}
                         ]
                     },
                     MMJmiyagirlsroof_2: {
                         //minori wakes up + haru cameo & checkpoint
+                        prompt: "\n\n\n\n" + 
+                            "*Achoo!* You open your eyes to find yourself slumped on the side of the roof. \n" + 
+                            "/Haaaa!? I fell asleep?..and on the roof too... I must have been really tired../ You stand up and stretch, yawning. \n" + 
+                            "\"Whelp, time to get back to practicing!\"" +
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
+                            "\"Are my documents ready?\" A blue-haired girl asks a teacher." + 
+                            "The teacher replies affimatively. \"Yes.. but are you sure? There is still time to..\" " + 
+                            "\"I won't need to. After all... I have decided to quit being an idol.\"" +
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
+                            "\"Okay, I'm going to tackle that part that I keep messing up on!\" \n" + 
+                            "\"As long as I keep trying harder and harder, I will be able to become a great idol like Haruka!\" \n" + 
+                            //"" +  //this will be where the MORE! MORE! JUMP! text art will be when I add it
+                            "\x1b[3m\x1b[38;2;mCongratulations, you have finsihed the opening section of MORE! MORE! JUMP!'s story and unlocked a checkpoint! \n" + 
+                            "Do you want to...\x1b[0m",
+                        choices: [
+                            {name: "continue", value: "MMJplaceholder"}, 
+                            {name: "choose a new path?", value: "chooseGroup"}, 
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
                     },
                     MMJplaceholder: {
                         prompt: "\x1b[38;2;224uh oh! if you're seeing this, then that means that this part of the story has n't been finished yet! \n" + 
                             "Would you like to...\x1b[0m",
                         choices: [
-                            {name: "try again?", value: "k"}, 
-                            {name: "try a new path?", value: "t"},
-                            {name: "Exit game", value: ""}
+                            {name: "try again?", value: "MMJmiya_1"}, 
+                            {name: "try a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     }
                 },
