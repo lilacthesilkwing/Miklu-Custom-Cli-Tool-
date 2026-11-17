@@ -15,8 +15,9 @@ Command descriptions:
 
 Goals: 
 1. Add greeting commands for all 6 different miklus: Complete!
-2. Add description commands for all 6 different miklus: Complete! (-ish; only one of the stories has reached a checkpoint)
-3. Add text art to most (or all) desc commands: Pending
+2. Add description commands for all 6 different miklus: Complete! (-ish; only one of the stories has reached a checkpoint; see #4)
+3. Add text art to most (or all) desc commands: Pending; on hold in favor of #4
+4. Complete the full main stories for each main group in the form of a text based choose-your-own adventure game (letsplay command): In Progress [2 out of 5 opening chapters completed!]
 
 NOTE: Code changes may be in the main branch instead of the default branch. Check the main branch to see all code.
 
