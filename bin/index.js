@@ -1046,12 +1046,16 @@ const args = yargs(hideBin(process.argv))
                     }
                 },
                 vivibasu: {
-                    poverror_1: {
+                    VBSpoverror_1: {
                         //explanation in form of error message explaining why pov is an instaed of kohane
+                        prompt: "Uh oh!~ The character you selected isn't available right now! Looks like I'll just have to tell this story through different eyes! \n.",
+                        choices: [
+                            {name: "-> next", value: "VBSwkgarage_1a"}
+                        ]
                     },
                     VBSwkgarage_1a: {
                         //an is working and she is talking to the patrons + flshback of seeing RAD WEEKEND
-                        prompt: "You are in the WEEKEND GARAGE You pick up a " + 
+                        prompt: ". \n. \n. \n" + 
                         "\" \"",
                         choices: [
                             {name: "seelcted that person as a partner", value: "VBSdeadend_1a"},
@@ -1092,8 +1096,37 @@ const args = yargs(hideBin(process.argv))
                         //miku len and meiko explaination
                     },
                     VBSwkgarage_2: {
-                        prompt: "",
-                        choices: []
+                        prompt: "idk" + 
+                        "idk vro" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
+                        "     ...      ....                                                                            \n" +
+                        "  .X&&&&&X..:$&&&&&+.:X&$+.          .....         ........             .........             \n" +
+                        " :&XxxxxxX&X&xxxxxx$&&xxx$&.       .X&XX$$:        ;&XXX$&&$$X;.   .;X$$$&$$$$&&&$x:          \n" +
+                        " $$xxxxxxx$&Xxxxxxxx&&xxxX&.       ;&xxxx&x    :X&&&&x;;;;;;;;x$&XX&x;;;$&+;;;;;;;+$&+.       \n" +
+                        " x$x++++++xX+++++++x&&$xX&$$&&x.x&&$$&XX&&.    $X+++X&;;;;;;;;;;;;$x;;;;x&X;;;;;;;;;;$x       \n" +
+                        "  x&x+++;+;+;+;+++X&&x+;;+&+;+X&X+++&++;+$$$&$$$X;++$&$xxx$&$Xx;::+X:$+:;&&;::;;:::::x&       \n" +
+                        "  .x&&X;;;;;;;;;$&&&&$;;;x&;;;;x;;;;&;;;;X$;;;+;;;;&&&&&+::&X+;:x&&;:&x::X&+::x&x:::;$x       \n" +
+                        "    x&&X::::::;$&&&&&&:::x&&+:::::x&&+::;&+:;Xx:::;&&&&&&::x&&&X::xx:;;::+&x:::;::::$x.       \n" +
+                        "    :&&&+....:X&&&&&&$:..+&&&+...+&&&;...&X:;...:..$&&&&&$x+:..:;Xx.;&&:..&$:....:X&x         \n" +
+                        "    .X&&$&$$$&&&&&&&&&&$&&&&&&$x$&&&&$;:X&&&$$$&&$$&&&&;...;x$&&&+..+&X::;X&+..+$&&X          \n" +
+                        "      ..:&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&XX&&&&&&&&&&&&&&&&&&$x$&&x;&+          \n" +
+                        "      .&X.        ;&&&&&;.     .;&&&&; .x&&&&&&X  +&&&&&&&: :&&&&&&&&$.       .:$&;           \n" +
+                        "     .&x. .;;;;;;X&&&&;. ..:::..  ;&&; .x&&&&&&X  +&&&&&$.   .X&&&&&&$. .::::..  .$x          \n" +
+                        "     .&+. :XXXXX$&&&&+  :&&&&&&&;. +&; .x&&&&&&X  +&&&&x. .;. .+&&&&&$. :&&&&&&+. ;&.         \n" +
+                        "     .&&+.        .X&:  X&&$$$&&X. ;&; .x&&&&&&X  +&&&:. :$&$.  :$&&&$. :&&&&&&$. :&;         \n" +
+                        "     .X&&&&&&&&&x  :&X. .x&X..:$&+.x&+. ;$&&&&&; .x&X.  :&&&&&;. .X&&$. :$&&&&$:  +&;         \n" +
+                        "    :$X..........  x&&X.        :$&&&&:   .....  ;&x.  ..x$.x$..   +&$.         .x&&.         \n" +
+                        "   :&X+++++++++++X&&&&$$&X++++++++X&&&&&X++;;++X&&X++++++X&+$&++++++x&++++++++x$&$&;          \n" +
+                        "   :&$xxxxxxxxxxxX&&&&&&$x;;;;;;;;X&&&&&XxxxxxxX&&x;;;;;;X&&&&;;;;;;;&xxxxxxxxx$&X.           \n" +
+                        "    :;;+X&&&&&&&&&+..:&&&&&$$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&X;..             \n" +
+                        "             .X$+.    +&X.     .X&&&+.+&&&x.     .x$&&&&&&&&&&&&&&$;. .x$$$;.                 \n" +
+                        "                                .....  ...              ..x&&&&$;..                           \x1b[0m\n" +
+                        "Congratulations, you have finished the opening section of Vivid BAD SQUAD's story and unlocked a checkpoint! \n" + 
+                        "Would you like to...\x1b[0m",
+                        choices: [
+                            {name: "-> next", value: "VBSplaceholder"},
+                            {name: "choose a new path", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
                     },
                     VBSplaceholder: {
                         prompt: "d"
@@ -1217,7 +1250,7 @@ const args = yargs(hideBin(process.argv))
                     }
 
                 } else if (group === "vivibasu") {
-                    let sceneName = "VBSwkgarage_1a"; 
+                    let sceneName = "VBSpoverror_1"; 
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
                         console.log(scene.prompt);
