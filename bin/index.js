@@ -1046,30 +1046,58 @@ const args = yargs(hideBin(process.argv))
                     }
                 },
                 vivibasu: {
-                    koha: {
-                        prompt: "hamptster gose on walk home form schoool. should she take her normal path or choose a new path?",
+                    poverror_1: {
+                        //explanation in form of error message explaining why pov is an instaed of kohane
+                    },
+                    VBSwkgarage_1a: {
+                        //an is working and she is talking to the patrons + flshback of seeing RAD WEEKEND
+                        prompt: "You are in the WEEKEND GARAGE You pick up a " + 
+                        "\" \"",
                         choices: [
-                            {name: "same old, same old", value: "anchanzero"},
-                            {name: "choose a new path", value: "ginger"},
+                            {name: "seelcted that person as a partner", value: "VBSdeadend_1a"},
+                            {name: "did not seelct that person as a partner", value: "VBSwkgarage_1b"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    anchanzero: {
+                    VBSdeadend_1a: {
+                        //an-chan talks about how she chose her partner
                         prompt: "ohane goes home. thae end.",
                         choices: [
                             {name: "go back to the beginning?", value: "koha"},
                             {name: "diff path?", value: "ginger"}
                         ]
                     },
-                    ginger: {
+                    VBSdeadend_1b: {
+                        //partner is very terrible to work with and you eventually break up (much harder to find new partner b/c everyone already assumes you have one)
+                        prompt: "idk", 
+                        choices: []
+                    },
+                    VBSwkgarage_1b: {
+                        //explains that an-chan rsufed this partner b/c she said that it was impossibel to surpass RAD WEEKEND
                         prompt: "haopmter finsds new place! what!!!!!!",
                         choices: [
                             {name: "diff path?", value: "anchanzero"},
                             {name: "go back tot he beginning?", value: "koha"}
                         ]
                     }
-                }, 
+                    },
+                    VBSscramCross_1: {
+                        //an sings on crossing (choice: phone or no phone)
+                    },
+                    streetSekai_1a: {
+                        //an meats kohane in sekai
+                    },
+                    streetSekai_1b: {
+                        //miku len and meiko explaination
+                    },
+                    VBSwkgarage_2: {
+                        prompt: "",
+                        choices: []
+                    },
+                    VBSplaceholder: {
+                        prompt: "d"
+                    } 
                 wondasho: {
                     tsukasaskun: {
                         prompt: "tsukasa gets emoployed!!! a job so cool frfr",
@@ -1189,7 +1217,7 @@ const args = yargs(hideBin(process.argv))
                     }
 
                 } else if (group === "vivibasu") {
-                    let sceneName = "koha"; 
+                    let sceneName = "VBSwkgarage_1a"; 
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
                         console.log(scene.prompt);
