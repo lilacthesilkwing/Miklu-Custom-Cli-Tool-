@@ -1048,7 +1048,7 @@ const args = yargs(hideBin(process.argv))
                 vivibasu: {
                     VBSpoverror_1: {
                         //explanation in form of error message explaining why pov is an instead of kohane
-                        prompt: "Uh oh!~ The character you selected isn't available right now! Looks like I'll just have to tell this story through different eyes! \n.",
+                        prompt: "\x1b[38;2;224;196;255mUh oh!~ The character you selected isn't available right now! Looks like I'll just have to tell this story through different eyes! \x1b[0m\n.",
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_1a"},
                             {name: "try a different path?", value: "chooseGroup"},
@@ -1058,14 +1058,14 @@ const args = yargs(hideBin(process.argv))
                     VBSwkgarage_1a: {
                         //an is working and she is talking to the patrons + flshback of seeing RAD WEEKEND
                         prompt: ". \n. \n. \n" + 
-                        "A girl with stars in her hair finshes making a coffee for a customer at the small cafe, WEEKEND GARAGE." + 
-                        "\"\x1b[38;2;0;187;220mOkay, here's your coffee!\x1b[0m\" The girl hands the drink to the customer, who smiles apreciatively." + //an
-                        "\"Thanks, An. Ah, are you still looking for a music partner?\" asks the customer, taking a sip of her drink. " + 
-                        "\"\x1b[38;2;0;187;220mYeah, I haven't been able to find the right person yet...\x1b[0m\"" + 
-                        "Another customer chimes in, \"I heard you got an offer from some musician! I heard she's joining a big label soon...\"" + 
-                        "\"\x1b[38;2;0;187;220mOh, yeah... I \x1b[0m\"", 
+                        "A girl with stars in her hair finshes making a coffee for a customer at the small cafe, WEEKEND GARAGE. \n" + 
+                        "\"\x1b[38;2;0;187;220mOkay, here's your coffee!\x1b[0m\" The girl hands the drink to the customer, who smiles apreciatively. \n" + //an
+                        "\"Thanks, An. Ah, are you still looking for a music partner?\" asks the customer, taking a sip of her drink. \n" + 
+                        "\"\x1b[38;2;0;187;220mYeah, I haven't been able to find the right person yet...\x1b[0m\" \n" + 
+                        "Another customer chimes in, \"I heard you got an offer from some musician! I heard she's joining a big label soon...\" \n" + 
+                        "\"\x1b[38;2;0;187;220mOh, yeah.. I...\x1b[0m\"", 
                         choices: [
-                            {name: "\x1b[38;2;0;187;220maccepted her offer.\x1b[0m\"", value: "VBSdeadend_1a"},
+                            {name: "\x1b[38;2;0;187;220mmight accept her offer.\x1b[0m\"", value: "VBSdeadend_1a"},
                             {name: "\x1b[38;2;0;187;220mrejected her offer.\x1b[0m\"", value: "VBSwkgarage_1b"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
@@ -1073,17 +1073,24 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSdeadend_1a: {
                         //an-chan talks about how she chose her partner
-                        prompt: "\"She was really convincing about it, too!\" ",
+                        prompt: "\"\x1b[38;2;0;187;220mShe seemed like a pretty good choice.\x1b[0m\" An replied thoughtfully. \n" + 
+                            "\"\x1b[38;2;0;187;220mShe did say that it was impossible to surpass RAD WEEKEND though...\x1b[0m\" \n" +
+                            "The first customer put down her drink with a clink, \"Really! If I was you I wouldn't accept that offer then!\" \n" + 
+                            "\"No, remember she's getting signed soon! She might still be a good choice!\" The other customer countered. \n" + 
+                            "An thought for some time. \"\x1b[38;2;0;187;220mI think I'll accept. After all, she can probably be convinced to change her mind!\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "VBSdeadend_1b"}
                         ]
                     },
                     VBSdeadend_1b: {
                         //partner is very terrible to work with and you eventually break up (much harder to find new partner b/c everyone already assumes you have one)
-                        prompt: "idk", 
+                        prompt: "An and her new musicpartner get along pretty well, but often fight over their future goals. \n" + 
+                            "Eventually, their partnership dissolves and An is left without a partner. \x1b[3mAgain.\x1b[0m \n" + 
+                            "\x1b[38;2;224;196;255mOh dear~ Looks like An's chosen the wrong partner! \n" + 
+                            "Would you like to...\x1b[0m", 
                         choices: [
-                            {name: "d", value: "f"},
-                            {name: "E", value: "ej"},
+                            {name: "try again?", value: "VBSwkgarage_1a"},
+                            {name: "try a new path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
@@ -1275,7 +1282,7 @@ const args = yargs(hideBin(process.argv))
                             break;
                         }
 
-                        if (sceneName === "chooseGroup") {
+                        if (sceneName === "itisfinished") {
                             console.log("Thank you for playing!")
                             return;
                         }
@@ -1435,7 +1442,7 @@ const args = yargs(hideBin(process.argv))
 //  wxs - ff9900->255,153,0: tsuk - ffbb00->255,187,0; emu - ff66bc->255,102,188; nene - 34dd9a->52,221,154; rui - bb88ed->187,136,237
 //  n25 - 884499->136,68,153: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
 //  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103,203
-//  narrator - e0c4ff->224,196,255
+//  narrator (a playful miku!) - e0c4ff->224,196,255
 
 // all scene separators are 75 '_'s long & pov switches are 50 '~'s long
 
