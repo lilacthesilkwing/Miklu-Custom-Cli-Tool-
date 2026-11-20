@@ -1047,35 +1047,45 @@ const args = yargs(hideBin(process.argv))
                 },
                 vivibasu: {
                     VBSpoverror_1: {
-                        //explanation in form of error message explaining why pov is an instaed of kohane
+                        //explanation in form of error message explaining why pov is an instead of kohane
                         prompt: "Uh oh!~ The character you selected isn't available right now! Looks like I'll just have to tell this story through different eyes! \n.",
                         choices: [
-                            {name: "-> next", value: "VBSwkgarage_1a"}
+                            {name: "-> next", value: "VBSwkgarage_1a"},
+                            {name: "try a different path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     VBSwkgarage_1a: {
                         //an is working and she is talking to the patrons + flshback of seeing RAD WEEKEND
                         prompt: ". \n. \n. \n" + 
-                        "\" \"",
+                        "A girl with stars in her hair finshes making a coffee for a customer at the small cafe, WEEKEND GARAGE." + 
+                        "\"\x1b[38;2;0;187;220mOkay, here's your coffee!\x1b[0m\" The girl hands the drink to the customer, who smiles apreciatively." + //an
+                        "\"Thanks, An. Ah, are you still looking for a music partner?\" asks the customer, taking a sip of her drink. " + 
+                        "\"\x1b[38;2;0;187;220mYeah, I haven't been able to find the right person yet...\x1b[0m\"" + 
+                        "Another customer chimes in, \"I heard you got an offer from some musician! I heard she's joining a big label soon...\"" + 
+                        "\"\x1b[38;2;0;187;220mOh, yeah... I \x1b[0m\"", 
                         choices: [
-                            {name: "seelcted that person as a partner", value: "VBSdeadend_1a"},
-                            {name: "did not seelct that person as a partner", value: "VBSwkgarage_1b"},
+                            {name: "\x1b[38;2;0;187;220maccepted her offer.\x1b[0m\"", value: "VBSdeadend_1a"},
+                            {name: "\x1b[38;2;0;187;220mrejected her offer.\x1b[0m\"", value: "VBSwkgarage_1b"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     VBSdeadend_1a: {
                         //an-chan talks about how she chose her partner
-                        prompt: "ohane goes home. thae end.",
+                        prompt: "\"She was really convincing about it, too!\" ",
                         choices: [
-                            {name: "go back to the beginning?", value: "koha"},
-                            {name: "diff path?", value: "ginger"}
+                            {name: "-> next", value: "VBSdeadend_1b"}
                         ]
                     },
                     VBSdeadend_1b: {
                         //partner is very terrible to work with and you eventually break up (much harder to find new partner b/c everyone already assumes you have one)
                         prompt: "idk", 
-                        choices: []
+                        choices: [
+                            {name: "d", value: "f"},
+                            {name: "E", value: "ej"},
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
                     },
                     VBSwkgarage_1b: {
                         //explains that an-chan rsufed this partner b/c she said that it was impossibel to surpass RAD WEEKEND
@@ -1084,7 +1094,6 @@ const args = yargs(hideBin(process.argv))
                             {name: "diff path?", value: "anchanzero"},
                             {name: "go back tot he beginning?", value: "koha"}
                         ]
-                    }
                     },
                     VBSscramCross_1: {
                         //an sings on crossing (choice: phone or no phone)
@@ -1131,6 +1140,7 @@ const args = yargs(hideBin(process.argv))
                     VBSplaceholder: {
                         prompt: "d"
                     } 
+                },
                 wondasho: {
                     tsukasaskun: {
                         prompt: "tsukasa gets emoployed!!! a job so cool frfr",
