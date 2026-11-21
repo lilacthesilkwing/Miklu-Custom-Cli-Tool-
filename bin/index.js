@@ -1084,7 +1084,7 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSdeadend_1b: {
                         //partner is very terrible to work with and you eventually break up (much harder to find new partner b/c everyone already assumes you have one)
-                        prompt: "An and her new musicpartner get along pretty well, but often fight over their future goals. \n" + 
+                        prompt: "An and her new music partner get along pretty well, but often fight over their future goals. \n" + 
                             "Eventually, their partnership dissolves and An is left without a partner. \x1b[3mAgain.\x1b[0m \n" + 
                             "\x1b[38;2;224;196;255mOh dear~ Looks like An's chosen the wrong partner! \n" + 
                             "Would you like to...\x1b[0m", 
@@ -1096,10 +1096,20 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSwkgarage_1b: {
                         //explains that an-chan rsufed this partner b/c she said that it was impossibel to surpass RAD WEEKEND
-                        prompt: "haopmter finsds new place! what!!!!!!",
+                        prompt: "\"I was thinking of choosing her but she kept on insisting that it's impossiblel to surpass RAD WEEKEND\"" + 
+                            "The first customer placed down her drink, \"Well, obvously that's a deal breaker!\"" + 
+                            "\"Well, I can kinda sympathatize with her... I can't even imagine what an event better than that would be like.\" The second customer chimed in. \n" + 
+                            "\"I guess that's a normal reaction... but I'm still going to do it!\" An said determinedly.",
                         choices: [
-                            {name: "diff path?", value: "anchanzero"},
-                            {name: "go back tot he beginning?", value: "koha"}
+                            {name: "-> next", value: "VBSwkgarage_1c"}
+                        ]
+                    },
+                    VBSwkgarage_1c: {
+                        prompt: "An finishes \"All finished!\"" + 
+                            "j" + 
+                            "",
+                        choices: [
+                            {name: "n"}
                         ]
                     },
                     VBSscramCross_1: {
