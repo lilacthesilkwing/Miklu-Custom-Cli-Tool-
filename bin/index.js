@@ -1261,7 +1261,7 @@ const args = yargs(hideBin(process.argv))
                         }
 
                         if (sceneName === "itisfinished") {
-                            console.log("Thank you for playing!")
+                            console.log("\x1b[3m\x1b[38;2;224;196;255mThank you for playing!\x1b[0m")
                             return;
                         }
                     }
@@ -1283,7 +1283,7 @@ const args = yargs(hideBin(process.argv))
                         }
 
                         if (sceneName === "itisfinished") {
-                            console.log("Thank you for playing!")
+                            console.log("\x1b[3m\x1b[38;2;224;196;255mThank you for playing!\x1b[0m")
                             return;
                         }
                     }
@@ -1305,7 +1305,7 @@ const args = yargs(hideBin(process.argv))
                         }
 
                         if (sceneName === "itisfinished") {
-                            console.log("Thank you for playing!")
+                            console.log("\x1b[3m\x1b[38;2;224;196;255mThank you for playing!\x1b[0m")
                             return;
                         }
                     }
@@ -1327,7 +1327,7 @@ const args = yargs(hideBin(process.argv))
                         }
                         
                         if (sceneName === "itisfinished") {
-                            console.log("Thank you for playing!")
+                            console.log("\x1b[3m\x1b[38;2;224;196;255mThank you for playing!\x1b[0m")
                             return;
                         }
                     }
