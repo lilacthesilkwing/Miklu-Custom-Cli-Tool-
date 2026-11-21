@@ -1105,15 +1105,29 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     VBSwkgarage_1c: {
-                        prompt: "An finishes \"All finished!\"" + 
-                            "j" + 
-                            "",
+                        prompt: "___________________________________________________________________________ \n" +
+                            "An finishes cleaning up the tables. \"All finished!\"" + 
+                            "\"Dad, cafe hours are over now! I'm leaving!\" An yelled up the stairs." + 
+                            "\"Another street performance? Try not to get into any fights with the other musicians, okay?\"" + 
+                            "\"Please! I'm not a kid anymore!\" An huffed indignantly. \"Anyways, bye!\"",
                         choices: [
-                            {name: "n"}
+                            {name: "-> next", value: "VBSscramCross_1"}
                         ]
                     },
                     VBSscramCross_1: {
                         //an sings on crossing (choice: phone or no phone)
+                        prompt: "" + 
+                            "",
+                        choices: [
+                            {name: "g", value: "g"},
+                            {name: "", value: ""}
+                        ]
+                    },
+                    VBSdeadend_2: {
+                        prompt: "d",
+                        choices: [
+                            {name: "d", value: "d"}
+                        ]
                     },
                     streetSekai_1a: {
                         //an meats kohane in sekai
