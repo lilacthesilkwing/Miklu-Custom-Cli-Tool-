@@ -1127,14 +1127,14 @@ const args = yargs(hideBin(process.argv))
                             "\x1b[3m\x1b[38;2;255;103;154mShe's so confident.. I'd never have the courage to sing on the street like that...\x1b[0m \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ I'll see you again, survive until the end ♪ Sayonara bye bye lets go ♪♫\x1b[0m The song comes to an end and \x1b[9myou\x1b[0m The girl leaves, not having the time to stay for the next song. ",
                         choices: [
-                            {name: "-> next", value: "VBSplaceholder"}
+                            {name: "-> next", value: "VBSscramCross_1b"}
                         ]
                     },
                     VBSscramCross_1b: {
-                        prompt: "/That was a good performance..\x1b[0m An thinks as she starts packing up." + 
-                            "/I need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag. \n" + 
-                            "/Well, I'll just have to _! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND/ \n" + 
-                            "/It's getting late.. I need to finish packing up quickly/ *blink sfx* (miku colored) /Hmm?/  An notices something out of the corner of her eye. /Did my phone just flash?/ \n" + 
+                        prompt: "\x1b[3m\x1b[38;2;0;187;220mThat was a good performance..\x1b[0m An thinks as she starts packing up. \n " + 
+                            "\x1b[3m\x1b[38;2;0;187;220mI need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag. \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220mWell, I'll just have to keep searching! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND!\x1b[0m \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220mIt's getting late.. I need to finish packing up quickly.\x1b[0m \x1b[3m\x1b[38;2;51;204;186m*ping*\x1b[0m \x1b[3m\x1b[38;0;187;20;186mHmm?\x1b[0m  An notices something out of the corner of her eye. \x1b[3m\x1b[38;2;0;187;220mDid my phone just flash?\x1b[0m \n" + 
                             "An...",
                         choices: [
                             {name: "pauses her cleanup to check her phone.", value: "VBSscramCross_1c"},
@@ -1143,14 +1143,14 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSdeadend_2a: {
                         prompt: "After she puts the rest of her equipment in her bag, An checks her phone, but it seems to have stopped flashing. \n" + 
-                            "/Must have been my imagination/ An turns away from the crossing, making her way back to WEEKEND GARAGE. \n",
+                            "\x1b[3m\x1b[38;2;0;187;220mMust have been my imagination\x1b[0m An turns away from the crossing, making her way back to WEEKEND GARAGE. ",
                         choices: [
-                            {name: "-> next", value: "VBSdeadeend_2b"}
+                            {name: "-> next", value: "VBSdeadend_2b"}
                         ]
                     },
                     VBSdeadend_2b: {
-                        prompt: "An continues looking for a music partner, but she just can't seem to find the right person." + 
-                            "Oops!~ Looks like An missed a pre/tty/ important detail! Would you like to...",
+                        prompt: "An continues looking for a music partner, but she just can't seem to find the right person. \n" + 
+                            "\x1b[3m\x1b[38;2;224;196;255mOops!~ Looks like An missed a pre\x1b[23mtty\x1b[3m important detail! Would you like to...\x1b[0m",
                         choices: [
                             {name: "try again? ", value: "VBSwkgarage_1a"},
                             {name: "try a new path?", value: "chooseGroup"},
@@ -1158,13 +1158,14 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     VBSscramCross_1c: {
-                        prompt: "An picks up her phone. /What's this?/ " + 
-                            "",
+                        prompt: "An picks up her phone. /What's this?/ One of the apps on her phone is blinking. \n" + 
+                            "/My music app is blinking?/ Tapping the app's icon, An squints in confusion. /Untitled? I don't think I've ever heard this song.../ \n" + 
+                            "Suddenly, red, blue and yellow transparent trianglular shards appear around An, and a bright light flashes from her phone. /Whoa! What is this light?/",
                         choices: [
                             {name: "d", value: "d"}
                         ]
                     },
-                    streetSekai_1a: {
+                    streetSekai_1a: { 
                         //an meets kohane in sekai
                     },
                     streetSekai_1b: {
