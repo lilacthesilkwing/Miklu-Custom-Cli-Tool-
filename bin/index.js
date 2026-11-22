@@ -1232,12 +1232,12 @@ const args = yargs(hideBin(process.argv))
                             "An wakes up with a start, \"Huh? Oh no, the bar hours are about to start! I can't believe I've slept this long!\" \n" +  
                             "\"You don't usually fall asleep like this.. Had a long day?\" \n" + 
                             "\"Hmm, no, not really... but I had a pretty weird dream?\" \n" + 
-                            "\"What type of dream?\"" + 
-                            "\" I was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\" An dashed off to go do just that." +
+                            "\"What type of dream?\" \n" + 
+                            "\" I was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\" An dashed off to go do just that. \n" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "\"Huh.?\" \You\ A girl wakes up, glancing around \your\ her room. \"When did I fall asleep..?\"" + 
-                            "\"I think I was talking to someone.. I can't really remember the details though...\"" +
-                            "/But I have the feeling.. that someting new is about to begin./" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
+                            "\"Huh.?\" \You\ A girl wakes up, glancing around \your\ her room. \"When did I fall asleep..?\" \n" + 
+                            "\"I think I was talking to someone.. I can't really remember the details though...\" \n" +
+                            "/But I have the feeling.. that someting new is about to begin./ \n" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
                             "     ...      ....                                                                            \n" +
                             "  .X&&&&&X..:$&&&&&+.:X&$+.          .....         ........             .........             \n" +
                             " :&XxxxxxX&X&xxxxxx$&&xxx$&.       .X&XX$$:        ;&XXX$&&$$X;.   .;X$$$&$$$$&&&$x:          \n" +
@@ -1270,7 +1270,7 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSplaceholder: {
                         prompt: "\x1b[3m\x1b[38;2;224;196;225muh oh! if you're seeing this, then that means that this part of the story hasn't been finished yet! \n" + 
-                            "Would you like to...\x1b[0m",
+                            "Would you like to...\x1b[0m", 
                         choices: [
                             {name: "try again?", value: "VBSwkgarage_1a"}, 
                             {name: "try a new path?", value: "chooseGroup"},
@@ -1280,25 +1280,30 @@ const args = yargs(hideBin(process.argv))
                 },
                 wondasho: { //flashback from opening will be put in the chpater 16 section
                     WXStsukasaRoom_1a: {
-                        prompt: "tsukasa gets emoployed!!! a job so cool frfr",
+                        prompt: "You stnad at your mirror thinkign about your aiudtion \"The day is finally upon us.\"" + 
+                            "\"Clear skies and great weather... It's like the heavens themselves are celebrating my debut as a star!\"" + 
+                            "\"HAHA! At this point, they will probably take one look at my application and see my potnetial!\" You laugh confidently." + 
+                            "\"Tsukasa!\" \"Hmm?\" YOu walk to the open wall on the other side of your room, and look down, seeing your sister, Saki calling to you from the floor below." + 
+                            "\"Mom, says that you should keep it down!\"" +
+                            "You...",
                         choices: [
-                            {name: "get to job early", value: "emu"},
-                            {name: "get to job late", value: "nane"},
+                            {name: "apologize to Saki for the noise", value: "WXStsukasaRoom_1b"},
+                            {name: "continue yapping", value: "WXSdeadend_1a"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    emu: {
+                    WXSdeadend_1a: {
                         prompt: "tuskas doen not get ajob b/c he is choppped!!! unemplyed loser lol *insert emu jumpscare here*",
                         choices: [
-                            {name: "go back to the beginndg?", value: "tsukasaskun"},
+                            {name: "-> next", value: "tsukasaskun"},
                             {name: "dvo", value: "nane"}
                         ]
                     },
-                    nane: {
+                    WXStsukasaRoom_1b: {
                         prompt: "tsuksa get a job!!!!! employed ending! no wnderstage :(",
                         choices: [
-                            {name: "sosd", value: "emu"},
+                            {name: "-> next", value: "emu"},
                             {name: "dofodj", value: "tsukasaskun"}
                         ]
                     }
