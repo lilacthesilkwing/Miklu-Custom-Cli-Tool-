@@ -1158,19 +1158,19 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     VBSscramCross_1c: {
-                        prompt: "An picks up her phone. /What's this?/ One of the apps on her phone is blinking. \n" + 
-                            "/My music app is blinking?/ Tapping the app's icon, An squints in confusion. /Untitled? I don't think I've ever heard this song.../ \n" + 
-                            "Suddenly, red, blue and yellow transparent trianglular shards appear around An, and a bright light flashes from her phone. /Whoa! What is this light?/",
+                        prompt: "An picks up her phone. \x1b[3m\x1b[38;2;0;187;220mWhat's this?\x1b[0m One of the apps on her phone is blinking. \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220mMy music app is blinking?\x1b[0m Tapping the app's icon, An squints in confusion. \x1b[3m\x1b[38;2;0;187;220mUntitled? I don't think I've ever heard this song...\x1b[0m \n" + 
+                            "Suddenly, red, blue and yellow transparent trianglular shards appear around An, and a bright light flashes from her phone. \x1b[3m\x1b[38;2;0;187;220mWhoa! What is this light?\x1b[0m",
                         choices: [
-                            {name: "d", value: "d"}
+                            {name: "-> next", value: "streetSekai_1a"}
                         ]
                     },
                     streetSekai_1a: { 
                         //an meets kohane in sekai
-                        prompt: "" + 
-                            "",
+                        prompt: "k" + 
+                            "k",
                         choices: [
-                            {name: "-> next", value: ""}
+                            {name: "-> next", value: "m"}
                         ]
                     },
                     streetSekai_1b: {
