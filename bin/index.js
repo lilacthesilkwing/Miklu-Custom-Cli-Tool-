@@ -1132,26 +1132,36 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSscramCross_1b: {
                         prompt: "/That was a good performance..\x1b[0m An thinks as she starts packing up." + 
-                            "/I need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag." + 
-                            "/Well, I'll just have to _! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND/" + 
-                            "/It's getting late.. I need to finish packing up quickly/ *blink sfx* (miku colored) /Hmm?/  An notices something out of the corner of her eye. /Did my phone just flash?/" + 
+                            "/I need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag. \n" + 
+                            "/Well, I'll just have to _! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND/ \n" + 
+                            "/It's getting late.. I need to finish packing up quickly/ *blink sfx* (miku colored) /Hmm?/  An notices something out of the corner of her eye. /Did my phone just flash?/ \n" + 
                             "An...",
                         choices: [
-                            {name: "pauses her cleanup to check her phone.", value: "streetSekai_1a"},
+                            {name: "pauses her cleanup to check her phone.", value: "VBSscramCross_1c"},
                             {name: "finishes cleaning up first.", value: "VBSdeadend_2a"}
                         ]
                     },
                     VBSdeadend_2a: {
-                        prompt: "After she puts the rest of her equipment in her bag, An checks her phone, but it seems to have stopped flashing." + 
-                            "/Must have been my imagination/ An turns away from the crossing, making her way back to WEEKEND GARAGE.",
+                        prompt: "After she puts the rest of her equipment in her bag, An checks her phone, but it seems to have stopped flashing. \n" + 
+                            "/Must have been my imagination/ An turns away from the crossing, making her way back to WEEKEND GARAGE. \n",
                         choices: [
                             {name: "-> next", value: "VBSdeadeend_2b"}
                         ]
                     },
                     VBSdeadend_2b: {
-                        prompt: "dc",
+                        prompt: "An continues looking for a music partner, but she just can't seem to find the right person." + 
+                            "Oops!~ Looks like An missed a pre/tty/ important detail! Would you like to...",
                         choices: [
-                            {name: "d"}
+                            {name: "try again? ", value: "VBSwkgarage_1a"},
+                            {name: "try a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
+                        ]
+                    },
+                    VBSscramCross_1c: {
+                        prompt: "An picks up her phone. /What's this?/ " + 
+                            "",
+                        choices: [
+                            {name: "d", value: "d"}
                         ]
                     },
                     streetSekai_1a: {
