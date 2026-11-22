@@ -1194,37 +1194,38 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     streetSekai_1c: {
-                        prompt: "\"No, this is your SEKAI.\" Miku retorted" + 
-                            "\"SEKAI?\"" + //kohane
-                            "\"Yep. This SEKAI is a place that was created from your feelings.\"" + //miku
-                            "\"A place created from feelings?\"" + //an
-                            "\"Mmhm. If you find your true feelings here, they will give birth to songs.\"" + //meiko
-                            "\"That's where we come in! We're here to help you find those true feelings!\"" + //len
-                            "\"Feelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\"" + //an 
-                            "\"Haha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\"" + //len
-                            "\"True feelings? I don't know what my true feelings are..\" /I hardly even know how to choose what I'll be doing tomorrow../", //kohane
+                        prompt: "\"No, this is your SEKAI.\" Miku retorted. \n" + 
+                            "\"SEKAI?\" \n" + //kohane
+                            "\"Yep. This SEKAI is a place that was created from your feelings.\" \n" + //miku
+                            "\"A place created from feelings?\" \n" + //an
+                            "\"Mmhm. If you find your true feelings here, they will give birth to songs.\" \n" + //meiko
+                            "\"That's where we come in! We're here to help you find those true feelings!\" \n" + //len
+                            "\"Feelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\" \n" + //an 
+                            "\"Haha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\" \n" + //len
+                            "\"True feelings? I don't know what my true feelings are..\" /I hardly even know how to choose what I'll be doing most day../", //kohane
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_2"}
                         ]
                     },
                     streetSekai_1d: {
                         prompt: "\"What's your dream kohane?\"" + //miku
-                            "" + //kohane
-                            "" + //miku
-                            "" + //an
-                            "\"\" \"\"" + //kohane
-                            "\"" + //an
-                            "" + //kohane
-                            "" + //an
-                            "" + //koh
-                            "" + //an 
-                            "" + //miku
-                            "\"Wait..this light..!\" \"not agin!\" " + //koha -> an
-                            "", //aprting words from miku
+                            "\"I don't know, I don't really have one.. so..\" " + //kohane
+                            "\"Really? How about you, An?\"" + //miku
+                            "\"Me? My dream is to surpass a legend!\"" + //an
+                            "\"Legend?\" \"Yup, the legndary event RAD WEEKEND that I saw when I was in junior high school. It was a super high point in the music scene, so everyone says that no event could ever possibly be better than it.\"" + //kohane then an
+                            "\"But, I disagree... Because I'm going to surpass it!\"" + //an
+                            "\"Woah..You're so cool.\"" + //kohane
+                            "\"Aww, you think so? Thanks, but I'm still a long way off from my goals. I need more training, and most importantly, bandmates! I st\"" + //an
+                            "\"..you never know if you never try...\" Kohane mumbled. \"You're right.! Maybe if I stop worrying and start trying, something could chage for me too..?\"" + //koh
+                            "\"Hmm, maybe? Just try something when ever you het the feeling.\"" + //an 
+                            "\"Hehe. I'm sure the two of you will find your true feelings.\"" + //miku
+                            "A bright light begins to blind /your/ eyes. \"Wait..this light..!\" \"Not again!\" " + //koha -> an
+                            "\"As long as you two both have the same true feelings, we'll meet here again, in SEKAI.\"" + //aprting words from miku
+                            "The cafee fades away, leaving only blue, red, and yellow triangles behind.",
                         choices: [
-                            {}
+                            {name: "-> name", value: "VBSwkgarage_2"}
                         ]
-                    }
+                    },
                     VBSwkgarage_2: {
                         prompt: "___________________________________________________________________________ \n" +
                             "idk" + 
