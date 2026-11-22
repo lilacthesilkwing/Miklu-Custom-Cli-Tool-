@@ -1185,14 +1185,20 @@ const args = yargs(hideBin(process.argv))
                         prompt: "The two whirled around to see a girl with her turquoise hair in twintails. \n" + 
                             "\"Eh! M-Miku?\" The two girls exclaimed in unison. \n" + 
                             "\"Wait..How do you know my name?\" Kohane asked curiously. \n" + 
-                            "\"H\" A blondnd" + 
-                            "\"meik\" A brown-haired lady wt",
-                        choice: [
+                            "\"Hey there! We've been waiting for you y'know?\" Waving, a blond boy with a tuft of his hair sticking upwards dashed up to the three girls. \n" + 
+                            "\"They're probably still disoriented from their sudden arrival. In any case, it's very nice to meet the both of you.\" A brown-haired lady with a red jacket walks up to the group. \n" + 
+                            "\"Ah, Len and Miku too? This can't be real...\" \n" + 
+                            "\"Well, I can't be talking to Miku, Len, and Meiko... I've got to be dreaming.\" \n",
+                        choices: [
                             {name: "-> next", value: "streetSekai_1c"}
                         ]
                     },
                     streetSekai_1c: {
-                        prompt: "\"\"" + ""
+                        prompt: "\"n\"" + 
+                            "",
+                        choices: [
+                            {name: "-> next", value: "VBSwkgarage_2"}
+                        ]
                     },
                     VBSwkgarage_2: {
                         prompt: "___________________________________________________________________________ \n" +
