@@ -1196,19 +1196,19 @@ const args = yargs(hideBin(process.argv))
                     streetSekai_1c: {
                         prompt: "\"No, this is your SEKAI.\" Miku retorted" + 
                             "\"SEKAI?\"" + //kohane
-                            "\"\"" + //miku
-                            "\"\"" + //an
-                            "\"feeling->sing\"" + //meiko
-                            "\"thay why ewe hre\"" + //len
-                            "\"Feling song waht the helly\"" + //an 
-                            "\"\"" + //len
-                            "\"True feeling\"", //kohane
+                            "\"Yep. This SEKAI is a place that was created from your feelings.\"" + //miku
+                            "\"A place created from feelings?\"" + //an
+                            "\"Mmhm. If you find your true feelings here, they will give birth to songs.\"" + //meiko
+                            "\"That's where we come in! We're here to help you find those true feelings!\"" + //len
+                            "\"Feelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\"" + //an 
+                            "\"Haha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\"" + //len
+                            "\"True feelings? I don't know what my true feelings are..\" /I hardly even know how to choose what I'll be doing tomorrow../", //kohane
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_2"}
                         ]
                     },
                     streetSekai_1d: {
-                        prompt: "\"Wjhat's your dream kohane?\"" + 
+                        prompt: "\"What's your dream kohane?\"" + //miku
                             "" + //kohane
                             "" + //miku
                             "" + //an
