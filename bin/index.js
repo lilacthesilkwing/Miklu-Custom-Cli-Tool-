@@ -1167,6 +1167,11 @@ const args = yargs(hideBin(process.argv))
                     },
                     streetSekai_1a: { 
                         //an meets kohane in sekai
+                        prompt: "" + 
+                            "",
+                        choices: [
+                            {name: "-> next", value: ""}
+                        ]
                     },
                     streetSekai_1b: {
                         //miku len and meiko explaination
