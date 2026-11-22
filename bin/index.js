@@ -1307,15 +1307,15 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     WXStsukasaRoom_1b: {
-                        prompt: "\"Ah, sorry Saki, I was just woarming up my vocal chords by talking to the wall!\"" + 
+                        prompt: "\"Ah, sorry Saki, I was just warming up my vocal chords by talking to the wall!\"" + 
                         "\"You were talking to the wall..?\" Saki looks at you confusedly. \"Ah, right! Don't you have your\"" + 
                         "\"Erm, actually, its an audition, /not/ an interview. It sounds much cooler that way!\"" + 
                         "Saki giggles. \"/That's/ what your worried about?\"" + 
-                        "\"By the way, how's school been?\"" +
-                        "\"i good\"" + 
-                        "\"nie to hear that\"" + 
-                        "\"nici to her yur riaching youe drema\" Your sister tilts her head in confusion." + 
-                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You\"",
+                        "\"By the way, how's school been? I know you were only very recently sick, so I'm a bit worried...\"" +
+                        "\"No need for that! I've been doing great, and I'm gonna live out my high school life to the fullest!\"" + 
+                        "\"Well, its nice to hear that!\"" + 
+                        "\"It's also great to hear that your making progress on reaching your dream of becoming a star!\" Your sister tilts her head in confusion, continuing to talk." + 
+                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You've always been talking about it for as long as I can \"",
                         choices: [
                             {name: "-> next", value: "emu"},
                             {name: "dofodj", value: "tsukasaskun"}
