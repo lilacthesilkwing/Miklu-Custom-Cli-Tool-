@@ -1122,10 +1122,10 @@ const args = yargs(hideBin(process.argv))
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ Half way down to K.O (fuwa fuwa) ♪ I'll float until tomorrow ♫ Time to get it started now ♪♫ \n" +
                             "Yup. My voice is in top form today. I'll whip this crowd into a frenzy! \n" +
                             "♪♫ Fall to tears, or laugh or jeer, just never let me go ♪ Come and say no, bellow echo down the road ♪♫ \x1b[0m \n" +
-                            "\"\x1b[38;2;255;103;154mOh, wow.\x1b[0m\" \x1b[9mYou\x1b[0m stop by the performance on your way back from school. \n" + 
+                            "\"\x1b[38;2;255;103;154mOh, wow.\x1b[0m\" \x1b[9mYou\x1b[0m A girl with her hair in light-brown pigtails stops by the performance on your way back from school. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ We'll dance to the beat, we'll dance to the beat ♫ All us lonely souls will set it free now♪♫\x1b[0m \n" +
                             "\x1b[3m\x1b[38;2;255;103;154mShe's so confident.. I'd never have the courage to sing on the street like that...\x1b[0m \n" + 
-                            "\x1b[3m\x1b[38;2;0;187;220m♪♫ I'll see you again, survive until the end ♪ Sayonara bye bye lets go ♪♫\x1b[0m The song comes to an end and \x1b[9myou\x1b[0m leave, not having the time to stay for the next song. ",
+                            "\x1b[3m\x1b[38;2;0;187;220m♪♫ I'll see you again, survive until the end ♪ Sayonara bye bye lets go ♪♫\x1b[0m The song comes to an end and \x1b[9myou\x1b[0m The girl leaves, not having the time to stay for the next song. ",
                         choices: [
                             {name: "-> next", value: "VBSplaceholder"}
                         ]
@@ -1138,13 +1138,20 @@ const args = yargs(hideBin(process.argv))
                             "An...",
                         choices: [
                             {name: "pauses her cleanup to check her phone.", value: "streetSekai_1a"},
-                            {name: "finishes cleaning up first.", value: "VBSdeadend"}
+                            {name: "finishes cleaning up first.", value: "VBSdeadend_2a"}
                         ]
                     },
-                    VBSdeadend_2: {
-                        prompt: "After she puts the rest of her equipment in her bag,",
+                    VBSdeadend_2a: {
+                        prompt: "After she puts the rest of her equipment in her bag, An checks her phone, but it seems to have stopped flashing." + 
+                            "/Must have been my imagination/ An turns away from the crossing, making her way back to WEEKEND GARAGE.",
                         choices: [
-                            {name: "d", value: "d"}
+                            {name: "-> next", value: "VBSdeadeend_2b"}
+                        ]
+                    },
+                    VBSdeadend_2b: {
+                        prompt: "dc",
+                        choices: [
+                            {name: "d"}
                         ]
                     },
                     streetSekai_1a: {
