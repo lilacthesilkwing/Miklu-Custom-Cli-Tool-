@@ -1187,19 +1187,44 @@ const args = yargs(hideBin(process.argv))
                             "\"Wait..How do you know my name?\" Kohane asked curiously. \n" + 
                             "\"Hey there! We've been waiting for you y'know?\" Waving, a blond boy with a tuft of his hair sticking upwards dashed up to the three girls. \n" + 
                             "\"They're probably still disoriented from their sudden arrival. In any case, it's very nice to meet the both of you.\" A brown-haired lady with a red jacket walks up to the group. \n" + 
-                            "\"Ah, Len and Miku too? This can't be real...\" \n" + 
+                            "\"Ah, Len and MEIKO too? This can't be real...\" \n" + 
                             "\"Well, I can't be talking to Miku, Len, and Meiko... I've got to be dreaming.\" \n",
                         choices: [
                             {name: "-> next", value: "streetSekai_1c"}
                         ]
                     },
                     streetSekai_1c: {
-                        prompt: "\"n\"" + 
-                            "",
+                        prompt: "\"No, this is your SEKAI.\" Miku retorted" + 
+                            "\"SEKAI?\"" + //kohane
+                            "\"\"" + //miku
+                            "\"\"" + //an
+                            "\"feeling->sing\"" + //meiko
+                            "\"thay why ewe hre\"" + //len
+                            "\"Feling song waht the helly\"" + //an 
+                            "\"\"" + //len
+                            "\"True feeling\"", //kohane
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_2"}
                         ]
                     },
+                    streetSekai_1d: {
+                        prompt: "\"Wjhat's your dream kohane?\"" + 
+                            "" + //kohane
+                            "" + //miku
+                            "" + //an
+                            "\"\" \"\"" + //kohane
+                            "\"" + //an
+                            "" + //kohane
+                            "" + //an
+                            "" + //koh
+                            "" + //an 
+                            "" + //miku
+                            "\"Wait..this light..!\" \"not agin!\" " + //koha -> an
+                            "", //aprting words from miku
+                        choices: [
+                            {}
+                        ]
+                    }
                     VBSwkgarage_2: {
                         prompt: "___________________________________________________________________________ \n" +
                             "idk" + 
