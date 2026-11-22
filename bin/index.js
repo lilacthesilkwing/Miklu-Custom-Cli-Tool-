@@ -1131,13 +1131,18 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     VBSscramCross_1b: {
-                        prompt: "c",
+                        prompt: "/That was a good performance..\x1b[0m An thinks as she starts packing up." + 
+                            "/I need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag." + 
+                            "/Well, I'll just have to _! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND/" + 
+                            "/It's getting late.. I need to finish packing up quickly/ *blink sfx* (miku colored) /Hmm?/  An notices something out of the corner of her eye. /Did my phone just flash?/" + 
+                            "An...",
                         choices: [
-                            {name: "d", value: "r"}
+                            {name: "pauses her cleanup to check her phone.", value: "streetSekai_1a"},
+                            {name: "finishes cleaning up first.", value: "VBSdeadend"}
                         ]
                     },
                     VBSdeadend_2: {
-                        prompt: "d",
+                        prompt: "After she puts the rest of her equipment in her bag,",
                         choices: [
                             {name: "d", value: "d"}
                         ]
