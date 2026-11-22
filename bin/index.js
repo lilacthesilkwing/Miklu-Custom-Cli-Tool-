@@ -1111,16 +1111,28 @@ const args = yargs(hideBin(process.argv))
                             "\"Another street performance? Try not to get into any fights with the other musicians, okay?\"" + 
                             "\"Please! I'm not a kid anymore!\" An huffed indignantly. \"Anyways, bye!\"",
                         choices: [
-                            {name: "-> next", value: "VBSscramCross_1"}
+                            {name: "-> next", value: "VBSscramCross_1a"}
                         ]
                     },
-                    VBSscramCross_1: {
+                    VBSscramCross_1a: {
                         //an sings on crossing (choice: phone or no phone)
-                        prompt: "" + 
-                            "",
+                        prompt: "An adjusts the settings on her microphone. /Mic set and checked! Time to start singing!/ She glances around, surveying the small crowd that has grown as she was setting up." + 
+                            "\"Hey An, we're ready for the show! I brought a friend along this time so you better go for broke!\" One of the onlookers calls out." + 
+                            "\"Thanks, everyone! I'll do my best!\" An says to the growing crowd." + 
+                            "♪♫ music ♪♫" +
+                            "/Yup. My voice is in top form today. I'll whip this crowd into a frenzy!" +
+                            "♪♫ music ♪♫" +
+                            "\"Oh, wow.\" \u001B[9mYou\u001B[0m stop by the performance on your way back from school." + 
+                            "/She's so confident.. I'd never have the courage to sing on the street like that.../" + 
+                            "The song comes to an end and \u001B[9myou\u001B[0m leave without waiting for the next one to start",
                         choices: [
-                            {name: "g", value: "g"},
-                            {name: "", value: ""}
+                            {name: "-> next", value: "VBSscramCross_1b"}
+                        ]
+                    },
+                    VBSscramCross_1b: {
+                        prompt: "c",
+                        choices: [
+                            {name: "d", value: ""}
                         ]
                     },
                     VBSdeadend_2: {
