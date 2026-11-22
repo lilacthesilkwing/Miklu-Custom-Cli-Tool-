@@ -1208,19 +1208,19 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     streetSekai_1d: {
-                        prompt: "\"What's your dream kohane?\"" + //miku
-                            "\"I don't know, I don't really have one.. so..\" " + //kohane
-                            "\"Really? How about you, An?\"" + //miku
-                            "\"Me? My dream is to surpass a legend!\"" + //an
-                            "\"Legend?\" \"Yup, the legndary event RAD WEEKEND that I saw when I was in junior high school. It was a super high point in the music scene, so everyone says that no event could ever possibly be better than it.\"" + //kohane then an
-                            "\"But, I disagree... Because I'm going to surpass it!\"" + //an
-                            "\"Woah..You're so cool.\"" + //kohane
-                            "\"Aww, you think so? Thanks, but I'm still a long way off from my goals. I need more training, and most importantly, bandmates! I st\"" + //an
-                            "\"..you never know if you never try...\" Kohane mumbled. \"You're right.! Maybe if I stop worrying and start trying, something could chage for me too..?\"" + //koh
-                            "\"Hmm, maybe? Just try something when ever you het the feeling.\"" + //an 
-                            "\"Hehe. I'm sure the two of you will find your true feelings.\"" + //miku
-                            "A bright light begins to blind /your/ eyes. \"Wait..this light..!\" \"Not again!\" " + //koha -> an
-                            "\"As long as you two both have the same true feelings, we'll meet here again, in SEKAI.\"" + //aprting words from miku
+                        prompt: "\"What's your dream kohane?\" \n" + //miku
+                            "\"I don't know, I don't really have one.. so..\" \n" + //kohane
+                            "\"Really? How about you, An?\" \n" + //miku
+                            "\"Me? My dream is to surpass a legend!\" \n" + //an
+                            "\"Legend?\" \"Yup, the legndary event RAD WEEKEND that I saw when I was in junior high school. It was a super high point in the music scene, so everyone says that no event could ever possibly be better than it.\" \n" + //kohane then an
+                            "\"But, I disagree... Because I'm going to surpass it!\" \n" + //an
+                            "\"Woah..You're so cool.\" \n" + //kohane
+                            "\"Aww, you think so? Thanks, but I'm still a long way off from my goals. I need more training, and most importantly, bandmates! I still practice every day by singing on the street at night and during music events.\" \n" + //an
+                            "\"..you never know if you never try...\" Kohane mumbled. \"You're right.! Maybe if I stop worrying and start trying, something could chage for me too..?\" \n" + //koh
+                            "\"Hmm, maybe? Just try something when ever you het the feeling.\" \n" + //an 
+                            "\"Hehe. I'm sure the two of you will find your true feelings.\" \n" + //miku
+                            "A bright light begins to blind /your/ eyes. \"Wait..this light..!\" \"Not again!\" \n" + //koha -> an
+                            "\"As long as you two both have the same true feelings, we'll meet here again, in SEKAI.\" \n" + //aprting words from miku
                             "The cafee fades away, leaving only blue, red, and yellow triangles behind.",
                         choices: [
                             {name: "-> name", value: "VBSwkgarage_2"}
@@ -1228,8 +1228,16 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSwkgarage_2: {
                         prompt: "___________________________________________________________________________ \n" +
-                            "idk" + 
-                            "idk vro" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
+                            "\"Hey, An, wake up.\" \n" + 
+                            "An wakes up with a start, \"Huh? Oh no, the bar hours are about to start! I can't believe I've slept this long!\" \n" +  
+                            "\"You don't usually fall asleep like this.. Had a long day?\" \n" + 
+                            "\"Hmm, no, not really... but I had a pretty weird dream?\" \n" + 
+                            "\"What type of dream?\"" + 
+                            "\" I was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\" An dashed off to go do just that." +
+                            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
+                            "\"Huh.?\" \You\ A girl wakes up, glancing around \your\ her room. \"When did I fall asleep..?\"" + 
+                            "\"I think I was talking to someone.. I can't really remember the details though...\"" +
+                            "/But I have the feeling.. that someting new is about to begin./" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
                             "     ...      ....                                                                            \n" +
                             "  .X&&&&&X..:$&&&&&+.:X&$+.          .....         ........             .........             \n" +
                             " :&XxxxxxX&X&xxxxxx$&&xxx$&.       .X&XX$$:        ;&XXX$&&$$X;.   .;X$$$&$$$$&&&$x:          \n" +
@@ -1270,8 +1278,8 @@ const args = yargs(hideBin(process.argv))
                         ]
                     } 
                 },
-                wondasho: {
-                    tsukasaskun: {
+                wondasho: { //flashback from opening will be put in the chpater 16 section
+                    WXStsukasaRoom_1a: {
                         prompt: "tsukasa gets emoployed!!! a job so cool frfr",
                         choices: [
                             {name: "get to job early", value: "emu"},
