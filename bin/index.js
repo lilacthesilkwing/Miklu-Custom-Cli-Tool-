@@ -1096,43 +1096,44 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSwkgarage_1b: {
                         //explains that an-chan rsufed this partner b/c she said that it was impossibel to surpass RAD WEEKEND
-                        prompt: "\"I was thinking of choosing her but she kept on insisting that it's impossiblel to surpass RAD WEEKEND\"" + 
-                            "The first customer placed down her drink, \"Well, obvously that's a deal breaker!\"" + 
+                        prompt: "\"\x1b[38;2;0;187;220mI was thinking of choosing her, but she kept on insisting that it's impossible to surpass RAD WEEKEND!\x1b[0m\" \n" + 
+                            "The first customer placed down her drink, \"Well, obvously that's a deal breaker!\" \n" + 
                             "\"Well, I can kinda sympathatize with her... I can't even imagine what an event better than that would be like.\" The second customer chimed in. \n" + 
-                            "\"I guess that's a normal reaction... but I'm still going to do it!\" An said determinedly.",
+                            "\"\x1b[38;2;0;187;220mI guess that's a normal reaction... but I'm still going to do it!\x1b[0m\" An said determinedly.",
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_1c"}
                         ]
                     },
                     VBSwkgarage_1c: {
                         prompt: "___________________________________________________________________________ \n" +
-                            "An finishes cleaning up the tables. \"All finished!\"" + 
-                            "\"Dad, cafe hours are over now! I'm leaving!\" An yelled up the stairs." + 
-                            "\"Another street performance? Try not to get into any fights with the other musicians, okay?\"" + 
-                            "\"Please! I'm not a kid anymore!\" An huffed indignantly. \"Anyways, bye!\"",
+                            "An finishes cleaning up the tables. \"\x1b[38;2;0;187;220mAll finished!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;0;187;220mDad, cafe hours are over now! I'm leaving!\x1b[0m\" An yelled up the stairs. \n" + 
+                            "\"Another street performance? Try not to get into any fights with the other musicians, okay?\" \n" + 
+                            "\"\x1b[38;2;0;187;220mPlease! I'm not a kid anymore!\x1b[0m\" An huffed indignantly. \"\x1b[38;2;0;187;220mAnyways, bye!\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "VBSscramCross_1a"}
                         ]
                     },
                     VBSscramCross_1a: {
                         //an sings on crossing (choice: phone or no phone)
-                        prompt: "An adjusts the settings on her microphone. /Mic set and checked! Time to start singing!/ She glances around, surveying the small crowd that has grown as she was setting up." + 
-                            "\"Hey An, we're ready for the show! I brought a friend along this time so you better go for broke!\" One of the onlookers calls out." + 
-                            "\"Thanks, everyone! I'll do my best!\" An says to the growing crowd." + 
-                            "♪♫ music ♪♫" +
-                            "/Yup. My voice is in top form today. I'll whip this crowd into a frenzy!" +
-                            "♪♫ music ♪♫" +
-                            "\"Oh, wow.\" \u001B[9mYou\u001B[0m stop by the performance on your way back from school." + 
-                            "/She's so confident.. I'd never have the courage to sing on the street like that.../" + 
-                            "The song comes to an end and \u001B[9myou\u001B[0m leave without waiting for the next one to start",
+                        prompt: "An adjusts the settings on her microphone. \x1b[3m\x1b[38;2;0;187;220mMic set and checked! Time to start singing!\x1b[0m She glances around, surveying the small crowd that has grown as she was setting up. \n" + 
+                            "\"Hey An, we're ready for the show! I brought a friend along this time so you better go for broke!\" One of the onlookers calls out. \n" + 
+                            "\"\x1b[38;2;0;187;220mThanks, everyone! I'll do my best!\x1b[0m\" An says to the growing crowd. \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220m♪♫ Half way down to K.O (fuwa fuwa) ♪ I'll float until tomorrow ♫ Time to get it started now ♪♫ \n" +
+                            "Yup. My voice is in top form today. I'll whip this crowd into a frenzy! \n" +
+                            "♪♫ Fall to tears, or laugh or jeer, just never let me go ♪ Come and say no, bellow echo down the road ♪♫ \x1b[0m \n" +
+                            "\"\x1b[38;2;255;103;154mOh, wow.\x1b[0m\" \x1b[9mYou\x1b[0m stop by the performance on your way back from school. \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220m♪♫ We'll dance to the beat, we'll dance to the beat ♫ All us lonely souls will set it free now♪♫\x1b[0m \n" +
+                            "\x1b[3m\x1b[38;2;255;103;154mShe's so confident.. I'd never have the courage to sing on the street like that...\x1b[0m \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220m♪♫ I'll see you again, survive until the end ♪ Sayonara bye bye lets go ♪♫\x1b[0m The song comes to an end and \x1b[9myou\x1b[0m leave, not having the time to stay for the next song. ",
                         choices: [
-                            {name: "-> next", value: "VBSscramCross_1b"}
+                            {name: "-> next", value: "VBSplaceholder"}
                         ]
                     },
                     VBSscramCross_1b: {
                         prompt: "c",
                         choices: [
-                            {name: "d", value: ""}
+                            {name: "d", value: "r"}
                         ]
                     },
                     VBSdeadend_2: {
@@ -1142,7 +1143,7 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     streetSekai_1a: {
-                        //an meats kohane in sekai
+                        //an meets kohane in sekai
                     },
                     streetSekai_1b: {
                         //miku len and meiko explaination
