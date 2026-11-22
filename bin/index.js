@@ -1116,13 +1116,14 @@ const args = yargs(hideBin(process.argv))
                     },
                     VBSscramCross_1a: {
                         //an sings on crossing (choice: phone or no phone)
-                        prompt: "An adjusts the settings on her microphone. \x1b[3m\x1b[38;2;0;187;220mMic set and checked! Time to start singing!\x1b[0m She glances around, surveying the small crowd that has grown as she was setting up. \n" + 
+                        prompt: "___________________________________________________________________________ \n" +
+                            "An adjusts the settings on her microphone. \x1b[3m\x1b[38;2;0;187;220mMic set and checked! Time to start singing!\x1b[0m She glances around, surveying the small crowd that has grown as she was setting up. \n" + 
                             "\"Hey An, we're ready for the show! I brought a friend along this time so you better go for broke!\" One of the onlookers calls out. \n" + 
                             "\"\x1b[38;2;0;187;220mThanks, everyone! I'll do my best!\x1b[0m\" An says to the growing crowd. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ Half way down to K.O (fuwa fuwa) ♪ I'll float until tomorrow ♫ Time to get it started now ♪♫ \n" +
                             "Yup. My voice is in top form today. I'll whip this crowd into a frenzy! \n" +
                             "♪♫ Fall to tears, or laugh or jeer, just never let me go ♪ Come and say no, bellow echo down the road ♪♫ \x1b[0m \n" +
-                            "\"\x1b[38;2;255;103;154mOh, wow.\x1b[0m\" \x1b[9mYou\x1b[0m A girl with her hair in light-brown pigtails stops by the performance on your way back from school. \n" + 
+                            "\"\x1b[38;2;255;103;154mOh, wow.\x1b[0m\" \x1b[9mYou\x1b[0m A girl in glasses with her hair in light-brown pigtails stops by the performance on your way back from school. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ We'll dance to the beat, we'll dance to the beat ♫ All us lonely souls will set it free now♪♫\x1b[0m \n" +
                             "\x1b[3m\x1b[38;2;255;103;154mShe's so confident.. I'd never have the courage to sing on the street like that...\x1b[0m \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220m♪♫ I'll see you again, survive until the end ♪ Sayonara bye bye lets go ♪♫\x1b[0m The song comes to an end and \x1b[9myou\x1b[0m The girl leaves, not having the time to stay for the next song. ",
@@ -1167,14 +1168,28 @@ const args = yargs(hideBin(process.argv))
                     },
                     streetSekai_1a: { 
                         //an meets kohane in sekai
-                        prompt: "k" + 
-                            "k",
+                        prompt: "___________________________________________________________________________ \n" + 
+                            "\"\" An looks around, taking in her surroundings. \n" + 
+                            "/a cafe?/ \"Wasn't I just at scramble crossing?\" An suddenly hears a voice from her side. \n" + 
+                            "\"Ah, where am I? I don't recognize this place...\" An unfamiliar girl in glasses murmured worriedly. \n" + 
+                            "An hurried over to the girl, \"Hey, you work here right? Could you tell me where exactly this place is? It sounds a bit odd, but I kinda woke up here\" \n" + 
+                            "\"Um, actually..I don't know how I got her either...\" The girl sheepishly admitted. \"I just blinked..and I was in this place...\" \n" + 
+                            "\"Oh? You too?\" Abruptly, the two girls hear a somewhat familiar voice from behind them. \n" + 
+                            "\"Welcome, Kohane, An.\"",
                         choices: [
-                            {name: "-> next", value: "m"}
+                            {name: "-> next", value: "streetSekai_1b"}
                         ]
                     },
                     streetSekai_1b: {
                         //miku len and meiko explaination
+                        prompt: "The two whirled around to see a girl with her turquoise hair in twintails. \n" + 
+                            "\"Eh! M-Miku?\" The two girls exclaimed in unison. \n" + 
+                            "\"Wait..How do you know my name?\" Kohane asked curiously. \n" + 
+                            "\"Len\"" + 
+                            "\"meik\" A brown-haired lady wt",
+                        choice: [
+                            {name: "-> next", value: "VBSwkgarage_2"}
+                        ]
                     },
                     VBSwkgarage_2: {
                         prompt: "idk" + 
