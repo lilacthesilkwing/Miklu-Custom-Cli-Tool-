@@ -1280,31 +1280,61 @@ const args = yargs(hideBin(process.argv))
                 },
                 wondasho: { //flashback from opening will be put in the chpater 16 section
                     WXStsukasaRoom_1a: {
-                        prompt: "You stnad at your mirror thinkign about your aiudtion \"The day is finally upon us.\"" + 
-                            "\"Clear skies and great weather... It's like the heavens themselves are celebrating my debut as a star!\"" + 
-                            "\"HAHA! At this point, they will probably take one look at my application and see my potnetial!\" You laugh confidently." + 
-                            "\"Tsukasa!\" \"Hmm?\" YOu walk to the open wall on the other side of your room, and look down, seeing your sister, Saki calling to you from the floor below." + 
-                            "\"Mom, says that you should keep it down!\"" +
+                        prompt: "You stand at your window thinking about your audition. \"The day is finally upon us.\" \n" + 
+                            "\"Clear skies and great weather... It's like the heavens themselves are celebrating my debut as a star!\" \n" + 
+                            "\"HAHA! At this point, they will probably take one look at my application and see my potnetial!\" You laugh confidently. \n" + 
+                            "\"Tsukasa!\" \"Hmm?\" You walk to the open wall on the other side of your room, and look down, seeing your sister, Saki calling to you from the floor below. \n" + 
+                            "\"Mom says that you should keep it down!\" \n" +
                             "You...",
                         choices: [
-                            {name: "apologize to Saki for the noise", value: "WXStsukasaRoom_1b"},
-                            {name: "continue yapping", value: "WXSdeadend_1a"},
+                            {name: "apologize to Saki for the noise.", value: "WXStsukasaRoom_1b"},
+                            {name: "continue talking.", value: "WXSdeadend_1a"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     WXSdeadend_1a: {
-                        prompt: "tuskas doen not get ajob b/c he is choppped!!! unemplyed loser lol *insert emu jumpscare here*",
+                        //tsukasa is early for his interview
+                        prompt: " You spend more time in your room, practicing for your audition. \n" + 
+                            "Unfortunately, you don't make the audition, and as you leave, you almost bump into a pink haired girl who is just about to enter the room you left. \n" + 
+                            "Oh no! Looks like Tsukasa-kun juuuust missed being seen by someone important! \n" + //these 2 lines lilac colored
+                            "Would you like to...",
+                            //"tuskas doen not get ajob b/c he is choppped!!! unemplyed loser lol *insert em",
                         choices: [
-                            {name: "-> next", value: "tsukasaskun"},
-                            {name: "dvo", value: "nane"}
+                            {name: "try again?", value: "WXStsukasaRoom_1a"},
+                            {name: "dvo", value: "nane"},
+                            {}
                         ]
                     },
                     WXStsukasaRoom_1b: {
-                        prompt: "tsuksa get a job!!!!! employed ending! no wnderstage :(",
+                        prompt: "\"Ah, sorry Saki, I was just woarming up my vocal chords by talking to the wall!\"" + 
+                        "\"You were talking to the wall..?\" Saki looks at you confusedly. \"Ah, right! Don't you have your\"" + 
+                        "\"Erm, actually, its an audition, /not/ an interview. It sounds much cooler that way!\"" + 
+                        "Saki giggles. \"/That's/ what your worried about?\"" + 
+                        "\"By the way, how's school been?\"" +
+                        "\"i good\"" + 
+                        "\"nie to hear that\"" + 
+                        "\"nici to her yur riaching youe drema\" Your sister tilts her head in confusion." + 
+                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You\"",
                         choices: [
                             {name: "-> next", value: "emu"},
                             {name: "dofodj", value: "tsukasaskun"}
+                        ]
+                    },
+                    WXStsukasaRoom_1c: {
+                        //saki asks why tuskas want to be a star and leaves + phone bolinks now
+                        prompt: "\"Whyd di i want to be a star? Hmm, weel thats because,... ah well\"", 
+                        choices: [
+                            {}, 
+                            {}
+                        ]
+                    },
+                    WXSplaceholder: {
+                        prompt: "c", 
+                        choices: [
+                            {},
+                            {},
+                            {}
                         ]
                     }
                     //{name: "sec1", value: "opening", prompt: "Tsukasa seeks employment"}
