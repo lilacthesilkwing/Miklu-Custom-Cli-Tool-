@@ -1169,13 +1169,13 @@ const args = yargs(hideBin(process.argv))
                     streetSekai_1a: { 
                         //an meets kohane in sekai
                         prompt: "___________________________________________________________________________ \n" + 
-                            "\"\" An looks around, taking in her surroundings. \n" + 
-                            "/a cafe?/ \"Wasn't I just at scramble crossing?\" An suddenly hears a voice from her side. \n" + 
-                            "\"Ah, where am I? I don't recognize this place...\" An unfamiliar girl in glasses murmured worriedly. \n" + 
-                            "An hurried over to the girl, \"Hey, you work here right? Could you tell me where exactly this place is? It sounds a bit odd, but I kinda woke up here\" \n" + 
-                            "\"Um, actually..I don't know how I got her either...\" The girl sheepishly admitted. \"I just blinked..and I was in this place...\" \n" + 
-                            "\"Oh? You too?\" Abruptly, the two girls hear a somewhat familiar voice from behind them. \n" + 
-                            "\"Welcome, Kohane, An.\"",
+                            "\"\x1b[38;2;0;187;220mHuh?\x1b[0m\" An looks around, taking in her surroundings. \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220mA cafe?\x1b[0m \"\x1b[38;2;0;187;220mWasn't I just at scramble crossing?\x1b[0m\" An suddenly hears a voice from her side. \n" + 
+                            "\"\x1b[38;2;255;103;154mAh, where am I? I don't recognize this place...\x1b[0m\" An unfamiliar girl in glasses murmured worriedly. \n" + 
+                            "An hurried over to the girl, \"\x1b[38;2;0;187;220mHey, you work here right? Could you tell me where exactly this place is? It sounds a bit odd, but I kinda woke up here and I don't know how I got here.\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;103;154mUm, actually..I don't know how I got here either...\x1b[0m\" The girl sheepishly admitted. \"\x1b[38;2;255;103;154mI just blinked..and I was in this place...\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;0;187;220mOh? You too?\x1b[0m\" Abruptly, the two girls hear a somewhat familiar voice from behind them. \n" + 
+                            "\"\x1b[38;2;51;204;186mWelcome, Kohane, An.\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "streetSekai_1b"}
                         ]
@@ -1347,8 +1347,19 @@ const args = yargs(hideBin(process.argv))
                             "\"Untitled? I've never seen this song before...\" You tap the blank icon of the song, and suddenly, bright light flashes from the phone, and you cover your eyes to shield them from the blinding light." + 
                             "\"Argh! It's so bright!\"", 
                         choices: [
-                            {name: "", value: ""},
+                            {name: "-> next", value: "wonderlandsSekai"},
                         ]
+                    },
+                    wonderlandsSekai_1: {
+                        //tsukas sees circus
+                        prompt: "When the light dies down, you open your eyes and start quickly looking around. \"Eh? A circus..?\"" + 
+                            "" +
+                            "/j/j " + 
+                            "" + 
+                            "" + 
+                            "" + 
+                            "",
+                        choices: []
                     },
                     WXSplaceholder: {
                         prompt: "c", 
