@@ -1288,12 +1288,12 @@ const args = yargs(hideBin(process.argv))
                             "You...",
                         choices: [
                             {name: "apologize to Saki for the noise.", value: "WXStsukasaRoom_1b"},
-                            {name: "continue talking.", value: "WXSdeadend_1a"},
+                            {name: "continue talking.", value: "WXSdeadend_1"},
                             {name: "try a different path?", value: "chooseGroup"},
                             {name: "Exit game", value: "itisfinished"}
                         ]
                     },
-                    WXSdeadend_1a: {
+                    WXSdeadend_1: {
                         //tsukasa is early for his interview
                         prompt: " You spend more time in your room, practicing for your audition. \n" + 
                             "Unfortunately, you don't make the audition, and as you leave, you almost bump into a pink haired girl who is just about to enter the room you left. \n" + 
@@ -1307,15 +1307,15 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     WXStsukasaRoom_1b: {
-                        prompt: "\"Ah, sorry Saki, I was just warming up my vocal chords by talking to the wall!\"" + 
-                        "\"You were talking to the wall..?\" Saki looks at you confusedly. \"Ah, right! Don't you have your\"" + 
-                        "\"Erm, actually, its an audition, /not/ an interview. It sounds much cooler that way!\"" + 
-                        "Saki giggles. \"/That's/ what your worried about?\"" + 
-                        "\"By the way, how's school been? I know you were only very recently sick, so I'm a bit worried...\"" +
-                        "\"No need for that! I've been doing great, and I'm gonna live out my high school life to the fullest!\"" + 
-                        "\"Well, its nice to hear that!\"" + 
-                        "\"It's also great to hear that your making progress on reaching your dream of becoming a star!\" Your sister tilts her head in confusion, continuing to talk." + 
-                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You've always been talking about it for as long as I can \"",
+                        prompt: "\"Ah, sorry Saki, I was just warming up my vocal chords by talking to the wall!\" \n" + //tsuka
+                        "\"You were talking to the wall..?\" Saki looks at you confusedly, having made her way up to your room. \"Ah, right! Don't you have your interview today?\" \n" + //saki
+                        "\"Erm, actually, its an audition, /not/ an interview. It sounds much cooler that way!\" \n" + //tsuka
+                        "Saki giggles. \"/That's/ what your worried about?\" \n" + //saki
+                        "\"By the way, how's school been? I know you were only very recently sick, so I'm a bit worried...\" \n" + //tsuka
+                        "\"No need for that! I've been doing great, and I'm gonna live out my high school life to the fullest!\" \n" + //saki
+                        "\"Well, its nice to hear that!\" \n" + //tsuka
+                        "\"It's also great to hear that your making progress on reaching your dream of becoming a star!\" Your sister tilts her head in confusion, continuing to talk. \n" + //saki
+                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You've always been talking about it for as long as I can remember.\" ", //saki
                         choices: [
                             {name: "-> next", value: "emu"},
                             {name: "dofodj", value: "tsukasaskun"}
@@ -1323,10 +1323,30 @@ const args = yargs(hideBin(process.argv))
                     },
                     WXStsukasaRoom_1c: {
                         //saki asks why tuskas want to be a star and leaves + phone bolinks now
-                        prompt: "\"Whyd di i want to be a star? Hmm, weel thats because,... ah well\"", 
+                        prompt: "\"Why did I want to be a star? Hmm, well that's because,... ah well, I can't seem to remember..\"" + 
+                        "\"Huh? You don't remember your own dream?\" Saki exclaims." + 
+                        "\"No, I'm just having a temporary lapse of memeory!\" You put your habd on your chin, thinking hard. \"Ah! I remeber now!\"" + 
+                        "\"It's because it would be such a tradgedy to wasites my amazing stage skills!\"" + 
+                        "\"Reaaaaaaaaaallly?\" Saki squits her eyes at you, then suddenly bursts into laughter." + 
+                        "\"Haha... When you put it that way, it really seems like that has to be it! Its like you were born for this!\"" + 
+                        "\"Haha! Y-you understand Saki!\" You laugh nervously, hoping Saki doesn't notice. \"And that is why the audition that I am going to is practically already passed!\"" + 
+                        "\"And then I'll become the best and brightest star ever! \"" + 
+                        "Something glints out of the corner of your eye. \"Eh? Did my phone just blink?\"" + 
+                        "Saki blinked. \"Did it? Ah, isn't it time for you to start preparing for your audition? I'll leave you be for now. Bye!\"" + 
+                        "She dashes out of your room. You...",  
                         choices: [
-                            {}, 
-                            {}
+                            {name: "start getting ready for your audition.", value: "WXSdeadend_1"}, 
+                            {name: "check your phone.", value: "WXStsukasaRoom_1d"}
+                        ]
+                    },
+                    WXStsukasaRoom_1d: {
+                        prompt: "You unlock your phone, checking it. /Hmm... No messages./" + 
+                            "YOur mind turns to the converstion that you just had vwith Saki/." + 
+                            "/Why can't I remember?/ Your phone flashes again, drawing you out of your thoughts." + 
+                            "/Didn't I just check this?/ You pick up your phone " +
+                            "", 
+                        choices: [
+                            {name: "", value: ""},
                         ]
                     },
                     WXSplaceholder: {
