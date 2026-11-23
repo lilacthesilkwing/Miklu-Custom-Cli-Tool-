@@ -1194,15 +1194,15 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     streetSekai_1c: {
-                        prompt: "\"No, this is your SEKAI.\" Miku retorted. \n" + 
-                            "\"SEKAI?\" \n" + //kohane
-                            "\"Yep. This SEKAI is a place that was created from your feelings.\" \n" + //miku
-                            "\"A place created from feelings?\" \n" + //an
-                            "\"Mmhm. If you find your true feelings here, they will give birth to songs.\" \n" + //meiko
-                            "\"That's where we come in! We're here to help you find those true feelings!\" \n" + //len
-                            "\"Feelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\" \n" + //an 
-                            "\"Haha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\" \n" + //len
-                            "\"True feelings? I don't know what my true feelings are..\" /I hardly even know how to choose what I'll be doing most day../", //kohane
+                        prompt: "\"\x1b[38;2;51;204;186mNo, this is your SEKAI.\x1b[0m\" Miku retorted. \n" + 
+                            "\"\x1b[38;2;255;103;154mSEKAI?\x1b[0m\" Kohane repeated.\n" + //kohane
+                            "\"\x1b[38;2;51;204;186mYep. This SEKAI is a place that was created from your feelings.\x1b[0m\" Miku clarified.\n" + //miku
+                            "\"\x1b[38;2;0;187;220mA place created from feelings?\x1b[0m\" \n" + //an
+                            "\"\x1b[38;2;222;68;68mMmhm. If you find your true feelings here, they will give birth to songs.\x1b[0m\" MEIKO explained\n" + //meiko
+                            "\"\x1b[38;2;255;238;18mThat's where we come in! We're here to help you find those true feelings!\x1b[0m\" Len chimed in.\n" + //len
+                            "\"\x1b[38;2;0;187;220mFeelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\x1b[0m\" \n" + //an 
+                            "\"\x1b[38;2;255;238;18mHaha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\x1b[0m\" \n" + //len
+                            "\"\x1b[38;2;255;103;154mTrue feelings? I don't know what my true feelings are..\x1b[0m\" \x1b[3m\x1b[38;2;255;103;154mI hardly even know how to choose what I'll be doing most days..\x1b[0m", //kohane
                         choices: [
                             {name: "-> next", value: "VBSwkgarage_2"}
                         ]
@@ -1353,8 +1353,8 @@ const args = yargs(hideBin(process.argv))
                     wonderlandsSekai_1: {
                         //tsukas sees circus
                         prompt: "When the light dies down, you open your eyes and start quickly looking around. \"Eh? A circus..?\"" + 
-                            "" +
-                            "/j/j " + 
+                            "/wbhat shos ro something/ You look around noticing all of the " +
+                            "" + 
                             "" + 
                             "" + 
                             "" + 
