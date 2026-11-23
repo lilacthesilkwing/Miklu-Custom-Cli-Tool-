@@ -1323,16 +1323,16 @@ const args = yargs(hideBin(process.argv))
                     },
                     WXStsukasaRoom_1c: {
                         //saki asks why tuskas want to be a star and leaves + phone bolinks now
-                        prompt: "\"Why did I want to be a star? Hmm, well that's because,... ah well, I can't seem to remember..\"" + 
-                        "\"Huh? You don't remember your own dream?\" Saki exclaims." + 
-                        "\"No, I'm just having a temporary lapse of memeory!\" You put your habd on your chin, thinking hard. \"Ah! I remeber now!\"" + 
-                        "\"It's because it would be such a tradgedy to wasites my amazing stage skills!\"" + 
-                        "\"Reaaaaaaaaaallly?\" Saki squits her eyes at you, then suddenly bursts into laughter." + 
-                        "\"Haha... When you put it that way, it really seems like that has to be it! Its like you were born for this!\"" + 
-                        "\"Haha! Y-you understand Saki!\" You laugh nervously, hoping Saki doesn't notice. \"And that is why the audition that I am going to is practically already passed!\"" + 
-                        "\"And then I'll become the best and brightest star ever! \"" + 
-                        "Something glints out of the corner of your eye. \"Eh? Did my phone just blink?\"" + 
-                        "Saki blinked. \"Did it? Ah, isn't it time for you to start preparing for your audition? I'll leave you be for now. Bye!\"" + 
+                        prompt: "\"Why did I want to be a star? Hmm, well that's because,... ah well, I can't seem to remember..\" \n" + 
+                        "\"Huh? You don't remember your own dream?\" Saki exclaims. \n" + 
+                        "\"No, I'm just having a temporary lapse of memeory!\" You put your habd on your chin, thinking hard. \"Ah! I remember now!\" \n" + 
+                        "\"It's because it would be such a tradgedy to wasites my amazing stage skills!\" \n" + 
+                        "\"Reaaaaaaaaaallly?\" Saki squits her eyes at you, then suddenly bursts into laughter. \n" + 
+                        "\"Haha... When you put it that way, it really seems like that has to be it! Its like you were born for this!\" \n" + 
+                        "\"Haha! Y-you understand Saki!\" You laugh nervously, hoping Saki doesn't notice. \"And that is why the audition that I am going to is practically already passed!\" \n" + 
+                        "\"And then I'll become the best and brightest star ever! \" \n" + 
+                        "Something glints out of the corner of your eye. \"Eh? Did my phone just blink?\" \n" + 
+                        "Saki blinked. \"Did it? Ah, isn't it time for you to start preparing for your audition? I'll leave you be for now. Bye!\" \n" + 
                         "She dashes out of your room. You...",  
                         choices: [
                             {name: "start getting ready for your audition.", value: "WXSdeadend_1"}, 
@@ -1343,8 +1343,9 @@ const args = yargs(hideBin(process.argv))
                         prompt: "You unlock your phone, checking it. /Hmm... No messages./" + 
                             "YOur mind turns to the converstion that you just had vwith Saki/." + 
                             "/Why can't I remember?/ Your phone flashes again, drawing you out of your thoughts." + 
-                            "/Didn't I just check this?/ You pick up your phone " +
-                            "", 
+                            "/Didn't I just check this?/ You pick up your phone and notice the music app flashing. \"What?\"" +
+                            "\"Untitled? I've never seen this song before...\" You tap the blank icon of the song, and suddenly, bright light flashes from the phone, and you cover your eyes to shield them from the blinding light." + 
+                            "\"Argh! It's so bright!\"", 
                         choices: [
                             {name: "", value: ""},
                         ]
@@ -1474,7 +1475,7 @@ const args = yargs(hideBin(process.argv))
                     }
 
                 } else if (group === "wondasho") {
-                    let sceneName = "tsukasaskun";
+                    let sceneName = "WXStsukasaRoom_1a";
                     while (storySelection[group][sceneName]) {
                         const scene = storySelection[group][sceneName];
                         console.log(scene.prompt)
@@ -1625,7 +1626,7 @@ const args = yargs(hideBin(process.argv))
 //  mmj - 6ccb20->108,203,32: mino - ffcdac->225,205,172; haru - 99cdff->153,205,255; airi - ffa9cc->255,169,204; shizu - 9aeede->154,238,222
 //  vbs - ee1166->238,17,102: koha - ff679a->255,103,154; an - 00bbdc->0,187,220; ginger - ff7721->255,119,33; toya - 0077dd->0,119,221
 //  wxs - ff9900->255,153,0: tsuk - ffbb00->255,187,0; emu - ff66bc->255,102,188; nene - 34dd9a->52,221,154; rui - bb88ed->187,136,237
-//  n25 - 884499->136,68,153: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
+//  n25 - 884499->136,68,15gcbvnvbmbmbbmhmghgffjtfdthz3: kana - bb6588->187,101,136; mafu - 8889cc->136,137,204; ena - ccaa87->204,170,135; mizu - e4a8ca->228,168,202
 //  vs - 00cdba->0,205,186: miku - 33ccba->51,204,186; rin - ffcc11->255,204,17; len - ffee12->255,238,18; luka - ffbacc->255,186,204; meiko - de4444->222,68,68; kaito - 3367cd->51,103,203
 //  narrator (a playful miku!) - e0c4ff->224,196,255
 
@@ -1633,3 +1634,4 @@ const args = yargs(hideBin(process.argv))
 
 //polish ideas: 
 // add colors to the character descriptions
+//potatogfuokhongh,mgfmhnmfvmgbgmgcmnfnbfnfv c  c  c c c cgre
