@@ -1183,12 +1183,12 @@ const args = yargs(hideBin(process.argv))
                     streetSekai_1b: {
                         //miku len and meiko explaination
                         prompt: "The two whirled around to see a girl with her turquoise hair in twintails. \n" + 
-                            "\"Eh! M-Miku?\" The two girls exclaimed in unison. \n" + 
-                            "\"Wait..How do you know my name?\" Kohane asked curiously. \n" + 
-                            "\"Hey there! We've been waiting for you y'know?\" Waving, a blond boy with a tuft of his hair sticking upwards dashed up to the three girls. \n" + 
-                            "\"They're probably still disoriented from their sudden arrival. In any case, it's very nice to meet the both of you.\" A brown-haired lady with a red jacket walks up to the group. \n" + 
-                            "\"Ah, Len and MEIKO too? This can't be real...\" \n" + 
-                            "\"Well, I can't be talking to Miku, Len, and Meiko... I've got to be dreaming.\" \n",
+                            "\"\x1b[38;2;0;187;220mEh! \x1b[38;2;255;103;154mM-Miku?\x1b[0m\" The two girls exclaimed in unison. \n" + 
+                            "\"\x1b[38;2;255;103;154mWait..How do you know my name?\x1b[0m\" Kohane asked curiously. \n" + 
+                            "\"\x1b[38;2;255;238;18mHey there! We've been waiting for you y'know?\x1b[0m\" Waving, a blond boy with a tuft of his hair sticking upwards dashed up to the three girls. \n" + 
+                            "\"\x1b[38;2;222;68;68mThey're probably still disoriented from their sudden arrival. In any case, it's very nice to meet the both of you.\x1b[0m\" A brown-haired lady with a red jacket walks up to the group. \n" + 
+                            "\"\x1b[38;2;255;103;154mAh, Len and MEIKO too? This can't be real...\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;0;187;220mWell, I can't be talking to Miku, Len, and Meiko... I've got to be dreaming.\x1b[0m\" \n",
                         choices: [
                             {name: "-> next", value: "streetSekai_1c"}
                         ]
@@ -1299,7 +1299,7 @@ const args = yargs(hideBin(process.argv))
                             "Unfortunately, you don't make the audition, and as you leave, you almost bump into a pink haired girl who is just about to enter the room you left. \n" + 
                             "Oh no! Looks like Tsukasa-kun juuuust missed being seen by someone important! \n" + //these 2 lines lilac colored
                             "Would you like to...",
-                            //"tuskas doen not get ajob b/c he is choppped!!! unemplyed loser lol *insert em",
+                            //"tuskas doen not get ajob b/c he is choppped!!! unemplye
                         choices: [
                             {name: "try again?", value: "WXStsukasaRoom_1a"},
                             {name: "dvo", value: "nane"},
