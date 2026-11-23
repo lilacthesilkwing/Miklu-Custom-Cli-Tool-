@@ -1171,9 +1171,9 @@ const args = yargs(hideBin(process.argv))
                         prompt: "___________________________________________________________________________ \n" + 
                             "\"\x1b[38;2;0;187;220mHuh?\x1b[0m\" An looks around, taking in her surroundings. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220mA cafe?\x1b[0m \"\x1b[38;2;0;187;220mWasn't I just at scramble crossing?\x1b[0m\" An suddenly hears a voice from her side. \n" + 
-                            "\"\x1b[38;2;255;103;154mAh, where am I? I don't recognize this place...\x1b[0m\" An unfamiliar girl in glasses murmured worriedly. \n" + 
+                            "\"\x1b[38;2;255;103;154mAh, where am I? I don't recognize this place...\x1b[0m\" \x1b[9mYou\x1b[0m An unfamiliar girl in glasses murmured worriedly. \n" + 
                             "An hurried over to the girl, \"\x1b[38;2;0;187;220mHey, you work here right? Could you tell me where exactly this place is? It sounds a bit odd, but I kinda woke up here and I don't know how I got here.\x1b[0m\" \n" + 
-                            "\"\x1b[38;2;255;103;154mUm, actually..I don't know how I got here either...\x1b[0m\" The girl sheepishly admitted. \"\x1b[38;2;255;103;154mI just blinked..and I was in this place...\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;103;154mUm, actually..I don't know how I got here either...\x1b[0m\" \x1b[9mYou\x1b[0m The girl sheepishly admitted. \"\x1b[38;2;255;103;154mI just blinked..and I was in this place...\x1b[0m\" \n" + 
                             "\"\x1b[38;2;0;187;220mOh? You too?\x1b[0m\" Abruptly, the two girls hear a somewhat familiar voice from behind them. \n" + 
                             "\"\x1b[38;2;51;204;186mWelcome, Kohane, An.\x1b[0m\"",
                         choices: [
@@ -1184,18 +1184,18 @@ const args = yargs(hideBin(process.argv))
                         //miku len and meiko explaination
                         prompt: "The two whirled around to see a girl with her turquoise hair in twintails. \n" + 
                             "\"\x1b[38;2;0;187;220mEh! \x1b[38;2;255;103;154mM-Miku?\x1b[0m\" The two girls exclaimed in unison. \n" + 
-                            "\"\x1b[38;2;255;103;154mWait..How do you know my name?\x1b[0m\" Kohane asked curiously. \n" + 
+                            "\"\x1b[38;2;255;103;154mWait..How do you know my name?\x1b[0m\" \x1b[9mYou\x1b[0m Kohane asked curiously. \n" + 
                             "\"\x1b[38;2;255;238;18mHey there! We've been waiting for you y'know?\x1b[0m\" Waving, a blond boy with a tuft of his hair sticking upwards dashed up to the three girls. \n" + 
                             "\"\x1b[38;2;222;68;68mThey're probably still disoriented from their sudden arrival. In any case, it's very nice to meet the both of you.\x1b[0m\" A brown-haired lady with a red jacket walks up to the group. \n" + 
                             "\"\x1b[38;2;255;103;154mAh, Len and MEIKO too? This can't be real...\x1b[0m\" \n" + 
-                            "\"\x1b[38;2;0;187;220mWell, I can't be talking to Miku, Len, and Meiko... I've got to be dreaming.\x1b[0m\" \n",
+                            "\"\x1b[38;2;0;187;220mWell, I can't be talking to Miku, Len, and MEIKO... I've got to be dreaming.\x1b[0m\" \n",
                         choices: [
                             {name: "-> next", value: "streetSekai_1c"}
                         ]
                     },
                     streetSekai_1c: {
                         prompt: "\"\x1b[38;2;51;204;186mNo, this is your SEKAI.\x1b[0m\" Miku retorted. \n" + 
-                            "\"\x1b[38;2;255;103;154mSEKAI?\x1b[0m\" Kohane repeated.\n" + //kohane
+                            "\"\x1b[38;2;255;103;154mSEKAI?\x1b[0m\" \x1b[9mYou\x1b[0m Kohane repeated.\n" + //kohane
                             "\"\x1b[38;2;51;204;186mYep. This SEKAI is a place that was created from your feelings.\x1b[0m\" Miku clarified.\n" + //miku
                             "\"\x1b[38;2;0;187;220mA place created from feelings?\x1b[0m\" \n" + //an
                             "\"\x1b[38;2;222;68;68mMmhm. If you find your true feelings here, they will give birth to songs.\x1b[0m\" MEIKO explained\n" + //meiko
@@ -1208,20 +1208,20 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     streetSekai_1d: {
-                        prompt: "\"What's your dream kohane?\" \n" + //miku
-                            "\"I don't know, I don't really have one.. so..\" \n" + //kohane
-                            "\"Really? How about you, An?\" \n" + //miku
-                            "\"Me? My dream is to surpass a legend!\" \n" + //an
-                            "\"Legend?\" \"Yup, the legndary event RAD WEEKEND that I saw when I was in junior high school. It was a super high point in the music scene, so everyone says that no event could ever possibly be better than it.\" \n" + //kohane then an
-                            "\"But, I disagree... Because I'm going to surpass it!\" \n" + //an
-                            "\"Woah..You're so cool.\" \n" + //kohane
-                            "\"Aww, you think so? Thanks, but I'm still a long way off from my goals. I need more training, and most importantly, bandmates! I still practice every day by singing on the street at night and during music events.\" \n" + //an
-                            "\"..you never know if you never try...\" Kohane mumbled. \"You're right.! Maybe if I stop worrying and start trying, something could chage for me too..?\" \n" + //koh
-                            "\"Hmm, maybe? Just try something when ever you het the feeling.\" \n" + //an 
-                            "\"Hehe. I'm sure the two of you will find your true feelings.\" \n" + //miku
-                            "A bright light begins to blind /your/ eyes. \"Wait..this light..!\" \"Not again!\" \n" + //koha -> an
-                            "\"As long as you two both have the same true feelings, we'll meet here again, in SEKAI.\" \n" + //aprting words from miku
-                            "The cafee fades away, leaving only blue, red, and yellow triangles behind.",
+                        prompt: "\"\x1b[38;2;51;204;186mWhat's your dream kohane?\x1b[0m\" \n" + //miku
+                            "\"\x1b[38;2;255;103;154mI don't know, I don't really have one.. so..\x1b[0m\" \n" + //kohane
+                            "\"\x1b[38;2;51;204;186mReally? How about you, An?\x1b[0m\" \n" + //miku
+                            "\"\x1b[38;2;0;187;220mMe? My dream is to surpass a legend!\x1b[0m\" \n" + //an
+                            "\"\x1b[38;2;255;103;154mLegend?\x1b[0m\" \"\x1b[38;2;0;187;220mYup, the legndary event RAD WEEKEND that I saw when I was in junior high school. It was a super high point in the music scene, so everyone says that no event could ever possibly be better than it.\x1b[0m\" \n" + //kohane then an
+                            "\"\x1b[38;2;0;187;220mBut, I disagree... Because I'm going to surpass it!\x1b[0m\" \n" + //an
+                            "\"\x1b[38;2;255;103;154mWoah..You're so cool!\x1b[0m\" \n" + //kohane
+                            "\"\x1b[38;2;0;187;220mAww, you think so? Thanks, but I'm still a long way off from my goals. I need more training, and most importantly, bandmates! I still practice every day by singing on the street at night and during music events.\x1b[0m\" \n" + //an
+                            "\"\x1b[38;2;255;103;154m..you never know if you never try...\x1b[0m\" Kohane mumbled. \"\x1b[38;2;255;103;154mYou're right.! Maybe if I stop worrying and start trying, something could change for me too..?\x1b[0m\" \n" + //koh
+                            "\"\x1b[38;2;0;187;220mHmm, maybe? Just try something new when ever you get the feeling.\x1b[0m\" \n" + //an 
+                            "\"\x1b[38;2;51;204;186mHehe. I'm sure the two of you will find your true feelings.\x1b[0m\" \n" + //miku
+                            "A bright light begins to blind \x1b[9myour\x1b[om eyes. \"\x1b[38;2;255;103;154mWait..this light..!\x1b[0m\" \"\x1b[38;2;0;187;220mNot again!\x1b[0m\" \n" + //koha -> an
+                            "\"\x1b[38;2;51;204;186mAs long as you two both have the same true feelings, we'll meet here again, in SEKAI.\x1b[0m\" \n" + //aprting words from miku
+                            "The cafe fades away, leaving only blue, red, and yellow triangles behind.",
                         choices: [
                             {name: "-> name", value: "VBSwkgarage_2"}
                         ]
@@ -1347,7 +1347,7 @@ const args = yargs(hideBin(process.argv))
                             "\"Untitled? I've never seen this song before...\" You tap the blank icon of the song, and suddenly, bright light flashes from the phone, and you cover your eyes to shield them from the blinding light." + 
                             "\"Argh! It's so bright!\"", 
                         choices: [
-                            {name: "-> next", value: "wonderlandsSekai"},
+                            {name: "-> next", value: "WXSplaceholder"},
                         ]
                     },
                     wonderlandsSekai_1: {
