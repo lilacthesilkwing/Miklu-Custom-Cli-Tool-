@@ -1135,7 +1135,7 @@ const args = yargs(hideBin(process.argv))
                         prompt: "\x1b[3m\x1b[38;2;0;187;220mThat was a good performance..\x1b[0m An thinks as she starts packing up. \n " + 
                             "\x1b[3m\x1b[38;2;0;187;220mI need more practice though... And more importantly, I need bandmates!\x1b[0m An sighed, putting her microphone in her bag. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220mWell, I'll just have to keep searching! After all, I'm going to be holding an event that will surpass the legendary RAD WEEKEND!\x1b[0m \n" + 
-                            "\x1b[3m\x1b[38;2;0;187;220mIt's getting late.. I need to finish packing up quickly.\x1b[0m \x1b[3m\x1b[38;2;51;204;186m*ping*\x1b[0m \x1b[3m\x1b[38;0;187;20;186mHmm?\x1b[0m  An notices something out of the corner of her eye. \x1b[3m\x1b[38;2;0;187;220mDid my phone just flash?\x1b[0m \n" + 
+                            "\x1b[3m\x1b[38;2;0;187;220mIt's getting late.. I need to finish packing up quickly.\x1b[0m \x1b[3m\x1b[38;2;51;204;186m*ping*\x1b[0m \x1b[3m\x1b[38;0;187;220mHmm?\x1b[0m  An notices something out of the corner of her eye. \x1b[3m\x1b[38;2;0;187;220mDid my phone just flash?\x1b[0m \n" + 
                             "An...",
                         choices: [
                             {name: "pauses her cleanup to check her phone.", value: "VBSscramCross_1c"},
@@ -1161,7 +1161,7 @@ const args = yargs(hideBin(process.argv))
                     VBSscramCross_1c: {
                         prompt: "An picks up her phone. \x1b[3m\x1b[38;2;0;187;220mWhat's this?\x1b[0m One of the apps on her phone is blinking. \n" + 
                             "\x1b[3m\x1b[38;2;0;187;220mMy music app is blinking?\x1b[0m Tapping the app's icon, An squints in confusion. \x1b[3m\x1b[38;2;0;187;220mUntitled? I don't think I've ever heard this song...\x1b[0m \n" + 
-                            "Suddenly, red, blue and yellow transparent trianglular shards appear around An, and a bright light flashes from her phone. \x1b[3m\x1b[38;2;0;187;220mWhoa! What is this light?\x1b[0m",
+                            "Suddenly, red, blue and yellow transparent trianglular shards appear around An, and a bright light flashes from her phone. \"\x1b[38;2;0;187;220mWhoa! What is this light?\x1b[0m\"",
                         choices: [
                             {name: "-> next", value: "streetSekai_1a"}
                         ]
@@ -1196,10 +1196,10 @@ const args = yargs(hideBin(process.argv))
                     streetSekai_1c: {
                         prompt: "\"\x1b[38;2;51;204;186mNo, this is your SEKAI.\x1b[0m\" Miku retorted. \n" + 
                             "\"\x1b[38;2;255;103;154mSEKAI?\x1b[0m\" \x1b[9mYou\x1b[0m Kohane repeated.\n" + //kohane
-                            "\"\x1b[38;2;51;204;186mYep. This SEKAI is a place that was created from your feelings.\x1b[0m\" Miku clarified.\n" + //miku
+                            "\"\x1b[38;2;51;204;186mYep. This SEKAI is a place that was created from your feelings.\x1b[0m\" Miku clarified. \n" + //miku
                             "\"\x1b[38;2;0;187;220mA place created from feelings?\x1b[0m\" \n" + //an
-                            "\"\x1b[38;2;222;68;68mMmhm. If you find your true feelings here, they will give birth to songs.\x1b[0m\" MEIKO explained\n" + //meiko
-                            "\"\x1b[38;2;255;238;18mThat's where we come in! We're here to help you find those true feelings!\x1b[0m\" Len chimed in.\n" + //len
+                            "\"\x1b[38;2;222;68;68mMmhm. If you find your true feelings here, they will give birth to songs.\x1b[0m\" MEIKO explained. \n" + //meiko
+                            "\"\x1b[38;2;255;238;18mThat's where we come in! We're here to help you find those true feelings!\x1b[0m\" Len chimed in. \n" + //len
                             "\"\x1b[38;2;0;187;220mFeelings? Songs? I'm sorry, I don't mean t be rude, but I don't understand anything that you're saying.\x1b[0m\" \n" + //an 
                             "\"\x1b[38;2;255;238;18mHaha. Well, that's to be expected. You'll understand soon enough eventually.. Ah, that goes for both this SEKAI and your true feelings.\x1b[0m\" \n" + //len
                             "\"\x1b[38;2;255;103;154mTrue feelings? I don't know what my true feelings are..\x1b[0m\" \x1b[3m\x1b[38;2;255;103;154mI hardly even know how to choose what I'll be doing most days..\x1b[0m", //kohane
@@ -1235,7 +1235,7 @@ const args = yargs(hideBin(process.argv))
                             "\"What type of dream?\" \n" + 
                             "\"\x1b[38;2;0;187;220mI was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\x1b[0m\" An dashed off to go do just that. \n" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "\"\x1b[38;2;255;103;154mHuh.?\x1b[0m\" \x1b[0mYou\x1b[0m A girl wakes up, glancing around \x1b[9myour\x1b[0m her room. \"\x1b[38;2;255;103;154mWhen did I fall asleep..?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;103;154mHuh.?\x1b[0m\" \x1b[9mYou\x1b[0m A girl wakes up, glancing around \x1b[9myour\x1b[0m room. \"\x1b[38;2;255;103;154mWhen did I fall asleep..?\x1b[0m\" \n" + 
                             "\"\x1b[38;2;255;103;154mI think I was talking to someone.. I can't really remember the details though...\x1b[0m\" \n" +
                             "\x1b[3m\x1b[38;2;255;103;154mBut I have the feeling.. that someting new is about to begin.\x1b[0m \n" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
                             "     ...      ....                                                                            \n" +
@@ -1280,11 +1280,11 @@ const args = yargs(hideBin(process.argv))
                 },
                 wondasho: { //flashback from opening will be put in the chpater 16 section
                     WXStsukasaRoom_1a: {
-                        prompt: "You stand at your window thinking about your audition. \"The day is finally upon us.\" \n" + 
-                            "\"Clear skies and great weather... It's like the heavens themselves are celebrating my debut as a star!\" \n" + 
-                            "\"HAHA! At this point, they will probably take one look at my application and see my potnetial!\" You laugh confidently. \n" + 
-                            "\"Tsukasa!\" \"Hmm?\" You walk to the open wall on the other side of your room, and look down, seeing your sister, Saki calling to you from the floor below. \n" + 
-                            "\"Mom says that you should keep it down!\" \n" +
+                        prompt: "You stand at your window thinking about your upcoming audition. \"\x1b[38;2;255;187;0mThe day is finally upon us!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;187;0mClear skies and great weather... It's like the heavens themselves are celebrating my debut as a star!\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;187;0mHAHA! At this point, they will probably take one look at my application and see my potential!\x1b[0m\" You laugh confidently. \n" + 
+                            "\"\x1b[38;2;255;221;69mOnii-chan!\x1b[0m\" \"\x1b[38;2;255;187;0mHmm?\x1b[0m\" You walk to the open wall on the other side of your room, and look down, seeing your sister, Saki calling to you from the floor below. \n" + 
+                            "\"\x1b[38;2;255;221;69mMom says that you should keep it down!\x1b[0m\" \n" +
                             "You...",
                         choices: [
                             {name: "apologize to Saki for the noise.", value: "WXStsukasaRoom_1b"},
@@ -1295,44 +1295,43 @@ const args = yargs(hideBin(process.argv))
                     },
                     WXSdeadend_1: {
                         //tsukasa is early for his interview
-                        prompt: "You spend more time in your room, practicing for your audition. \n" + 
+                        prompt: "You spend more time in your room, practicing for your audition, as your sister leaves." + //presumably assuming you didn't notice her. \n" + 
                             "Unfortunately, you don't make the audition, and as you leave, you almost bump into a pink haired girl who is just about to enter the room you left. \n" + 
-                            "Oh no! Looks like Tsukasa-kun juuuust missed being seen by someone important! \n" + //these 2 lines lilac colored
+                            "\x1b[38;2;224;196;255mOh no! Looks like Tsukasa-kun juuuust missed being seen by someone important! \n" + //these 2 lines lilac colored
                             "Would you like to...\x1b[0m",
                             //"tuskas doen not get ajob b/c he is choppped!!! unemplye
                         choices: [
                             {name: "try again?", value: "WXStsukasaRoom_1a"},
-                            {name: "dvo", value: "nane"},
-                            {}
+                            {name: "try a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     },
                     WXStsukasaRoom_1b: {
-                        prompt: "\"Ah, sorry Saki, I was just warming up my vocal chords by talking to the wall!\" \n" + //tsuka
-                        "\"You were talking to the wall..?\" Saki looks at you confusedly, having made her way up to your room. \"Ah, right! Don't you have your interview today?\" \n" + //saki
-                        "\"Erm, actually, its an audition, /not/ an interview. It sounds much cooler that way!\" \n" + //tsuka
-                        "Saki giggles. \"/That's/ what your worried about?\" \n" + //saki
-                        "\"By the way, how's school been? I know you were only very recently sick, so I'm a bit worried...\" \n" + //tsuka
-                        "\"No need for that! I've been doing great, and I'm gonna live out my high school life to the fullest!\" \n" + //saki
-                        "\"Well, its nice to hear that!\" \n" + //tsuka
-                        "\"It's also great to hear that your making progress on reaching your dream of becoming a star!\" Your sister tilts her head in confusion, continuing to talk. \n" + //saki
-                        "\"Come to think of it.. When did you start dreaming of becoming a star, anyway? You've always been talking about it for as long as I can remember.\" ", //saki
+                        prompt: "\"\x1b[38;2;255;187;0mAh, sorry Saki, I was just warming up my vocal chords by talking to the wall!\x1b[0m\" \n" + //tsuka
+                        "\"\x1b[38;2;255;221;69mYou were talking to the wall..?\x1b[0m\" Saki looks at you confusedly, having made her way up to your room. \"A\x1b[38;2;255;221;69mh, right! Don't you have your interview today?\x1b[0m\" \n" + //saki
+                        "\"\x1b[38;2;255;187;0mErm, actually, its an audition, \x1b[3mnot\x1b[23m an interview. It sounds much cooler that way!\x1b[0m\" \n" + //tsuka
+                        "Saki giggles. \"\x1b[3m\x1b[38;2;255;221;69mThat's\x1b[23m what your worried about?\" \n" + //saki
+                        "\"\x1b[38;2;255;187;0mBy the way, how's school been? I know you were only very recently sick, so I'm a bit worried...\x1b[0m\" \n" + //tsuka
+                        "\"\x1b[38;2;255;221;69mNo need for that! I've been doing great, and I'm gonna live out my high school life to the fullest!\x1b[0m\" \n" + //saki
+                        "\"\x1b[38;2;255;187;0mWell, its nice to hear that!\x1b[0m\" \n" + //tsuka
+                        "\"\x1b[38;2;255;221;69mIt's also great to hear that your making progress on reaching your dream of becoming a star!\x1b[0m\" Your sister tilts her head in confusion, continuing to talk. \n" + //saki
+                        "\"\x1b[38;2;255;221;69mCome to think of it.. When did you start dreaming of becoming a star, anyway? You've always been talking about it for as long as I can remember.\x1b[0m\" ", //saki
                         choices: [
-                            {name: "-> next", value: "emu"},
-                            {name: "dofodj", value: "tsukasaskun"}
+                            {name: "-> next", value: "WXStsukasaRoom_1c"}
                         ]
                     },
                     WXStsukasaRoom_1c: {
                         //saki asks why tuskas want to be a star and leaves + phone bolinks now
-                        prompt: "\"Why did I want to be a star? Hmm, well that's because,... ah well, I can't seem to remember..\" \n" + 
-                        "\"Huh? You don't remember your own dream?\" Saki exclaims. \n" + 
-                        "\"No, I'm just having a temporary lapse of memeory!\" You put your habd on your chin, thinking hard. \"Ah! I remember now!\" \n" + 
-                        "\"It's because it would be such a tradgedy to wasites my amazing stage skills!\" \n" + 
-                        "\"Reaaaaaaaaaallly?\" Saki squits her eyes at you, then suddenly bursts into laughter. \n" + 
-                        "\"Haha... When you put it that way, it really seems like that has to be it! Its like you were born for this!\" \n" + 
-                        "\"Haha! Y-you understand Saki!\" You laugh nervously, hoping Saki doesn't notice. \"And that is why the audition that I am going to is practically already passed!\" \n" + 
-                        "\"And then I'll become the best and brightest star ever! \" \n" + 
-                        "Something glints out of the corner of your eye. \"Eh? Did my phone just blink?\" \n" + 
-                        "Saki blinked. \"Did it? Ah, isn't it time for you to start preparing for your audition? I'll leave you be for now. Bye!\" \n" + 
+                        prompt: "\"\x1b[38;2;255;187;0mWhy did I want to be a star? Hmm, well that's because,... ah well, I can't seem to remember..\x1b[0m\" \n" + 
+                        "\"\x1b[38;2;255;221;69mHuh? You don't remember your own dream?\x1b[0m\" Saki exclaims. \n" + 
+                        "\"\x1b[38;2;255;187;0mNo, I'm just having a temporary lapse of memory!\x1b[0m\" You put your hand on your chin, thinking hard. \"\x1b[38;2;255;187;0mAh! I remember now!\x1b[0m\" \n" + 
+                        "\"\x1b[38;2;255;187;0mIt's because it would be such a tragedy to waste my amazing stage skills!\x1b[0m\" \n" + 
+                        "\"\x1b[38;2;255;221;69mReaaaaaaaaaallly?\x1b[0m\" Saki squits her eyes at you, then suddenly bursts into laughter. \n" + 
+                        "\"\x1b[38;2;255;221;69mHaha... When you put it that way, it really seems like that has to be it! Its like you were born for this!\x1b[0m\" \n" + 
+                        "\"\x1b[38;2;255;187;0mHaha! Y-you understand Saki!\x1b[0m\" You laugh nervously, hoping Saki doesn't notice. \"\x1b[38;2;255;187;0mAnd that is why the audition that I am going to is practically already passed!\x1b[0m\" \n" + 
+                        "\"\x1b[38;2;255;187;0mAnd then I'll become the best and brightest star ever!\x1b[0m\" \n" + 
+                        "Something glints out of the corner of your eye. \"\x1b[38;2;255;187;0mEh? Did my phone just blink?\x1b[0m\" \n" + 
+                        "Saki blinked. \"\x1b[38;2;255;211;69mDid it? Ah, isn't it time for you to start preparing for your audition? I'll leave you be for now. Bye!\x1b[0m\" \n" + 
                         "She dashes out of your room. You...",  
                         choices: [
                             {name: "start getting ready for your audition.", value: "WXSdeadend_1"}, 
@@ -1340,18 +1339,18 @@ const args = yargs(hideBin(process.argv))
                         ]
                     },
                     WXStsukasaRoom_1d: {
-                        prompt: "You unlock your phone, checking it. /Hmm... No messages./" + 
-                            "YOur mind turns to the converstion that you just had vwith Saki/." + 
-                            "/Why can't I remember?/ Your phone flashes again, drawing you out of your thoughts." + 
-                            "/Didn't I just check this?/ You pick up your phone and notice the music app flashing. \"What?\"" +
-                            "\"Untitled? I've never seen this song before...\" You tap the blank icon of the song, and suddenly, bright light flashes from the phone, and you cover your eyes to shield them from the blinding light." + 
-                            "\"Argh! It's so bright!\"", 
+                        prompt: "You unlock your phone, checking it. \x1b[3m\x1b[38;2;255;187;0mHmm... No messages.\x1b[0m \n" + 
+                            "Your mind turns to the conversation that you just had vwith Saki. \n" + 
+                            "\x1b[3m\x1b[38;2;255;187;0mWhy can't I remember?\x1b[0m Your phone flashes again, drawing you out of your thoughts. \n" + 
+                            "\x1b[3m\x1b[38;2;255;187;0mDidn't I just check this?\x1b[0m You pick up your phone and notice the music app flashing. \"\x1b[38;2;255;187;0mWhat?\x1b[0m\" \n" +
+                            "\"\x1b[38;2;255;187;0mUntitled? I've never seen this song before...\x1b[0m\" You tap the blank icon of the song, and suddenly, bright light flashes from the phone, and you cover your eyes to shield them from the blinding light. \n" + 
+                            "\"\x1b[38;2;255;187;0mArgh! It's so bright!\x1b[0m\"", 
                         choices: [
                             {name: "-> next", value: "WXSplaceholder"},
                         ]
                     },
                     wonderlandsSekai_1: {
-                        //tsukas sees circus
+                        //tsukas sees circus (incomplete as of 11/22/2026)
                         prompt: "When the light dies down, you open your eyes and start quickly looking around. \"Eh? A circus..?\"" + 
                             "/wbhat shos ro something/ You look around noticing all of the " +
                             "" + 
@@ -1362,11 +1361,12 @@ const args = yargs(hideBin(process.argv))
                         choices: []
                     },
                     WXSplaceholder: {
-                        prompt: "c", 
+                        prompt: "\x1b[38;2;224;196;255muh oh! if you're seeing this, then that means that this part of the story hasn't been finished yet! \n" + 
+                            "Would you like to...\x1b[0m", 
                         choices: [
-                            {},
-                            {},
-                            {}
+                            {name: "try again?", value: "WXStsukasaRoom_1a"},
+                            {name: "choose a new path?", value: "chooseGroup"},
+                            {name: "Exit game", value: "itisfinished"}
                         ]
                     }
                     //{name: "sec1", value: "opening", prompt: "Tsukasa seeks employment"}
