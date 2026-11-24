@@ -1229,15 +1229,15 @@ const args = yargs(hideBin(process.argv))
                     VBSwkgarage_2: {
                         prompt: "___________________________________________________________________________ \n" +
                             "\"Hey, An, wake up.\" \n" + 
-                            "An wakes up with a start, \"Huh? Oh no, the bar hours are about to start! I can't believe I've slept this long!\" \n" +  
+                            "An wakes up with a start, \"\x1b[38;2;0;187;220mHuh? Oh no, the bar hours are about to start! I can't believe I slept for this long!\x1b[0m\" \n" +  
                             "\"You don't usually fall asleep like this.. Had a long day?\" \n" + 
-                            "\"Hmm, no, not really... but I had a pretty weird dream?\" \n" + 
+                            "\"\x1b[38;2;0;187;220mHmm, no, not really... but I had a pretty weird dream?\x1b[0m\" \n" + 
                             "\"What type of dream?\" \n" + 
-                            "\" I was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\" An dashed off to go do just that. \n" +
+                            "\"\x1b[38;2;0;187;220mI was talking to someone, but I don't remember who it was.... Ah well, I'll go put up the open sign!\x1b[0m\" An dashed off to go do just that. \n" +
                             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n" + 
-                            "\"Huh.?\" \You\ A girl wakes up, glancing around \your\ her room. \"When did I fall asleep..?\" \n" + 
-                            "\"I think I was talking to someone.. I can't really remember the details though...\" \n" +
-                            "/But I have the feeling.. that someting new is about to begin./ \n" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
+                            "\"\x1b[38;2;255;103;154mHuh.?\x1b[0m\" \x1b[0mYou\x1b[0m A girl wakes up, glancing around \x1b[9myour\x1b[0m her room. \"\x1b[38;2;255;103;154mWhen did I fall asleep..?\x1b[0m\" \n" + 
+                            "\"\x1b[38;2;255;103;154mI think I was talking to someone.. I can't really remember the details though...\x1b[0m\" \n" +
+                            "\x1b[3m\x1b[38;2;255;103;154mBut I have the feeling.. that someting new is about to begin.\x1b[0m \n" + "\n\n\n\n\n\n\x1b[38;2;238;17;102m" +                    
                             "     ...      ....                                                                            \n" +
                             "  .X&&&&&X..:$&&&&&+.:X&$+.          .....         ........             .........             \n" +
                             " :&XxxxxxX&X&xxxxxx$&&xxx$&.       .X&XX$$:        ;&XXX$&&$$X;.   .;X$$$&$$$$&&&$x:          \n" +
@@ -1260,7 +1260,7 @@ const args = yargs(hideBin(process.argv))
                             "    :;;+X&&&&&&&&&+..:&&&&&$$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&X;..             \n" +
                             "             .X$+.    +&X.     .X&&&+.+&&&x.     .x$&&&&&&&&&&&&&&$;. .x$$$;.                 \n" +
                             "                                .....  ...              ..x&&&&$;..                           \x1b[0m\n" +
-                            "Congratulations, you have finished the opening section of Vivid BAD SQUAD's story and unlocked a checkpoint! \n" + 
+                            "\x1b[3m\x1b[38;2;224;196;255mCongratulations, you have finished the opening section of Vivid BAD SQUAD's story and unlocked a checkpoint! \n" + 
                             "Would you like to...\x1b[0m",
                         choices: [
                             {name: "-> next", value: "VBSplaceholder"},
@@ -1295,10 +1295,10 @@ const args = yargs(hideBin(process.argv))
                     },
                     WXSdeadend_1: {
                         //tsukasa is early for his interview
-                        prompt: " You spend more time in your room, practicing for your audition. \n" + 
+                        prompt: "You spend more time in your room, practicing for your audition. \n" + 
                             "Unfortunately, you don't make the audition, and as you leave, you almost bump into a pink haired girl who is just about to enter the room you left. \n" + 
                             "Oh no! Looks like Tsukasa-kun juuuust missed being seen by someone important! \n" + //these 2 lines lilac colored
-                            "Would you like to...",
+                            "Would you like to...\x1b[0m",
                             //"tuskas doen not get ajob b/c he is choppped!!! unemplye
                         choices: [
                             {name: "try again?", value: "WXStsukasaRoom_1a"},
@@ -1645,4 +1645,3 @@ const args = yargs(hideBin(process.argv))
 
 //polish ideas: 
 // add colors to the character descriptions
-//potatogfuokhongh,mgfmhnmfvmgbgmgcmnfnbfnfv c  c  c c c cgre
